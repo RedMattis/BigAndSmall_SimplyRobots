@@ -1,0 +1,90 @@
+<Defs>
+  <HediffDef ParentName="BS_BaseRobotHumanoid">
+    <defName>BS_SynthHediff</defName>
+    <label>synth</label>
+    <description>A synthetic human of dubious origins</description>
+    <abilities>
+    </abilities>
+    <stages Inherit="False">
+      <li>
+        <painFactor>0.8</painFactor>
+        <totalBleedFactor>0.3</totalBleedFactor>
+        <statFactors>
+        </statFactors>
+        <statOffsets>
+          <PawnBeauty>1</PawnBeauty>
+        </statOffsets>
+        <damageFactors>
+          <Frostbite>1.5</Frostbite>
+        </damageFactors>
+        <socialFightChanceFactor>1.2</socialFightChanceFactor>
+        <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>WoundInfection</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>OrganDecay</li>
+          <li>LungRot</li>
+          <li>FoodPoisoning</li>
+        </makeImmuneTo>
+        <!-- <blocksSleeping>true</blocksSleeping> -->
+      </li>
+		</stages>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_Race">
+      </li>
+		</comps>
+    <renderNodeProperties Inherit="False">
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <!-- Functional -->
+        <isMechanical>true</isMechanical>
+        <aptitudes>
+          <Melee>1</Melee>
+          <Shooting>1</Shooting>
+          <Construction>2</Construction>
+          <Mining>1</Mining>
+          <Cooking>1</Cooking>
+          <Plants>1</Plants>
+          <Animals>1</Animals>
+          <Crafting>2</Crafting>
+          <Artistic>2</Artistic>
+          <Medicine>3</Medicine>
+          <Social>1</Social>
+          <Intellectual>4</Intellectual>
+        </aptitudes>
+        <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
+        <geneCategoryFilters>
+          <blacklist>
+            <!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->
+            <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
+          </blacklist>
+        </geneCategoryFilters>
+        <pawnDiet>BS_EverythingAndFuel</pawnDiet>
+        <surgeryRecipes>
+          <blacklist>
+            <li>InstallNaturalLiver</li>
+            <li>InstallNaturalLung</li>
+            <li>InstallNaturalKidney</li>
+            <li>InstallNaturalHeart</li>
+            <li>BS_AndroidConversion</li>
+          </blacklist>
+          <allowlist>
+            <li>BS_RepairAndroidBrain</li>
+            <li>BS_RepairAndroidReactor</li>
+            <li>BS_RepairAndroidOrgan</li>
+            <li>BS_RepairAndroidMinorOrganPart</li>
+            <li>BS_RepairAndroidPart</li>
+            <li>BS_RepairAndroidPartSmall</li>
+          </allowlist>
+        </surgeryRecipes>
+        <babyStartAge>20</babyStartAge>
+      </li>
+    </modExtensions>
+  </HediffDef>
+</Defs>

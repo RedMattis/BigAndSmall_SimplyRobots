@@ -1,0 +1,36 @@
+<Defs>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>BS_CommandoBot</defName>
+    <label>Commando Bot</label>
+    <race>BS_CommandoBot</race>
+    <combatPower>80</combatPower>
+    <xenotypeSet Inherit="False">
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <BackstoryDef>
+    <defName>BS_CommandoAutomata</defName>
+    <title>automated soldier</title>
+    <titleShort>automated</titleShort>
+    <baseDesc>[PAWN_nameDef] was a mass-produced soldier intended as a less volatile replacement for mechanoids.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Melee>2</Melee>
+      <Shooting>2</Shooting>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_AutomatedSoldierAdult</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+
+</Defs>

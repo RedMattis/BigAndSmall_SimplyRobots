@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- <Operation Class="PatchOperationRemove">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace | ThingDef[@Name="BS_CommandoBotThingBase" or defName="BS_CommandoBot_NonSapient" or defName="BS_CommandoBot"]/comps/li[compClass="FacialAnimation.BrowControllerComp"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>/Defs/AlienRace.ThingDef_AlienRace | ThingDef[@Name="BS_CommandoBotThingBase" or defName="BS_CommandoBot_NonSapient" or defName="BS_CommandoBot"]/comps/li[compClass="FacialAnimation.SkinControllerComp"]</xpath>
+	</Operation> -->
+	
+	<!-- <Operation Class="PatchOperationConditional"> -->
+		<!-- <xpath>/Defs/ThingDef[@Name="BS_CommandoBotThingBase"]/comps</xpath> -->
+		<!-- <nomatch Class="PatchOperationAdd"> -->
+			<!-- <xpath>/Defs/ThingDef[@Name="BS_CommandoBotThingBase"]</xpath> -->
+			<!-- <value> -->
+				<!-- <comps> -->
+					<!-- <li><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li> -->
+					<!-- <li><compClass>FacialAnimation.EyeballControllerComp</compClass></li> -->
+					<!-- <li><compClass>FacialAnimation.HeadControllerComp</compClass></li> -->
+					<!-- <li><compClass>FacialAnimation.MouthControllerComp</compClass></li> -->
+					<!-- <li><compClass>FacialAnimation.LidControllerComp</compClass></li> -->
+					<!-- <li><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+					<!-- <li><compClass>FacialAnimation.BrowControllerComp</compClass></li> -->
+					<!-- <li><compClass>FacialAnimation.SkinControllerComp</compClass></li> -->
+					<!-- <li><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li> -->
+				<!-- </comps> -->
+			<!-- </value> -->
+		<!-- </nomatch> -->
+		<!-- <match Class="PatchOperationAdd"> -->
+			<!-- <xpath>/Defs/ThingDef[@Name="BS_CommandoBotThingBase"]/comps</xpath> -->
+			<!-- <value> -->
+				<!-- <li><compClass>FacialAnimation.DrawFaceGraphicsComp</compClass></li> -->
+				<!-- <li><compClass>FacialAnimation.EyeballControllerComp</compClass></li> -->
+				<!-- <li><compClass>FacialAnimation.HeadControllerComp</compClass></li> -->
+				<!-- <li><compClass>FacialAnimation.MouthControllerComp</compClass></li> -->
+				<!-- <li><compClass>FacialAnimation.LidControllerComp</compClass></li> -->
+				<!-- <li><compClass>FacialAnimation.EmotionControllerComp</compClass></li> -->
+				<!-- <li><compClass>FacialAnimation.BrowControllerComp</compClass></li> -->
+				<!-- <li><compClass>FacialAnimation.SkinControllerComp</compClass></li> -->
+				<!-- <li><compClass>FacialAnimation.FacialAnimationControllerComp</compClass></li> -->
+				<!--  -->
+			<!-- </value> -->
+		<!-- </match> -->
+	<!-- </Operation> -->
+
+</Patch>

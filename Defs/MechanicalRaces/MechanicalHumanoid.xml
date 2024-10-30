@@ -1,0 +1,39 @@
+<Defs>
+  <HediffDef Name="BS_BaseRobotHumanoid" Abstract="True">
+    <hediffClass>BigAndSmall.RaceTracker</hediffClass>
+
+    <isBad>false</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>1</initialSeverity>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <hediffFilters>
+          <banlist>
+            <li>Flu</li>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+            <li>Plague</li>
+            <li>WoundInfection</li>
+            <li>LungRot</li>
+            <li>GutWorms</li>
+            <li>MuscleParasites</li>
+            <li>OrganDecay</li>
+            <li>FoodPoisoning</li>
+
+            <li>Carcinoma</li>
+            <li>HeartAttack</li>
+            <li>BadBack</li>
+            <li>Frail</li>
+            <li>Cataract</li>
+            <li>Dementia</li>
+            <li>Alzheimers</li>
+            <li>Asthma</li>
+            <li>HeartArteryBlockage</li>
+
+            <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
+          </banlist>
+        </hediffFilters>
+      </li>
+    </modExtensions>
+  </HediffDef>
+</Defs>

@@ -1,0 +1,155 @@
+<Defs>
+  <ThingDef ParentName="BS_CommandoBotThingBase">
+    <defName>BS_CommandoBot</defName>
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension">
+        <raceHediff>BS_CommandoBot</raceHediff>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef ParentName="BS_CommandoBotHediffBase">
+    <defName>BS_CommandoBot</defName>
+    <label>Persona Commando</label>
+
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <!-- Functional -->
+        <isMechanical>true</isMechanical>
+        <aptitudes>
+          <Melee>2</Melee>
+          <Shooting>2</Shooting>
+          <Construction>4</Construction>
+          <Mining>2</Mining>
+          <Cooking>-2</Cooking>
+          <Plants>-2</Plants>
+          <Animals>-6</Animals>
+          <Crafting>2</Crafting>
+          <Artistic>-2</Artistic>
+          <Medicine>0</Medicine>
+          <Social>-2</Social>
+          <Intellectual>0</Intellectual>
+        </aptitudes>
+        <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
+        <immutableEndogenes>
+          <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
+          <!-- Mostly serves to get rid of other body genes. -->
+        </immutableEndogenes>
+        <geneCategoryFilters>
+          <blacklist>
+            <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
+          </blacklist>
+        </geneCategoryFilters>
+        <geneFilters>
+          <blacklist>
+            <li MayRequire="Ludeon.Rimworld.Biotech">Brow_Heavy</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">FacialRidges</li>
+          </blacklist>
+        </geneFilters>
+        <geneTagFilters>
+          <blacklist>
+            <li>Jaw</li>
+            <li>Nose</li>
+            <li>Ears</li>
+            <li>EyeColor</li>
+            <li>BeardStyle</li>
+            <li>Fur</li>
+            <li>HairStyle</li>
+          </blacklist>
+        </geneTagFilters>
+        <pawnDiet>BS_ChemRobotDiet</pawnDiet>
+        <surgeryRecipes>
+          <blacklist>
+            <li>InstallNaturalLiver</li>
+            <li>InstallNaturalLung</li>
+            <li>InstallNaturalKidney</li>
+            <li>InstallNaturalHeart</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallStoneskinGland</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallArmorskinGland</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallToughskinGland</li>
+            <li>BS_AndroidConversion</li>
+          </blacklist>
+          <allowlist>
+            <li>BS_RepairAndroidBrain</li>
+            <li>BS_RepairAndroidReactor</li>
+            <li>BS_RepairAndroidOrgan</li>
+            <li>BS_RepairAndroidMinorOrganPart</li>
+            <li>BS_RepairAndroidPart</li>
+            <li>BS_RepairAndroidPartSmall</li>
+          </allowlist>
+        </surgeryRecipes>
+        <apparelRestrictions>
+          <thingDefs>
+            <blacklist>
+              <li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Flophat</li>
+            </blacklist>
+          </thingDefs>
+          <apparelLayers>
+            <blacklist>
+              <li>OnSkin</li>
+            </blacklist>
+          </apparelLayers>
+          <bodyPartGroups>
+            <blacklist>
+              <li>FullHead</li>
+            </blacklist>
+          </bodyPartGroups>
+        </apparelRestrictions>
+        <babyStartAge>20</babyStartAge>
+
+        <!-- Cosmetic -->
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Female_Standard>Pawns/Commando/Naked_Female</Female_Standard>
+          <Male_Standard>Pawns/Commando/Naked_Male</Male_Standard>
+        </bodyPaths>
+        <bodyMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+						 <hairColor>true</hairColor>
+					</colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+             <!-- <apparelColorOrFavorite>true</apparelColorOrFavorite> -->
+         </colorB>
+        </bodyMaterial>
+        <headPaths>
+          <Female>Pawns/Commando/Female_Average_Normal</Female>
+          <Male>Pawns/Commando/Male_Average_Normal</Male>
+        </headPaths>
+        <headMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+         </colorA>
+         <colorB>
+           <ideologyColor>true</ideologyColor>
+           <!-- <apparelColorOrFavorite>true</apparelColorOrFavorite> -->
+        </colorB>
+        </headMaterial>
+        <randomHairGenes>
+          <li>Hair_Gray</li>
+          <li>Hair_SnowWhite</li>
+          <li>Hair_LightBlue</li>
+          <li>Hair_DarkBlack</li>
+          <li>Hair_DarkReddish</li>
+          <li>Hair_DarkSaturatedReddish</li>
+          <li>Hair_DarkBrown</li>
+          <li>Hair_ReddishBrown</li>
+          <li>Hair_SandyBlonde</li>
+          <li>Hair_Blonde</li>
+          <li>Hair_Pink</li>
+          <li>Hair_LightPurple</li>
+          <li>Hair_LightBlue</li>
+          <li>Hair_LightTeal</li>
+          <li>Hair_LightGreen</li>
+          <li>Hair_LightOrange</li>
+          <li>Hair_BrightRed</li>
+        </randomHairGenes>
+      </li>
+    </modExtensions>
+  </HediffDef>
+</Defs>

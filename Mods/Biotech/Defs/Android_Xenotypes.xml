@@ -1,0 +1,130 @@
+<Defs>
+  <XenotypeDef>
+    <defName>BS_CommandoAndroid</defName>
+    <label>Android Commando</label>
+    <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>Body_Standard</li>
+      <li>Hair_BaldOnly</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <forceRaceOnGeneration>BS_CommandoBot</forceRaceOnGeneration>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_CommandoAndroidAutomata</defName>
+    <label>Android Commando</label>
+    <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>Body_Standard</li>
+      <li>Hair_BaldOnly</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <forceRaceOnGeneration>BS_CommandoBot_NonSapient</forceRaceOnGeneration>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_TVAndroid</defName>
+    <label>Human Interaction Robot</label>
+    <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
+    <iconPath>Icons/BS_AndroidFaction_white</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>Body_Standard</li>
+      <li>Hair_BaldOnly</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <forceRaceOnGeneration>BS_TVAndroid</forceRaceOnGeneration>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_TVAndroid_Funky</defName>
+    <label>Human Interaction Robot</label>
+    <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
+    <iconPath>Icons/BS_TV_Erratic</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li>Body_Standard</li>
+      <li>Hair_BaldOnly</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
+      <!-- <li>Hair_Pink</li>
+      <li>Hair_LightPurple</li>
+      <li>Hair_LightBlue</li>
+      <li>Hair_LightTeal</li>
+      <li>Hair_LightGreen</li>
+      <li>Hair_LightOrange</li>
+      <li>Hair_BrightRed</li>
+      <li>Hair_LightPurple</li>
+      <li MayRequire="RedMattis.BigSmall.Core">Hair_MediumRed</li>
+      <li MayRequire="RedMattis.BigSmall.Core">Hair_MediumBlue</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Hair_TrueWhite</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_HairFrostWhite</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_HairPermafrost</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_BloodHair</li> -->
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <forceRaceOnGeneration>BS_TVAndroid_Sapient</forceRaceOnGeneration>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_SynthSpy</defName>
+    <label>synth</label>
+    <description>A synthetic human.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <forceRaceOnGeneration>BS_SynthRace</forceRaceOnGeneration>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_SynthSpyDerp</defName>
+    <label>synth...</label>
+    <description>A synthetic human. Expertly disguised.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <genes>
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_HighmateHair</li>
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguineHair</li>
+      <li>Hair_LongOnly</li>
+
+      <li>Hair_Pink</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Hair_TrueWhite</li>
+      <li>Hair_LightTeal</li>
+      <li>Hair_LightGreen</li>
+
+      <li MayRequire="RedMattis.BigSmall.Core">BS_SkinPermafrost</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Skin_Marble_White</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_CreamSkin</li>
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <forceRaceOnGeneration>BS_SynthRace</forceRaceOnGeneration>
+			</li>
+		</modExtensions>
+  </XenotypeDef>
+
+</Defs>

@@ -1,0 +1,68 @@
+<Defs>
+  <HediffDef ParentName="BS_BaseRobotHumanoid" Name="BS_CommandoBotHediffBase" Abstract="True">
+    <label>Persona Commando</label>
+    <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
+
+    <disablesNeeds>
+      <li>Comfort</li>
+      <li>Outdoors</li>
+      <!-- <li>Indoors</li> -->
+    </disablesNeeds>
+    <abilities>
+    </abilities>
+    <stages Inherit="False">
+      <li>
+        <painFactor>0.5</painFactor>
+        <totalBleedFactor>0</totalBleedFactor>
+        <statFactors>
+          <!-- <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
+          <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier> -->
+        </statFactors>
+        <damageFactors>
+          <Frostbite>0</Frostbite>
+        </damageFactors>
+        <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>WoundInfection</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>OrganDecay</li>
+          <li>LungRot</li>
+          <li>FoodPoisoning</li>
+        </makeImmuneTo>
+        <!-- <blocksSleeping>true</blocksSleeping> -->
+      </li>
+		</stages>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_Race">
+        <!-- Cosmetic -->
+        <bodyDefOverride>Male</bodyDefOverride>
+        <bodyDefOverride_Female>Female</bodyDefOverride_Female>
+        <disableHair>true</disableHair>
+        <disableBeards>true</disableBeards>
+      </li>
+		</comps>
+    <renderNodeProperties Inherit="False">
+    </renderNodeProperties>
+  </HediffDef>
+
+  <GeneDef ParentName="GeneSkinColorMelanin">
+    <defName>BS_Skin_AndroidWhite</defName>
+    <skinColorBase>(255, 255, 255)</skinColorBase>
+    <minMelanin>0</minMelanin>
+    <selectionWeight>0</selectionWeight>
+    <randomBrightnessFactor>0.1</randomBrightnessFactor>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorMelanin">
+    <defName>BS_Skin_AndroidGrey</defName>
+    <skinColorBase>(200, 200, 200)</skinColorBase>
+    <minMelanin>0</minMelanin>
+    <selectionWeight>0</selectionWeight>
+    <randomBrightnessFactor>0.4</randomBrightnessFactor>
+  </GeneDef>
+</Defs>

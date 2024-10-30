@@ -1,0 +1,178 @@
+<Defs>
+  <ThingDef ParentName="BS_TVAndroidThingBase">
+    <defName>BS_TVAndroid_Sapient</defName>
+    <label>Human-Interactive Robot</label>
+    <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension">
+        <raceHediff>BS_TVAndroid_Sapient</raceHediff>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef ParentName="BS_TVAndroidHediffBase">
+    <defName>BS_TVAndroid_Sapient</defName>
+    <label>Erratic Human-Interactive Robot</label>
+    <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
+
+    <stages Inherit="False">
+      <li>
+        <totalBleedFactor>0</totalBleedFactor>
+        <damageFactors>
+          <Frostbite>0</Frostbite>
+        </damageFactors>
+        <socialFightChanceFactor>0.5</socialFightChanceFactor>
+        <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>WoundInfection</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>OrganDecay</li>
+          <li>LungRot</li>
+          <li>FoodPoisoning</li>
+        </makeImmuneTo>
+      </li>
+		</stages>
+
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <!-- Functional -->
+        <isMechanical>true</isMechanical>
+        <aptitudes>
+          <Melee>0</Melee>
+          <Shooting>2</Shooting>
+          <Construction>4</Construction>
+          <Mining>0</Mining>
+          <Cooking>2</Cooking>
+          <Plants>0</Plants>
+          <Animals>0</Animals>
+          <Crafting>1</Crafting>
+          <Artistic>2</Artistic>
+          <Medicine>2</Medicine>
+          <Social>0</Social>
+          <Intellectual>4</Intellectual>
+        </aptitudes>
+        <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
+        <immutableEndogenes>
+          <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
+          <!-- Mostly serves to get rid of other body genes. -->
+        </immutableEndogenes>
+        <geneCategoryFilters>
+          <blacklist>
+            <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
+          </blacklist>
+        </geneCategoryFilters>
+        <geneFilters>
+          <blacklist>
+            <li MayRequire="Ludeon.Rimworld.Biotech">Brow_Heavy</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">FacialRidges</li>
+          </blacklist>
+        </geneFilters>
+        <geneTagFilters>
+          <blacklist>
+            <li>Jaw</li>
+            <li>Nose</li>
+            <li>Ears</li>
+            <li>EyeColor</li>
+            <li>BeardStyle</li>
+            <li>Fur</li>
+            <li>HairStyle</li>
+          </blacklist>
+        </geneTagFilters>
+        <surgeryRecipes>
+          <blacklist>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallStoneskinGland</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallArmorskinGland</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallToughskinGland</li>
+            <li>InstallNaturalLiver</li>
+            <li>InstallNaturalLung</li>
+            <li>InstallNaturalKidney</li>
+            <li>InstallNaturalHeart</li>
+            <li>BS_TVConversion</li>
+          </blacklist>
+          <allowlist>
+            <li>BS_RepairRobotBrain</li>
+            <li>BS_RepairRobotOrgan</li>
+            <li>BS_RepairRobotPart</li>
+          </allowlist>
+        </surgeryRecipes>
+        <pawnDiet>BS_ChemRobotDiet</pawnDiet>
+        <apparelRestrictions>
+          <apparelLayers>
+            <blacklist>
+              <li>OnSkin</li>
+            </blacklist>
+          </apparelLayers>
+          <bodyPartGroups>
+            <blacklist>
+              <li>FullHead</li>
+              <li>Feet</li>
+            </blacklist>
+          </bodyPartGroups>
+        </apparelRestrictions>
+        <babyStartAge>20</babyStartAge>
+
+        <!-- Cosmetic -->
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Female_Standard>Pawns/Simple/Naked_Female</Female_Standard>
+          <Male_Standard>Pawns/Simple/Naked_Female</Male_Standard>
+        </bodyPaths>
+        <forceFemaleBody>true</forceFemaleBody>
+        <bodyMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+						 <hairColor>true</hairColor>
+					</colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+         </colorB>
+        </bodyMaterial>
+        <headPaths>
+          <Female>Pawns/Simple/Female_Average_Simple</Female>
+          <Male>Pawns/Simple/Female_Average_Simple</Male>
+        </headPaths>
+        <headMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+         </colorA>
+         <colorB>
+           <ideologyColor>true</ideologyColor>
+        </colorB>
+        </headMaterial>
+        <randomHairGenes>
+          <li>Hair_Gray</li>
+          <li>Hair_SnowWhite</li>
+          <li>Hair_LightBlue</li>
+          <li>Hair_DarkBlack</li>
+          <li>Hair_DarkReddish</li>
+          <li>Hair_DarkSaturatedReddish</li>
+          <li>Hair_DarkBrown</li>
+          <li>Hair_ReddishBrown</li>
+          <li>Hair_SandyBlonde</li>
+          <li>Hair_Blonde</li>
+          <li>Hair_Pink</li>
+          <li>Hair_LightPurple</li>
+          <li>Hair_LightBlue</li>
+          <li>Hair_LightTeal</li>
+          <li>Hair_LightGreen</li>
+          <li>Hair_LightOrange</li>
+          <li>Hair_BrightRed</li>
+        </randomHairGenes>
+        <!-- <randomSkinGenes>
+          <li>BS_Skin_AndroidWhite</li>
+          <li>BS_Skin_AndroidGrey</li>
+        </randomSkinGenes> -->
+
+      </li>
+    </modExtensions>
+  </HediffDef>
+</Defs>

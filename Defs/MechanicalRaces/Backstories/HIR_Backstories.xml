@@ -1,0 +1,69 @@
+<Defs>
+
+  <PawnKindDef ParentName="GuardBase">
+    <defName>BS_TVAndroid</defName>
+    <label>HIR Robot</label>
+    <race>BS_TVAndroid</race>
+    <combatPower>40</combatPower>
+    <xenotypeSet Inherit="False">
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <BackstoryDef>
+    <defName>BS_SimpleAndroidChild</defName>
+    <title>factory-built</title>
+    <titleShort>factory-built</titleShort>
+    <baseDesc>[PAWN_nameDef] was built in a factory. They did not have a childhood.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_SimpleAndroidChild</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+
+  <BackstoryDef>
+    <defName>BS_TVAndroid</defName>
+    <title>support</title>
+    <titleShort>support</titleShort>
+    <baseDesc>[PAWN_nameDef] was mostly used for rudimentory low-skill jobs.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Female</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Construction>1</Construction>
+      <Animals>1</Animals>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_SimpleAndroidAdult</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>BS_TVAndroidAnnouncer</defName>
+    <title>announcer</title>
+    <titleShort>announcer</titleShort>
+    <baseDesc>[PAWN_nameDef] has been behaving in strange and unusual ways.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Female</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Social>8</Social>
+      <Intellectual>6</Intellectual>
+      <Medicine>6</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_TVAndroidSapient</li>
+    </spawnCategories>
+  </BackstoryDef>
+  
+</Defs>

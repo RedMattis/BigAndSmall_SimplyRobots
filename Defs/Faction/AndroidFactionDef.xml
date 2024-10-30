@@ -1,0 +1,243 @@
+<Defs>
+  <FactionDef ParentName="OutlanderRoughBase">
+    <defName>BS_HostileAndroids</defName>
+    <label>hayware androids</label>
+    <fixedName>The Media</fixedName>
+    <description>An faction made up entierly of robots who have been infected by some sort of digital virus.</description>
+    <factionIconPath>Icons/BS_AndroidFaction</factionIconPath>
+    <pawnSingular>advertiser</pawnSingular>
+    <pawnsPlural>advertisers</pawnsPlural>
+    <replacesFaction>Pirate</replacesFaction>
+    <permanentEnemy>false</permanentEnemy>
+    <naturalEnemy>true</naturalEnemy>
+    <techLevel>Spacer</techLevel>
+    <!-- <allowedCultures Inherit="False"><li>LoS_Urbworld</li></allowedCultures> -->
+    <colorSpectrum Inherit="False">
+      <li>(0.85, 0.3, 0.3)</li>
+      <!-- <li>(1, 0.74, 0.83)</li> -->
+    </colorSpectrum>
+    <requiredMemes Inherit="False">
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+    </requiredMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_Prohibited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Strict</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Moderate</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Lovin_SpouseOnly_Mild</li>
+
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestHairOrFaceDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestHairOrFaceDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinChestOrHairDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinChestOrHairDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinOrChestDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinOrChestDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Female_UncoveredGroinDisapproved</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudity_Male_UncoveredGroinDisapproved</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <VME_Structure_Corporate MayRequire="vanillaexpanded.vmemese">1000</VME_Structure_Corporate>
+    </structureMemeWeights>
+    <!-- <fixedLeaderKinds>
+    </fixedLeaderKinds> -->
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+      </xenotypeChances>
+    </xenotypeSet>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(300,  0)</li>
+        <li>(500, 1)</li>
+        <li>(4000, 2)</li>
+     </points>
+    </raidCommonalityFromPointsCurve>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(500, 100)</li>
+        <li>(1500, 200)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          
+        </options>
+      </li>
+      <li>
+        <!--TV Robots-->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <BS_TV_Villager>10</BS_TV_Villager>
+          <BS_TV_Grunt>5</BS_TV_Grunt>
+          <BS_TV_Boom>1</BS_TV_Boom>
+          <BS_TV_Elite>2</BS_TV_Elite>
+        </options>
+      </li>
+      
+      <li>
+        <!--Commandos Robots-->
+        <kindDef>Combat</kindDef>
+        <commonality>50</commonality>
+        <options>
+          <BS_Commando_Grunt>9</BS_Commando_Grunt>
+          <BS_Commando_Grunt_Sapient>1</BS_Commando_Grunt_Sapient>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+        </options>
+      </li>
+
+      <li>
+        <!--Mixed-->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <BS_TV_Villager>10</BS_TV_Villager>
+          <BS_TV_Grunt>20</BS_TV_Grunt>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+
+          <BS_Commando_Grunt>5</BS_Commando_Grunt>
+          <BS_Commando_Grunt_Sapient>0.5</BS_Commando_Grunt_Sapient>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+        </options>
+      </li>
+
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <BS_TV_Villager>20</BS_TV_Villager>
+          <BS_TV_Grunt>10</BS_TV_Grunt>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+
+          <BS_Commando_Grunt>5</BS_Commando_Grunt>
+          <BS_Commando_Grunt_Sapient>0.5</BS_Commando_Grunt_Sapient>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <BS_TV_Elite>1</BS_TV_Elite>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <BS_TV_Villager>10</BS_TV_Villager>
+          <BS_TV_Grunt>20</BS_TV_Grunt>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+
+          <BS_Commando_Grunt>9</BS_Commando_Grunt>
+          <BS_Commando_Grunt_Sapient>1</BS_Commando_Grunt_Sapient>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <Town_Councilman>1</Town_Councilman>
+          <BS_TV_Villager>20</BS_TV_Villager>
+          <BS_TV_Grunt>20</BS_TV_Grunt>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+
+          <BS_Commando_Grunt>0</BS_Commando_Grunt>
+          <BS_Commando_Grunt_Sapient>1</BS_Commando_Grunt_Sapient>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Miner>1</Miner>
+          <BS_TV_Grunt>18</BS_TV_Grunt>
+          <BS_Commando_Grunt_Sapient>2</BS_Commando_Grunt_Sapient>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+
+          <BS_Commando_Grunt>10</BS_Commando_Grunt>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Hunter>1</Hunter>
+          <BS_TV_Grunt>4</BS_TV_Grunt>
+          <BS_Commando_Grunt_Sapient>4</BS_Commando_Grunt_Sapient>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+
+          <BS_Commando_Grunt>10</BS_Commando_Grunt>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Loggers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Logger>1</Logger>
+          <BS_TV_Grunt>4</BS_TV_Grunt>
+          <BS_Commando_Grunt_Sapient>4</BS_Commando_Grunt_Sapient>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+
+          <BS_Commando_Grunt>10</BS_Commando_Grunt>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Farmer>1</Farmer>
+          <BS_TV_Grunt>4</BS_TV_Grunt>
+          <BS_Commando_Grunt_Sapient>4</BS_Commando_Grunt_Sapient>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+
+          <BS_Commando_Grunt>10</BS_Commando_Grunt>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <!-- <modExtensions>
+      <li Class="BigAndSmall.Factions">
+        <canUseDropPods>false</canUseDropPods>
+      </li>
+    </modExtensions> -->
+  </FactionDef>
+
+
+</Defs>

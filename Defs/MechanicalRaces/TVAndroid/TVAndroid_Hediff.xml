@@ -1,0 +1,142 @@
+<Defs>
+  <HediffDef ParentName="BS_BaseRobotHumanoid" Name="BS_TVAndroidHediffBase" Abstract="True">
+    <defName>BS_TVAndroid</defName>
+    <label>Human-Interactive Robot</label>
+    
+    <disablesNeeds>
+      <li>Comfort</li>
+      <!-- <li>Indoors</li> -->
+      <li>Outdoors</li>
+    </disablesNeeds>
+
+    <abilities></abilities>
+    
+    <comps>
+      <li Class="BigAndSmall.CompProperties_Race">
+        <!-- Cosmetic -->
+        <bodyDefOverride>Female</bodyDefOverride>
+        <bodyDefOverride_Female>Female</bodyDefOverride_Female>
+        <disableHair>true</disableHair>
+        <disableBeards>true</disableBeards>
+      </li>
+		</comps>
+    
+    <renderNodeProperties Inherit="False">
+      <!--  -->
+      <li Class="BigAndSmall.PawnComplexRenderingProps">
+        <nodeClass>BigAndSmall.PawnRenderNode_Complex</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <drawSize>0.26</drawSize>
+        <shader>TransparentPostLight</shader>
+        <!-- <useSkinShader>true</useSkinShader>
+        <colorType>Skin</colorType> -->
+        <rotDrawMode>Fresh</rotDrawMode>
+        <colorA>
+          <hostilityStatus>true</hostilityStatus>
+          <color>(300, 300, 300, 220)</color>
+        </colorA>
+        <colorType>Custom</colorType>
+        <useSkinShader>false</useSkinShader>
+        <visibleFacing>
+          <li>South</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.11)</offset>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+        <texPaths>
+          <li>Pawns/Simple/Face/BS_TV_Head_1_south</li> 
+          <li>Pawns/Simple/Face/BS_TV_Head_2_south</li> 
+          <li>Pawns/Simple/Face/BS_TV_Head_3_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_4_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_5_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_6_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_7_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_8_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_9_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_10_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_11_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_12_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_13_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_14_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_15_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_16_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_17_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_18_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_19_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_20_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_21_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_22_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_23_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_24_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_25_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_26_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_27_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_28_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_29_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_30_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_31_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_32_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_33_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_34_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_35_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_36_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_37_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_38_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_39_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_40_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_41_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_42_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_43_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_44_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_45_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_46_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_47_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_48_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_49_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_50_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_51_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_52_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_53_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_54_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_55_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_56_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_57_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_58_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_59_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_60_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_61_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_62_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_63_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_64_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_65_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_66_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_67_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_67_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_68_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_69_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_70_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_71_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_72_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_73_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_74_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_75_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_76_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_77_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_78_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_79_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_80_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_81_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_82_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_83_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_84_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_85_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_86_south</li>
+        </texPaths>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+</Defs>
