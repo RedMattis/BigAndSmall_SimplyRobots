@@ -2,7 +2,7 @@
 	<v1.5>
     <li>/</li>
 		<!-- <li IfModActive="nals.facialanimation">Mods/FacialAnim</li> -->
-		<li IfModActive="erdelf.HumanoidAlienRaces">Mods/HarHarHar</li>
+		<!-- <li IfModActive="erdelf.HumanoidAlienRaces">Mods/HarHarHar</li> -->
 		<li IfModActive="Ludeon.Rimworld.Biotech">Mods/Biotech</li>
 	</v1.5>
 </loadFolders>

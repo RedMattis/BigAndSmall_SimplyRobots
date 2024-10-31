@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef ParentName="BS_CommandoBotThingBase">
+  <ThingDef ParentName="BS_CommandoBotThingBase" BS_Alt="ThingDef_AlienRace">
     <defName>BS_CommandoBot</defName>
     <modExtensions>
       <li Class="BigAndSmall.RaceExtension">

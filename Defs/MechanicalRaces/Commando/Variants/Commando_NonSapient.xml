@@ -1,5 +1,5 @@
 <Defs>
-  <ThingDef ParentName="BS_CommandoBotThingBase">
+  <ThingDef ParentName="BS_CommandoBotThingBase" BS_Alt="ThingDef_AlienRace">
     <defName>BS_CommandoBot_NonSapient</defName>
     <label>Automated Commando</label>
     <description>A mechanical lifeform with a design were born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.\n\nThis one appears to be no more sophisticated than an advanced mechanoid however.</description>

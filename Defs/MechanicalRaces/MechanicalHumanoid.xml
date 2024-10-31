@@ -30,6 +30,8 @@
             <li>Asthma</li>
             <li>HeartArteryBlockage</li>
 
+            <li>Anesthetic</li>
+
             <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
           </banlist>
         </hediffFilters>
