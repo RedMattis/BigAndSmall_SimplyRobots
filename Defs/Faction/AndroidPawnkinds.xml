@@ -1,7 +1,7 @@
 <Defs>
   <PawnKindDef ParentName="GuardBase">
     <defName>BS_TV_Villager</defName>
-    <label>audience</label>
+    <label>crowd-puller</label>
     <combatPower>40</combatPower>
     <initialResistanceRange>3~10</initialResistanceRange>
     <weaponTags>
@@ -30,9 +30,9 @@
     <race>BS_TVAndroid</race>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MercenaryGunnerBase">
+  <PawnKindDef ParentName="MercenaryGunnerBase" Name="BS_TV_Grunt">
     <defName>BS_TV_Grunt</defName>
-    <label>streamer</label>
+    <label>ad-bot</label>
     <combatPower>60</combatPower>
     <!-- <apparelColor>0.34,0.30,0.54</apparelColor> -->
     <initialResistanceRange>3~10</initialResistanceRange>
@@ -55,9 +55,81 @@
     <race>BS_TVAndroid</race>
   </PawnKindDef>
 
+  <PawnKindDef ParentName="BS_TV_Grunt" Name="BS_TV_Grunt_Sapient">
+    <defName>BS_TV_Sapient</defName>
+    <label>streamer</label>
+    <backstoryFiltersOverride Inherit="False">
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>Offworld</li>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <race>BS_TVAndroid_Sapient</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+    <defName>BS_TV_Sapient_R</defName>
+    <apparelColor>(1.0, 0.25, 0.25)</apparelColor>
+    <forcedHairColor>(1.0, 0.25, 0.25)</forcedHairColor>
+    <forcedTraits><Tough/></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_G</defName>
+      <apparelColor>(0.5, 1.0, 0.4)</apparelColor> 
+      <forcedHairColor>(0.25, 1.0, 0.25)</forcedHairColor>
+      <forcedTraits><Greedy/><Industriousness>2</Industriousness></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_B</defName>
+      <apparelColor>(0.25, 0.25, 1.0)</apparelColor>
+      <forcedHairColor>(0.25, 0.25, 1.0)</forcedHairColor>
+      <forcedTraits><Nerves>2</Nerves></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_RG</defName>
+      <apparelColor>(1.0, 1.0, 0.25)</apparelColor>
+      <forcedHairColor>(1.0, 1.0, 0.25)</forcedHairColor>
+      <forcedTraits><SpeedOffset>2</SpeedOffset></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_GB</defName>
+      <apparelColor>(0.5, 1.0, 1.0)</apparelColor>
+      <forcedHairColor>(0.5, 1.0, 1.0)</forcedHairColor>
+      <forcedTraits><PsychicSensitivity>2</PsychicSensitivity><Neurotic>2</Neurotic></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_BR</defName>
+      <apparelColor>(1.0, 0.5, 0.75)</apparelColor>
+      <forcedHairColor>(1.0, 0.5, 0.75)</forcedHairColor>
+      <forcedTraits><NaturalMood>2</NaturalMood></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+    <defName>BS_TV_Sapient_Black</defName>
+    <apparelColor>(0.12, 0.12, 0.12)</apparelColor>
+    <forcedHairColor>(0.12, 0.12, 0.12)</forcedHairColor>
+    <forcedTraits><QuickSleeper/></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+    <defName>BS_TV_Sapient_White</defName>
+    <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
+    <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
+    <forcedTraits><Nimble/></forcedTraits>
+  </PawnKindDef>
+
+
   <PawnKindDef ParentName="GrenadierBase">
     <defName>BS_TV_Boom</defName>
-    <label>crowd-puller</label>
+    <label>sfx bot</label>
     <apparelColor>0.8,0.6,0.3</apparelColor>
     <forcedHairColor>0.8,0.6,0.3</forcedHairColor>
     <combatPower>70</combatPower>
@@ -86,11 +158,11 @@
 
   <PawnKindDef ParentName="MercenaryEliteBase">
     <defName>BS_TV_Elite</defName>
-    <label>announcer</label>
+    <label>showrunner</label>
     <factionLeader>true</factionLeader>
     <combatPower>100</combatPower>
-    <apparelColor>1,1,1</apparelColor>
-    <forcedHairColor>1,1,1</forcedHairColor>
+    <apparelColor>(1.0,1.0,1.0)</apparelColor>
+    <forcedHairColor>(1.0,1.0,1.0)</forcedHairColor>
     <initialResistanceRange>3~10</initialResistanceRange>
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <backstoryFiltersOverride>
@@ -111,10 +183,10 @@
 
   <PawnKindDef ParentName="MercenaryGunnerBase" Name="BS_CommandoGrunt">
     <defName>BS_Commando_Grunt</defName>
-    <label>RAVEN-R0</label>
-    <combatPower>100</combatPower>
-    <apparelColor>0.25,0.38,0.25</apparelColor>
-    <forcedHairColor>0.25,0.38,0.25</forcedHairColor>
+    <label>RAVEN-A0</label>
+    <combatPower>130</combatPower>
+    <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
+    <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
     <initialResistanceRange>3~15</initialResistanceRange> 
     <apparelTags Inherit="False">
       <li>IndustrialMilitaryBasic</li>
@@ -168,9 +240,12 @@
     </xenotypeSet>
     <race>BS_CommandoBot</race>
   </PawnKindDef>
+
   <PawnKindDef ParentName="BS_CommandoGrunt">
     <defName>BS_Commando_Grunt_Sapient</defName>
-    <label>RAVEN-R1</label>
+    <label>RAVEN-X</label>
+    <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
+    <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -186,10 +261,10 @@
 
   <PawnKindDef ParentName="GrenadierBase">
     <defName>BS_Commando_Boom</defName>
-    <label>HELLHOUND-X</label>
-    <combatPower>150</combatPower>
-    <apparelColor>0.25,0.38,0.25</apparelColor>
-    <forcedHairColor>0.25,0.38,0.25</forcedHairColor>
+    <label>HELLHOUND</label>
+    <combatPower>160</combatPower>
+    <apparelColor>(1.0, 0.0, 0.2)</apparelColor>
+    <forcedHairColor>(1.0, 0.0, 0.2)</forcedHairColor>
     <initialResistanceRange>3~20</initialResistanceRange>
     <apparelTags Inherit="False">
       <li>IndustrialMilitaryBasic</li>
@@ -251,8 +326,8 @@
     <label>APEX-C</label>
     <factionLeader>true</factionLeader>
     <combatPower>200</combatPower>
-    <apparelColor>0.30,0.30,0.32</apparelColor>
-    <forcedHairColor>0.30,0.30,0.32</forcedHairColor>
+    <apparelColor>(0.2, 0.2, 0.2)</apparelColor>
+    <forcedHairColor>(0.15, 0.15, 0.2)</forcedHairColor>
     <apparelMoney>500~8000</apparelMoney>
     <weaponMoney>1000~2500</weaponMoney>
     <apparelTags Inherit="False">

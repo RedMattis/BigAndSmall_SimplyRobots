@@ -1,6 +1,6 @@
 <Defs>
   <ThingDef ParentName="Human" Name="BS_TVAndroidThingBase" Abstract="True">
-    <label>Human-Interactive Robot</label>
+    <label>ad-bot</label>
     <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled  easily when injured.</description>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <statBases>

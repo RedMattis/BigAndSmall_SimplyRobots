@@ -36,6 +36,7 @@
 		</stages>
     <comps>
       <li Class="BigAndSmall.CompProperties_Race">
+        <canSwapAwayFrom>false</canSwapAwayFrom>
       </li>
 		</comps>
     <renderNodeProperties Inherit="False">
@@ -45,17 +46,17 @@
         <!-- Functional -->
         <isMechanical>true</isMechanical>
         <aptitudes>
-          <Melee>1</Melee>
-          <Shooting>1</Shooting>
-          <Construction>2</Construction>
-          <Mining>1</Mining>
-          <Cooking>1</Cooking>
-          <Plants>1</Plants>
-          <Animals>1</Animals>
-          <Crafting>2</Crafting>
-          <Artistic>2</Artistic>
+          <!-- <Melee>1</Melee> -->
+          <!-- <Shooting>1</Shooting> -->
+          <!-- <Construction>2</Construction> -->
+          <!-- <Mining>1</Mining> -->
+          <!-- <Cooking>1</Cooking> -->
+          <!-- <Plants>1</Plants> -->
+          <!-- <Animals>1</Animals> -->
+          <!-- <Crafting>2</Crafting> -->
+          <!-- <Artistic>2</Artistic> -->
           <Medicine>3</Medicine>
-          <Social>1</Social>
+          <!-- <Social>1</Social> -->
           <Intellectual>4</Intellectual>
         </aptitudes>
         <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->

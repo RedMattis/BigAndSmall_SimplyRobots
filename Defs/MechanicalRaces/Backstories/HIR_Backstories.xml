@@ -2,7 +2,7 @@
 
   <PawnKindDef ParentName="GuardBase">
     <defName>BS_TVAndroid</defName>
-    <label>HIR Robot</label>
+    <label>ad-bot</label>
     <race>BS_TVAndroid</race>
     <combatPower>40</combatPower>
     <xenotypeSet Inherit="False">
@@ -34,7 +34,7 @@
   <BackstoryDef>
     <defName>BS_TVAndroid</defName>
     <title>support</title>
-    <titleShort>support</titleShort>
+    <titleShort>ad-bot</titleShort>
     <baseDesc>[PAWN_nameDef] was mostly used for rudimentory low-skill jobs.</baseDesc>
     <slot>Adulthood</slot>
     <bodyTypeMale>Female</bodyTypeMale>
@@ -52,7 +52,7 @@
     <defName>BS_TVAndroidAnnouncer</defName>
     <title>announcer</title>
     <titleShort>announcer</titleShort>
-    <baseDesc>[PAWN_nameDef] has been behaving in strange and unusual ways.</baseDesc>
+    <baseDesc>At some point [PAWN_nameDef]'s processing patterns became erratic for an unknown reason.</baseDesc>
     <slot>Adulthood</slot>
     <bodyTypeMale>Female</bodyTypeMale>
     <bodyTypeFemale>Female</bodyTypeFemale>

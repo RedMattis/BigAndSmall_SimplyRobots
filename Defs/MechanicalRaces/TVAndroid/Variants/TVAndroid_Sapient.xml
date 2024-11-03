@@ -1,7 +1,7 @@
 <Defs>
   <ThingDef ParentName="BS_TVAndroidThingBase" BS_Alt="ThingDef_AlienRace">
     <defName>BS_TVAndroid_Sapient</defName>
-    <label>Human-Interactive Robot</label>
+    <label>ad-bot</label>
     <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
     <modExtensions>
       <li Class="BigAndSmall.RaceExtension">
@@ -12,7 +12,7 @@
 
   <HediffDef ParentName="BS_TVAndroidHediffBase">
     <defName>BS_TVAndroid_Sapient</defName>
-    <label>Erratic Human-Interactive Robot</label>
+    <label>erratic ad-bot</label>
     <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
 
     <stages Inherit="False">
@@ -43,17 +43,17 @@
         <!-- Functional -->
         <isMechanical>true</isMechanical>
         <aptitudes>
-          <Melee>0</Melee>
-          <Shooting>2</Shooting>
-          <Construction>4</Construction>
-          <Mining>0</Mining>
-          <Cooking>2</Cooking>
-          <Plants>0</Plants>
-          <Animals>0</Animals>
-          <Crafting>1</Crafting>
+          <!-- <Melee>0</Melee> -->
+          <!-- <Shooting>2</Shooting> -->
+          <!-- <Construction>0</Construction> -->
+          <!-- <Mining>0</Mining> -->
+          <!-- <Cooking>2</Cooking> -->
+          <!-- <Plants>0</Plants> -->
+          <!-- <Animals>0</Animals> -->
+          <!-- <Crafting>1</Crafting> -->
           <Artistic>2</Artistic>
-          <Medicine>2</Medicine>
-          <Social>0</Social>
+          <!-- <Medicine>2</Medicine> -->
+          <!-- <Social>0</Social> -->
           <Intellectual>4</Intellectual>
         </aptitudes>
         <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
@@ -63,7 +63,7 @@
         </immutableEndogenes>
         <geneCategoryFilters>
           <blacklist>
-            <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li>
+            <!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->
             <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
           </blacklist>
         </geneCategoryFilters>
@@ -77,7 +77,7 @@
           <blacklist>
             <li>Jaw</li>
             <li>Nose</li>
-            <li>Ears</li>
+            <!-- <li>Ears</li> -->
             <li>EyeColor</li>
             <li>BeardStyle</li>
             <li>Fur</li>
@@ -120,19 +120,31 @@
         <!-- Cosmetic -->
         <disableFacialAnimations>true</disableFacialAnimations>
         <bodyPaths>
-          <Female_Standard>Pawns/Simple/Naked_Female</Female_Standard>
-          <Male_Standard>Pawns/Simple/Naked_Female</Male_Standard>
+          <Body_Female>Pawns/Simple/Naked_Female</Body_Female>
+          <Body_Male>Pawns/Simple/Naked_Female</Body_Male>
         </bodyPaths>
         <forceFemaleBody>true</forceFemaleBody>
         <bodyMaterial>
           <shader>CutoutComplex</shader>
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
-						 <hairColor>true</hairColor>
-					</colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-         </colorB>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
         </bodyMaterial>
         <headPaths>
           <Female>Pawns/Simple/Female_Average_Simple</Female>
@@ -143,10 +155,22 @@
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
-         </colorA>
-         <colorB>
-           <ideologyColor>true</ideologyColor>
-        </colorB>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
         </headMaterial>
         <randomHairGenes>
           <li>Hair_Gray</li>

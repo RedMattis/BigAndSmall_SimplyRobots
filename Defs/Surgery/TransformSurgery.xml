@@ -84,6 +84,74 @@
   </HediffDef>
 
   <RecipeDef ParentName="BS_TransformSurgery">
+    <defName>BS_SynthConversion</defName>
+    <label>convert to synth</label>
+    <description>Convert the subject from an inferior organic body to that of a suprerior synthetic.</description>
+    <uiIconPath>UI/Icons/Xenotypes/Baseliner</uiIconPath>
+    <jobString>Synthesising synthetic</jobString>
+    <skillRequirements>
+      <Medicine>14</Medicine>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <recipeUsers Inherit="False">
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <researchPrerequisite>
+      <li>BS_AndroidConversion</li>
+    </researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>160</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+        <li>ComponentIndustrial</li>
+        <li>Hyperweave</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BS_CommandoBot_Morph</addsHediff>
+  </RecipeDef>
+  <HediffDef>
+    <defName>BS_Synth_Morph</defName>
+    <label>blank</label><description>blank</description>
+    <hediffClass>BigAndSmall.InstantEffect</hediffClass>
+    <comps><li Class="BigAndSmall.SwapRaceHediffCompProperties"><swapTarget>BS_SynthRace</swapTarget></li></comps>
+  </HediffDef>
+
+  <RecipeDef ParentName="BS_TransformSurgery">
     <defName>BS_TVConversion</defName>
     <label>convert to ...tv-like robot?</label>
     <description>Suspiciously simple instructions, but... are you sure about this?</description>
@@ -141,6 +209,7 @@
     <description>Most of the synthetic brain is not being properly utilized due to artificial limiters. Let's remove them.</description>
     <jobString>humming mission impossible theme.</jobString>
     <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <uiIconPath>Icons/BS_CommandoHead</uiIconPath>
     <workAmount>1000</workAmount>
     <skillRequirements>
       <Medicine>6</Medicine>

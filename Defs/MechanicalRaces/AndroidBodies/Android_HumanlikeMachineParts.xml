@@ -1,5 +1,19 @@
 <Defs>
 
+  <!-- <BodyPartDef>
+    <defName>BS_BackupSustainer</defName>
+    <label>core sustainer</label>
+    <hitPoints>20</hitPoints>
+    <skinCovered>false</skinCovered>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+    <alive>false</alive>
+    <tags>
+      <li>MetabolismSource</li>
+    </tags>
+  </BodyPartDef> -->
+
   <!-- Mechanical Organs -->
   <BodyPartDef>
     <defName>BS_FuelProcessor</defName>
@@ -53,6 +67,7 @@
     <bleedRate>0</bleedRate>
     <tags>
       <li>BloodPumpingSource</li>
+      <li>BreathingSource</li>
     </tags>
     <modExtensions>
       <li Class="BigAndSmall.BodyPartExtension">
@@ -63,6 +78,8 @@
       </li>
     </modExtensions>
   </BodyPartDef>
+
+
 
   <BodyPartDef>
     <defName>BS_FluidReprocessor</defName>
@@ -85,6 +102,42 @@
           <li>Liver</li>
           <li>FluidReprocessor</li>
         </importAllRecipesFrom>
+      </li>
+    </modExtensions>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>BS_Sustainer</defName>
+    <label>sustainer</label>
+    <hitPoints>15</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BloodFiltrationSource</li>
+      <li>BloodFiltrationLiver</li>
+      <li>BreathingSource</li>
+      <li>Mirrored</li>
+    </tags>
+  </BodyPartDef>
+
+  <BodyPartDef>
+    <defName>BS_AirCoolingUnit</defName>
+    <label>air cooling unit</label>
+    <frostbiteVulnerability>2</frostbiteVulnerability>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <alive>false</alive>
+    <bleedRate>0</bleedRate>
+    <tags>
+      <li>BreathingSource</li>
+    </tags>
+    <modExtensions>
+      <li Class="BigAndSmall.BodyPartExtension">
+        <importAllRecipesFrom><li>Lung</li></importAllRecipesFrom>
       </li>
     </modExtensions>
   </BodyPartDef>
@@ -151,25 +204,6 @@
           <li>Nose</li>
           <li>HearingSensor</li>
         </importAllRecipesFrom>
-      </li>
-    </modExtensions>
-  </BodyPartDef>
-
-  <BodyPartDef>
-    <defName>BS_AirCoolingUnit</defName>
-    <label>air cooling unit</label>
-    <frostbiteVulnerability>2</frostbiteVulnerability>
-    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
-    <skinCovered>false</skinCovered>
-    <solid>true</solid>
-    <alive>false</alive>
-    <bleedRate>0</bleedRate>
-    <tags>
-      <li>BreathingSource</li>
-    </tags>
-    <modExtensions>
-      <li Class="BigAndSmall.BodyPartExtension">
-        <importAllRecipesFrom><li>Lung</li></importAllRecipesFrom>
       </li>
     </modExtensions>
   </BodyPartDef>

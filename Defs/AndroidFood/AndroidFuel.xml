@@ -8,6 +8,7 @@
     <drawerType>MapMeshOnly</drawerType>
     <thingCategories>
       <li>Foods</li>
+      <li>FoodMeals</li>
     </thingCategories>
     <graphicData>
       <texPath>Items/BS_AndroidFuel</texPath>

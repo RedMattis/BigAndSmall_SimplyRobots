@@ -10,25 +10,25 @@
 
   <HediffDef ParentName="BS_CommandoBotHediffBase">
     <defName>BS_CommandoBot</defName>
-    <label>Persona Commando</label>
+    <label>Steel Enforcer</label>
 
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <!-- Functional -->
         <isMechanical>true</isMechanical>
         <aptitudes>
-          <Melee>2</Melee>
-          <Shooting>2</Shooting>
+          <!-- <Melee>2</Melee> -->
+          <!-- <Shooting>2</Shooting> -->
           <Construction>4</Construction>
-          <Mining>2</Mining>
-          <Cooking>-2</Cooking>
-          <Plants>-2</Plants>
-          <Animals>-6</Animals>
-          <Crafting>2</Crafting>
-          <Artistic>-2</Artistic>
-          <Medicine>0</Medicine>
-          <Social>-2</Social>
-          <Intellectual>0</Intellectual>
+          <!-- <Mining>2</Mining> -->
+          <!-- <Cooking>-4</Cooking> -->
+          <!-- <Plants>-2</Plants> -->
+          <Animals>-4</Animals>
+          <!-- <Crafting>2</Crafting> -->
+          <!-- <Artistic>-2</Artistic> -->
+          <!-- <Medicine>0</Medicine> -->
+          <!-- <Social>-2</Social> -->
+          <!-- <Intellectual>0</Intellectual> -->
         </aptitudes>
         <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
         <immutableEndogenes>
@@ -37,7 +37,7 @@
         </immutableEndogenes>
         <geneCategoryFilters>
           <blacklist>
-            <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li>
+            <!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->
             <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
           </blacklist>
         </geneCategoryFilters>
@@ -51,7 +51,7 @@
           <blacklist>
             <li>Jaw</li>
             <li>Nose</li>
-            <li>Ears</li>
+            <!-- <li>Ears</li> -->
             <li>EyeColor</li>
             <li>BeardStyle</li>
             <li>Fur</li>
@@ -101,19 +101,30 @@
         <!-- Cosmetic -->
         <disableFacialAnimations>true</disableFacialAnimations>
         <bodyPaths>
-          <Female_Standard>Pawns/Commando/Naked_Female</Female_Standard>
-          <Male_Standard>Pawns/Commando/Naked_Male</Male_Standard>
+          <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
+          <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
         </bodyPaths>
         <bodyMaterial>
           <shader>CutoutComplex</shader>
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
-						 <hairColor>true</hairColor>
-					</colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-             <!-- <apparelColorOrFavorite>true</apparelColorOrFavorite> -->
-         </colorB>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
         </bodyMaterial>
         <headPaths>
           <Female>Pawns/Commando/Female_Average_Normal</Female>
@@ -124,11 +135,22 @@
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
-         </colorA>
-         <colorB>
-           <ideologyColor>true</ideologyColor>
-           <!-- <apparelColorOrFavorite>true</apparelColorOrFavorite> -->
-        </colorB>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
         </headMaterial>
         <randomHairGenes>
           <li>Hair_Gray</li>

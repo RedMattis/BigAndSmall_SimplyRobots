@@ -1,6 +1,6 @@
 <Defs>
   <ThingDef ParentName="Human" Name="BS_CommandoBotThingBase" Abstract="True">
-    <label>persona commando</label>
+    <label>Steel Enforcer</label>
     <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <statBases>
@@ -24,8 +24,8 @@
       <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
 
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
-      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.42</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.53</ArmorRating_Sharp>
     </statBases>
     <race>
       <!-- <thinkTreeMain>Mechanoid</thinkTreeMain>-->

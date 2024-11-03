@@ -13,7 +13,7 @@
     <techLevel>Spacer</techLevel>
     <!-- <allowedCultures Inherit="False"><li>LoS_Urbworld</li></allowedCultures> -->
     <colorSpectrum Inherit="False">
-      <li>(0.85, 0.3, 0.3)</li>
+      <li>(1, 0, 0.15)</li>
       <!-- <li>(1, 0.74, 0.83)</li> -->
     </colorSpectrum>
     <requiredMemes Inherit="False">
@@ -85,6 +85,30 @@
           <BS_TV_Grunt>5</BS_TV_Grunt>
           <BS_TV_Boom>1</BS_TV_Boom>
           <BS_TV_Elite>2</BS_TV_Elite>
+          <BS_TV_Sapient_R>0.1</BS_TV_Sapient_R>
+          <BS_TV_Sapient_G>0.1</BS_TV_Sapient_G>
+          <BS_TV_Sapient_B>0.1</BS_TV_Sapient_B>
+          <BS_TV_Sapient_RG>0.1</BS_TV_Sapient_RG>
+          <BS_TV_Sapient_GB>0.1</BS_TV_Sapient_GB>
+          <BS_TV_Sapient_BR>0.1</BS_TV_Sapient_BR>
+          <BS_TV_Sapient_Black>0.1</BS_TV_Sapient_Black>
+          <BS_TV_Sapient_White>0.1</BS_TV_Sapient_White>
+        </options>
+      </li>
+
+      <li>
+        <!--Streamer Robots-->
+        <kindDef>Combat</kindDef>
+        <commonality>25</commonality>
+        <options>
+          <BS_TV_Sapient_R>0.1</BS_TV_Sapient_R>
+          <BS_TV_Sapient_G>0.1</BS_TV_Sapient_G>
+          <BS_TV_Sapient_B>0.1</BS_TV_Sapient_B>
+          <BS_TV_Sapient_RG>0.1</BS_TV_Sapient_RG>
+          <BS_TV_Sapient_GB>0.1</BS_TV_Sapient_GB>
+          <BS_TV_Sapient_BR>0.1</BS_TV_Sapient_BR>
+          <BS_TV_Sapient_Black>0.1</BS_TV_Sapient_Black>
+          <BS_TV_Sapient_White>0.1</BS_TV_Sapient_White>
         </options>
       </li>
       

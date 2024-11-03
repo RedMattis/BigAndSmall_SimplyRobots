@@ -64,14 +64,6 @@
             <li>Torso</li>
           </groups>
         </li>
-        <!-- <li>
-          <def>Liver</def>
-          <coverage>0.025</coverage>
-          <depth>Inside</depth>
-          <groups>
-            <li>Torso</li>
-          </groups>
-        </li> -->
         <li>
           <def>BS_MechanicalNeck</def>
           <coverage>0.075</coverage>

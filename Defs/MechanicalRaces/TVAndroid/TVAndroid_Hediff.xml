@@ -1,7 +1,7 @@
 <Defs>
   <HediffDef ParentName="BS_BaseRobotHumanoid" Name="BS_TVAndroidHediffBase" Abstract="True">
     <defName>BS_TVAndroid</defName>
-    <label>Human-Interactive Robot</label>
+    <label>ad-bot</label>
     
     <disablesNeeds>
       <li>Comfort</li>
@@ -18,6 +18,7 @@
         <bodyDefOverride_Female>Female</bodyDefOverride_Female>
         <disableHair>true</disableHair>
         <disableBeards>true</disableBeards>
+        <canSwapAwayFrom>false</canSwapAwayFrom>
       </li>
 		</comps>
     
@@ -28,12 +29,20 @@
         <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
         <drawSize>0.26</drawSize>
         <shader>TransparentPostLight</shader>
-        <!-- <useSkinShader>true</useSkinShader>
-        <colorType>Skin</colorType> -->
         <rotDrawMode>Fresh</rotDrawMode>
         <colorA>
           <hostilityStatus>true</hostilityStatus>
+          <invisibleIfUnconcious>true</invisibleIfUnconcious>
           <color>(300, 300, 300, 220)</color>
+          <alts>
+            <li>
+              <triggers><li>Colonist</li></triggers>
+              <favoriteColor>true</favoriteColor>
+              <minBrightness>1</minBrightness>
+              <invisibleIfUnconcious>true</invisibleIfUnconcious>
+              <color>(300, 300, 300, 220)</color>
+            </li>
+          </alts>
         </colorA>
         <colorType>Custom</colorType>
         <useSkinShader>false</useSkinShader>
@@ -138,5 +147,17 @@
         </texPaths>
       </li>
     </renderNodeProperties>
+    <!-- <modExtensions> -->
+      <!-- <li Class="BetterPrerequisites.GeneSuppressor_Hediff" MayRequire="RedMattis.BetterPrerequisites"> -->
+        <!-- <supressedExclusionTags> -->
+          <!-- <li>Jaw</li> -->
+          <!-- <li>Nose</li> -->
+          <!-- <li>Ears</li> -->
+          <!-- <li>EyeColor</li> -->
+          <!-- <li>BeardStyle</li> -->
+          <!-- <li>Fur</li> -->
+        <!-- </supressedExclusionTags> -->
+      <!-- </li> -->
+    <!-- </modExtensions> -->
   </HediffDef>
 </Defs>

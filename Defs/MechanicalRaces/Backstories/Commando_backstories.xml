@@ -1,7 +1,7 @@
 <Defs>
   <PawnKindDef ParentName="GuardBase">
     <defName>BS_CommandoBot</defName>
-    <label>Commando Bot</label>
+    <label>steel enforcer</label>
     <race>BS_CommandoBot</race>
     <combatPower>80</combatPower>
     <xenotypeSet Inherit="False">

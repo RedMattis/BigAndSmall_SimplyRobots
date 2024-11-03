@@ -1,6 +1,6 @@
 <Defs>
   <HediffDef ParentName="BS_BaseRobotHumanoid" Name="BS_CommandoBotHediffBase" Abstract="True">
-    <label>Persona Commando</label>
+    <label>Steel Enforcer</label>
     <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
 
     <disablesNeeds>
@@ -44,10 +44,23 @@
         <bodyDefOverride_Female>Female</bodyDefOverride_Female>
         <disableHair>true</disableHair>
         <disableBeards>true</disableBeards>
+        <canSwapAwayFrom>false</canSwapAwayFrom>
       </li>
 		</comps>
-    <renderNodeProperties Inherit="False">
-    </renderNodeProperties>
+    <renderNodeProperties Inherit="False"/>
+
+    <!-- <modExtensions> -->
+      <!-- <li Class="BetterPrerequisites.GeneSuppressor_Hediff" MayRequire="RedMattis.BetterPrerequisites"> -->
+        <!-- <supressedExclusionTags> -->
+          <!-- <li>Jaw</li> -->
+          <!-- <li>Nose</li> -->
+          <!-- <li>Ears</li> -->
+          <!-- <li>EyeColor</li> -->
+          <!-- <li>BeardStyle</li> -->
+          <!-- <li>Fur</li> -->
+        <!-- </supressedExclusionTags> -->
+      <!-- </li> -->
+    <!-- </modExtensions> -->
   </HediffDef>
 
   <GeneDef ParentName="GeneSkinColorMelanin">
