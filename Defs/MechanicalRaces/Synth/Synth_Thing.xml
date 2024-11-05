@@ -2,7 +2,7 @@
   <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
     <defName>BS_SynthRace</defName>
     <label>synth</label>
-    <description>Synthetic humans of dubious origins</description>
+    <description>Synthetic humans of unclear origins</description>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <statBases>
       <MarketValue>3000</MarketValue>

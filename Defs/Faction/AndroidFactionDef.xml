@@ -1,12 +1,12 @@
 <Defs>
   <FactionDef ParentName="OutlanderRoughBase">
     <defName>BS_HostileAndroids</defName>
-    <label>hayware androids</label>
-    <fixedName>The Media</fixedName>
+    <label>rogue androids</label>
+    <fixedName>Hypermedia</fixedName>
     <description>An faction made up entierly of robots who have been infected by some sort of digital virus.</description>
     <factionIconPath>Icons/BS_AndroidFaction</factionIconPath>
-    <pawnSingular>advertiser</pawnSingular>
-    <pawnsPlural>advertisers</pawnsPlural>
+    <pawnSingular>marketeer</pawnSingular>
+    <pawnsPlural>marketeers</pawnsPlural>
     <replacesFaction>Pirate</replacesFaction>
     <permanentEnemy>false</permanentEnemy>
     <naturalEnemy>true</naturalEnemy>
@@ -99,7 +99,7 @@
       <li>
         <!--Streamer Robots-->
         <kindDef>Combat</kindDef>
-        <commonality>25</commonality>
+        <commonality>30</commonality>
         <options>
           <BS_TV_Sapient_R>0.1</BS_TV_Sapient_R>
           <BS_TV_Sapient_G>0.1</BS_TV_Sapient_G>

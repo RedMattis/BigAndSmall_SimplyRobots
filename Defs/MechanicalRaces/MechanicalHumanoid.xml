@@ -35,6 +35,11 @@
             <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
           </banlist>
         </hediffFilters>
+        <geneTagFilters>
+          <blacklist>
+            <li>Pain</li>
+          </blacklist>
+        </geneTagFilters>
       </li>
     </modExtensions>
   </HediffDef>

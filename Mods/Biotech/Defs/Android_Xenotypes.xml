@@ -1,7 +1,7 @@
 <Defs>
   <XenotypeDef>
     <defName>BS_CommandoAndroid</defName>
-    <label>Android Commando</label>
+    <label>steel enforcer</label>
     <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
     <iconPath>Icons/BS_CommandoHead</iconPath>
     <combatPowerFactor>1</combatPowerFactor>
@@ -22,7 +22,7 @@
 
   <XenotypeDef>
     <defName>BS_CommandoAndroidAutomata</defName>
-    <label>Android Commando</label>
+    <label>automated enforcer</label>
     <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
     <iconPath>Icons/BS_CommandoHead</iconPath>
     <combatPowerFactor>1</combatPowerFactor>
@@ -43,7 +43,7 @@
 
   <XenotypeDef>
     <defName>BS_TVAndroid</defName>
-    <label>Human Interaction Robot</label>
+    <label>ad-bot</label>
     <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
     <iconPath>Icons/BS_AndroidFaction_white</iconPath>
     <combatPowerFactor>1</combatPowerFactor>
@@ -64,7 +64,7 @@
 
   <XenotypeDef>
     <defName>BS_TVAndroid_Funky</defName>
-    <label>Human Interaction Robot</label>
+    <label>erratic ad-bot</label>
     <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
     <iconPath>Icons/BS_TV_Erratic</iconPath>
     <combatPowerFactor>1</combatPowerFactor>
@@ -101,7 +101,7 @@
     <defName>BS_SynthSpy</defName>
     <label>synth</label>
     <description>A synthetic human.</description>
-    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
     <combatPowerFactor>1</combatPowerFactor>
     <inheritable>true</inheritable>
     <genes>
@@ -118,7 +118,7 @@
     <defName>BS_SynthSpyDerp</defName>
     <label>synth...</label>
     <description>A synthetic human. Expertly disguised.</description>
-    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
     <combatPowerFactor>1</combatPowerFactor>
     <inheritable>true</inheritable>
     <genes>
@@ -127,9 +127,9 @@
       <li>Hair_LongOnly</li>
 
       <li>Hair_Pink</li>
-      <li MayRequire="RedMattis.BigSmall.Core">BS_Hair_TrueWhite</li>
       <li>Hair_LightTeal</li>
       <li>Hair_LightGreen</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Hair_TrueWhite</li>
 
       <li MayRequire="RedMattis.BigSmall.Core">BS_SkinPermafrost</li>
       <li MayRequire="RedMattis.BigSmall.Core">BS_Skin_Marble_White</li>
@@ -142,5 +142,52 @@
       </li>
     </modExtensions>
   </XenotypeDef>
+
+
+  <XenotypeDef>
+    <defName>BS_Hemohunter</defName>
+    <label>hemohunter</label>
+    <description>A mechanical lifeform of unknown origins.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Body_Standard</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Hair_BaldOnly</li>
+      <li>Hair_InkBlack</li>
+      <li>Skin_DeepRed</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_SkinBloodRed</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Skin_DarkAsh</li>
+
+      <!-- <li>ArchiteMetabolism</li> -->
+      <li>Deathrest</li>
+      <!-- <li>Hemogenic</li> -->
+      <!-- <li>HemogenDrain</li> -->
+      <li>Bloodfeeder</li>
+      <li>DarkVision</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>UVSensitivity_Mild</li>
+      <li>Ageless</li>
+      
+      <li MayRequire="RedMattis.BigSmall.Core">BS_EltexPsychic</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_NoFood_Hemogenic</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_GreaterHemogenDrain</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Deathlike</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_PsychicWarrior</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_Darkness_MoveSpeed_Quick</li>
+
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguoFeeder</li>
+      <!-- <li MayRequire="vanillaracesexpanded.sanguophage">VRE_Hemosmosis</li> -->
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <setRace>BS_CommandoBot</setRace>
+        <forceRace>true</forceRace>
+      </li>
+    </modExtensions>
+  </XenotypeDef>
+
+  
 
 </Defs>

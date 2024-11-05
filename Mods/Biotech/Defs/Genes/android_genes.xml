@@ -4,6 +4,7 @@
     <label>steel enforcer head</label>
     <description>Carriers of this gene have a rugged mechanical-looking head.\n\nPrevents wearing some headgear.\n\nOtherwise visual only.</description>
     <iconPath>Icons/BS_CommandoHead</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <selectionWeight>0</selectionWeight>
     <biostatMet>1</biostatMet>
     <skinIsHairColor>true</skinIsHairColor>
@@ -200,6 +201,7 @@
     <label>ad-bot head</label>
     <description>UwU\n\nPrevents wearing some headgear.\n\nOtherwise visual only.</description>
     <iconPath>Icons/BS_TV_Erratic</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <selectionWeight>0</selectionWeight>
     <biostatMet>1</biostatMet>
     <skinIsHairColor>true</skinIsHairColor>

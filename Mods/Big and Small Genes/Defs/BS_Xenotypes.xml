@@ -1,0 +1,59 @@
+<Defs>
+  <XenotypeDef>
+    <defName>BS_NanomachineVampire</defName>
+    <label>dark cloud</label>
+    <description>A mechanical lifeform of unknown origins.</description>
+    <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <inheritable>true</inheritable>
+    <genes>
+      <!-- <li>ArchiteMetabolism</li> -->
+      <li>Deathless</li>
+      <li>Deathrest</li>
+      <li>LongjumpLegs</li>
+      <!-- <li>Hemogenic</li> -->
+      <li>HemogenDrain</li>
+      <li>Bloodfeeder</li>
+      <li>DarkVision</li>
+      <li>Aggression_Aggressive</li>
+      <li>UVSensitivity_Intense</li>
+      <li>Ageless</li>
+      <li>Skin_SlateGray</li>
+      <li MayRequire="RedMattis.BigSmall.Core">Skin_SheerWhite</li>
+      <li>BS_SkinFrostWhite</li>
+      <li>Beauty_Beautiful</li>
+      <!-- <li>Mood_Depressive</li> -->
+      <li>MinTemp_SmallIncrease</li>
+      <li>AptitudeStrong_Social</li>
+      <li>TotalHealing</li>
+      <li>PiercingSpine</li>
+      <!-- <li>Robust</li> -->
+
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Incorporate</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_IntegrateGenes</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_NoFood_Hemogenic</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_GreaterHemogenDrain</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_LesserDeathless</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Deathlike</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_Darkness_MoveSpeed_VeryQuick</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_DarknessMelee</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Fast_TotalHealing</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_DarknessWoundHealing_UltraFast</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_Unliving_Resilience</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_TrulyAgeless</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_AcidWeakness</li>
+
+      <li MayRequire="vanillaracesexpanded.highmate">VRE_HighmateHair</li>
+
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguineHair</li>
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguoFeeder</li>
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_Hemosmosis</li>
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <setRace>BS_SynthRace</setRace>
+        <forceRace>true</forceRace>
+      </li>
+    </modExtensions>
+  </XenotypeDef>
+</Defs>

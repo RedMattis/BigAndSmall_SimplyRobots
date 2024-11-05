@@ -2,7 +2,7 @@
   <HediffDef ParentName="BS_BaseRobotHumanoid">
     <defName>BS_SynthHediff</defName>
     <label>synth</label>
-    <description>A synthetic human of dubious origins</description>
+    <description>A synthetic human of unclear origins</description>
     <abilities>
     </abilities>
     <stages Inherit="False">

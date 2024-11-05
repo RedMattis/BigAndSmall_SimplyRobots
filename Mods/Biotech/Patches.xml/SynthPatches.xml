@@ -1,10 +1,9 @@
 <Patch>
-  <Operation Class="PatchOperationAdd">
+  <!-- <Operation Class="PatchOperationAdd">
     <xpath>Defs/XenotypeDef/doubleXenotypeChances</xpath>
     <value>
       <BS_SynthSpy>0.005</BS_SynthSpy>
       <BS_SynthSpyDerp>0.005</BS_SynthSpyDerp>
     </value>
-
-  </Operation>
+  </Operation> -->
 </Patch>

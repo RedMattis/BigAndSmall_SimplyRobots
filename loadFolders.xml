@@ -4,5 +4,6 @@
 		<!-- <li IfModActive="nals.facialanimation">Mods/FacialAnim</li> -->
 		<!-- <li IfModActive="erdelf.HumanoidAlienRaces">Mods/HarHarHar</li> -->
 		<li IfModActive="Ludeon.Rimworld.Biotech">Mods/Biotech</li>
+		<li IfModActive="RedMattis.BigSmall.Core">Mods/Big and Small Genes</li>
 	</v1.5>
 </loadFolders>
