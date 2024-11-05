@@ -44,7 +44,6 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <!-- Functional -->
-        <isMechanical>true</isMechanical>
         <aptitudes>
           <!-- <Melee>1</Melee> -->
           <!-- <Shooting>1</Shooting> -->
@@ -55,7 +54,7 @@
           <!-- <Animals>1</Animals> -->
           <!-- <Crafting>2</Crafting> -->
           <!-- <Artistic>2</Artistic> -->
-          <Medicine>3</Medicine>
+          <Medicine>4</Medicine>
           <!-- <Social>1</Social> -->
           <Intellectual>4</Intellectual>
         </aptitudes>

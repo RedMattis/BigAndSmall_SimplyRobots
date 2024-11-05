@@ -7,6 +7,22 @@
     <initialSeverity>1</initialSeverity>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <isMechanical>true</isMechanical>
+        <banAddictionsByDefault>true</banAddictionsByDefault>
+        <nullsThoughts>
+          <li>Pain</li>
+          <li>MissingTongue</li>
+          <li>RotStink</li>
+          <li>RotStinkLingering</li>
+          <li>SharedBed</li>
+          <li>MasochistPain</li>
+          <li>ProsthophobeUnhappy</li>
+        </nullsThoughts>
+        <traitFilters>
+          <blacklist>
+            <li>BodyPurist</li>
+          </blacklist>
+        </traitFilters>
         <hediffFilters>
           <banlist>
             <li>Flu</li>

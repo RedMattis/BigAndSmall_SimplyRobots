@@ -49,18 +49,176 @@
 		</comps>
     <renderNodeProperties Inherit="False"/>
 
-    <!-- <modExtensions> -->
-      <!-- <li Class="BetterPrerequisites.GeneSuppressor_Hediff" MayRequire="RedMattis.BetterPrerequisites"> -->
-        <!-- <supressedExclusionTags> -->
-          <!-- <li>Jaw</li> -->
-          <!-- <li>Nose</li> -->
-          <!-- <li>Ears</li> -->
-          <!-- <li>EyeColor</li> -->
-          <!-- <li>BeardStyle</li> -->
-          <!-- <li>Fur</li> -->
-        <!-- </supressedExclusionTags> -->
-      <!-- </li> -->
-    <!-- </modExtensions> -->
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+
+        <pawnDiet>BS_ChemRobotDiet</pawnDiet>
+        
+        <traitFilters>
+          <blacklist>
+            <li>Wimp</li>
+          </blacklist>
+        </traitFilters>
+        <immutableEndogenes>
+          <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
+          <!-- Mostly serves to get rid of other body genes. -->
+        </immutableEndogenes>
+        <geneCategoryFilters>
+          <blacklist>
+            <!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->
+            <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
+          </blacklist>
+        </geneCategoryFilters>
+        <geneFilters>
+          <blacklist>
+            <li MayRequire="Ludeon.Rimworld.Biotech">Brow_Heavy</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">FacialRidges</li>
+          </blacklist>
+        </geneFilters>
+        <geneTagFilters>
+          <blacklist>
+            <li>Jaw</li>
+            <li>Nose</li>
+            <!-- <li>Ears</li> -->
+            <li>EyeColor</li>
+            <li>BeardStyle</li>
+            <li>Fur</li>
+            <li>HairStyle</li>
+          </blacklist>
+        </geneTagFilters>
+        <nullsThoughts>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+          <li>Naked</li>
+        </nullsThoughts>
+        
+        <apparelRestrictions>
+          <thingDefs>
+            <blacklist>
+              <li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Flophat</li>
+            </blacklist>
+          </thingDefs>
+          <apparelLayers>
+            <blacklist>
+              <li>OnSkin</li>
+            </blacklist>
+          </apparelLayers>
+          <bodyPartGroups>
+            <blacklist>
+              <li>FullHead</li>
+            </blacklist>
+          </bodyPartGroups>
+        </apparelRestrictions>
+        <babyStartAge>20</babyStartAge>
+
+        <surgeryRecipes>
+          <blacklist>
+            <li>InstallNaturalLiver</li>
+            <li>InstallNaturalLung</li>
+            <li>InstallNaturalKidney</li>
+            <li>InstallNaturalHeart</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallStoneskinGland</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallArmorskinGland</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallToughskinGland</li>
+            <li>BS_AndroidConversion</li>
+          </blacklist>
+          <allowlist>
+            <li>BS_RepairAndroidBrain</li>
+            <li>BS_RepairAndroidReactor</li>
+            <li>BS_RepairAndroidOrgan</li>
+            <li>BS_RepairAndroidMinorOrganPart</li>
+            <li>BS_RepairAndroidPart</li>
+            <li>BS_RepairAndroidPartSmall</li>
+          </allowlist>
+        </surgeryRecipes>
+
+        <!-- Cosmetic -->
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
+          <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
+        </bodyPaths>
+        <headPaths>
+          <Female>Pawns/Commando/Female_Average_Normal</Female>
+          <Male>Pawns/Commando/Male_Average_Normal</Male>
+        </headPaths>
+
+        <bodyMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
+        </bodyMaterial>
+        <headMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
+        </headMaterial>
+        <randomHairGenes>
+          <li>Hair_Gray</li>
+          <li>Hair_SnowWhite</li>
+          <li>Hair_LightBlue</li>
+          <li>Hair_DarkBlack</li>
+          <li>Hair_DarkReddish</li>
+          <li>Hair_DarkSaturatedReddish</li>
+          <li>Hair_DarkBrown</li>
+          <li>Hair_ReddishBrown</li>
+          <li>Hair_SandyBlonde</li>
+          <li>Hair_Blonde</li>
+          <li>Hair_Pink</li>
+          <li>Hair_LightPurple</li>
+          <li>Hair_LightBlue</li>
+          <li>Hair_LightTeal</li>
+          <li>Hair_LightGreen</li>
+          <li>Hair_LightOrange</li>
+          <li>Hair_BrightRed</li>
+        </randomHairGenes>
+      </li>
+      
+    </modExtensions>
   </HediffDef>
 
   <GeneDef ParentName="GeneSkinColorMelanin">
