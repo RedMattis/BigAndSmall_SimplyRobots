@@ -72,6 +72,7 @@
     </products>
   </RecipeDef>
 
+
   <RecipeDef>
     <defName>BS_MakeAndroidFuelFromChemfuel_Refinery</defName>
     <label>make android fuel from chemfuel</label>
@@ -80,9 +81,7 @@
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
     <workAmount>500</workAmount>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
     <recipeUsers>
       <li>BiofuelRefinery</li>
     </recipeUsers>
@@ -114,9 +113,7 @@
     <effectWorking>Cremate</effectWorking>
     <soundWorking>Recipe_Cremate</soundWorking>
     <workAmount>4000</workAmount>
-    <workSpeedStat>DrugCookingSpeed</workSpeedStat>
-    <workSkill>Cooking</workSkill>
-    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <requiredGiverWorkType>Crafting</requiredGiverWorkType>
     <recipeUsers>
       <li>BiofuelRefinery</li>
     </recipeUsers>

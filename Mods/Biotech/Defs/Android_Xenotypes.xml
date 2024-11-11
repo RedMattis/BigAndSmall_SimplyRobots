@@ -46,7 +46,7 @@
     <label>ad-bot</label>
     <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
     <iconPath>Icons/BS_AndroidFaction_white</iconPath>
-    <combatPowerFactor>1</combatPowerFactor>
+    <combatPowerFactor>0.7</combatPowerFactor>
     <inheritable>true</inheritable>
     <genes>
       <li>Body_Standard</li>
@@ -67,7 +67,7 @@
     <label>erratic ad-bot</label>
     <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
     <iconPath>Icons/BS_TV_Erratic</iconPath>
-    <combatPowerFactor>1</combatPowerFactor>
+    <combatPowerFactor>0.7</combatPowerFactor>
     <inheritable>true</inheritable>
     <genes>
       <li>Body_Standard</li>
@@ -162,7 +162,7 @@
 
       <!-- <li>ArchiteMetabolism</li> -->
       <li>Deathrest</li>
-      <!-- <li>Hemogenic</li> -->
+      <li>Hemogenic</li>
       <!-- <li>HemogenDrain</li> -->
       <li>Bloodfeeder</li>
       <li>DarkVision</li>

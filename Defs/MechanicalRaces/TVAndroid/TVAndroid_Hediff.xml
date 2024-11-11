@@ -60,7 +60,7 @@
           <blacklist>
             <li>Jaw</li>
             <li>Nose</li>
-            <!-- <li>Ears</li> -->
+            <li>Ears</li>
             <li>EyeColor</li>
             <li>BeardStyle</li>
             <li>Fur</li>
