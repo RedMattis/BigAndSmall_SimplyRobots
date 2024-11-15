@@ -1,6 +1,7 @@
 <Defs>
   <HediffDef Name="BS_BaseRobotHumanoid" Abstract="True">
     <hediffClass>BigAndSmall.RaceTracker</hediffClass>
+    <defaultLabelColor>(0.5, 0.5, 1.0)</defaultLabelColor>
 
     <isBad>false</isBad>
     <everCurableByItem>false</everCurableByItem>
