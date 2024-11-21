@@ -22,6 +22,9 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
@@ -47,6 +50,9 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
@@ -148,6 +154,9 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
@@ -173,6 +182,9 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_TVAndroid_Funky MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid_Funky>
@@ -233,6 +245,9 @@
         </categories>
       </li>
     </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_CommandoAndroidAutomata MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroidAutomata>
@@ -308,6 +323,9 @@
         <BS_CommandoAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroid>
       </xenotypeChances>
     </xenotypeSet>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -340,6 +358,9 @@
         <BS_CommandoAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroid>
       </xenotypeChances>
     </xenotypeSet>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
     <backstoryFiltersOverride>
       <li>
         <categories>

@@ -1,24 +1,10 @@
 <Defs>
-  <RecipeDef ParentName="SurgeryFlesh" Name="BS_TransformSurgery" Abstract="True">
 
-    <workerClass>Recipe_AddHediff</workerClass>
-    <humanlikeOnly>true</humanlikeOnly>
-    <hideBodyPartNames>true</hideBodyPartNames>
-    <targetsBodyPart>false</targetsBodyPart>
-    <isViolation>true</isViolation>
-    <surgerySuccessChanceFactor>2</surgerySuccessChanceFactor>
-    <deathOnFailedSurgeryChance>0.1</deathOnFailedSurgeryChance>
-    <workAmount>16000</workAmount>
-    <uiIconPath>Icons/BS_AndroidFaction</uiIconPath>
-    <!-- <appliedOnFixedBodyParts>
-      <li>Torso</li>
-    </appliedOnFixedBodyParts> -->
-  </RecipeDef>
 
   <RecipeDef ParentName="BS_TransformSurgery">
     <defName>BS_AndroidConversion</defName>
-    <label>convert to android</label>
-    <description>Build an android body and convert the brain into a superior synthetic form.</description>
+    <label>convert to steel enforcer</label>
+    <description>Build an steel enforcer body and convert the brain into a superior synthetic form.\n\nNote that if combined with other race-changes the character will be transformed into a more generic version.</description>
     <uiIconPath>Icons/BS_CommandoHead</uiIconPath>
     <jobString>Go go gadget dental floss!</jobString>
     <skillRequirements>
@@ -78,9 +64,14 @@
   </RecipeDef>
   <HediffDef>
     <defName>BS_CommandoBot_Morph</defName>
-    <label>blank</label><description>blank</description>
+    <label>BS_CommandoBot_Morph</label><description>blank</description>
     <hediffClass>BigAndSmall.InstantEffect</hediffClass>
-    <comps><li Class="BigAndSmall.SwapRaceHediffCompProperties"><swapTarget>BS_CommandoBot</swapTarget></li></comps>
+    <comps>
+      <li Class="BigAndSmall.SwapRaceHediffCompProperties">
+        <swapTarget>BS_CommandoBot</swapTarget>
+        <xenotype MayRequire="Ludeon.RimWorld.Biotech">BS_CommandoAndroid</xenotype>
+      </li>
+    </comps>
   </HediffDef>
 
   <RecipeDef ParentName="BS_TransformSurgery">
@@ -142,11 +133,11 @@
         <li>Plasteel</li>
       </thingDefs>
     </fixedIngredientFilter>
-    <addsHediff>BS_CommandoBot_Morph</addsHediff>
+    <addsHediff>BS_Synth_Morph</addsHediff>
   </RecipeDef>
   <HediffDef>
     <defName>BS_Synth_Morph</defName>
-    <label>blank</label><description>blank</description>
+    <label>BS_Synth_Morph</label><description>blank</description>
     <hediffClass>BigAndSmall.InstantEffect</hediffClass>
     <comps><li Class="BigAndSmall.SwapRaceHediffCompProperties"><swapTarget>BS_SynthRace</swapTarget></li></comps>
   </HediffDef>
@@ -196,9 +187,14 @@
   </RecipeDef>
   <HediffDef>
     <defName>BS_TVAndroid_Sapient_Morph</defName>
-    <label>blank</label><description>blank</description>
+    <label>BS_TVAndroid_Sapient_Morph</label><description>blank</description>
     <hediffClass>BigAndSmall.InstantEffect</hediffClass>
-    <comps><li Class="BigAndSmall.SwapRaceHediffCompProperties"><swapTarget>BS_TVAndroid_Sapient</swapTarget></li></comps>
+    <comps>
+      <li Class="BigAndSmall.SwapRaceHediffCompProperties">
+        <swapTarget>BS_TVAndroid_Sapient</swapTarget>
+        <xenotype MayRequire="Ludeon.RimWorld.Biotech">BS_TVAndroid</xenotype>
+      </li>
+    </comps>
   </HediffDef>
 
   <!-- Sapience Upgrades -->

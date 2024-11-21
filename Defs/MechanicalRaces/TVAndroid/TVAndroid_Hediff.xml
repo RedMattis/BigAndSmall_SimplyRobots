@@ -7,6 +7,9 @@
       <li>Comfort</li>
       <!-- <li>Indoors</li> -->
       <li>Outdoors</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+			<li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
     </disablesNeeds>
 
     <abilities></abilities>
@@ -24,8 +27,11 @@
 
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        
         <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
         <nullsThoughts>
+          <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>
           <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
           <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
           <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
@@ -44,6 +50,10 @@
           <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
           <!-- Mostly serves to get rid of other body genes. -->
         </immutableEndogenes>
+        <forcedEndogenes>
+          <li MayRequire="Ludeon.Rimworld.Biotech">BS_SimpleRobotBody</li>
+          <li MayRequire="Ludeon.Rimworld.Biotech">BS_TVHead</li>
+        </forcedEndogenes>
         <geneCategoryFilters>
           <blacklist>
             <!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->

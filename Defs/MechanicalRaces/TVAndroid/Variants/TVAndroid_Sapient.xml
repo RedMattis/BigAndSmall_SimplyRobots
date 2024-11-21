@@ -40,6 +40,11 @@
 
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <romanceTags>
+          <Android>0.5</Android>
+          <Robot>0.5</Robot>
+          <Humanlike>0.5</Humanlike>
+        </romanceTags>
         <!-- Functional -->
         <aptitudes>
           <!-- <Melee>0</Melee> -->

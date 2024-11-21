@@ -6,17 +6,17 @@
     <disablesNeeds>
       <li>Comfort</li>
       <li>Outdoors</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+			<li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+      <!-- <li>FoodVariety</li> -->
       <!-- <li>Indoors</li> -->
     </disablesNeeds>
-    <abilities>
-    </abilities>
     <stages Inherit="False">
       <li>
         <painFactor>0.5</painFactor>
         <totalBleedFactor>0</totalBleedFactor>
         <statFactors>
-          <!-- <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
-          <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier> -->
         </statFactors>
         <damageFactors>
           <Frostbite>0</Frostbite>
@@ -51,18 +51,22 @@
 
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-
         <pawnDiet>BS_ChemRobotDiet</pawnDiet>
-        
         <traitFilters>
           <blacklist>
             <li>Wimp</li>
+            <!-- <li>BodyPurist</li> -->
           </blacklist>
         </traitFilters>
         <immutableEndogenes>
           <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
+          
           <!-- Mostly serves to get rid of other body genes. -->
         </immutableEndogenes>
+        <forcedEndogenes>
+          <li MayRequire="Ludeon.Rimworld.Biotech">BS_CommandoBody</li>
+          <li MayRequire="Ludeon.Rimworld.Biotech">BS_CommandoHead</li>
+        </forcedEndogenes>
         <geneCategoryFilters>
           <blacklist>
             <!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->
@@ -76,6 +80,9 @@
           </blacklist>
         </geneFilters>
         <geneTagFilters>
+          <allowlist>
+            <li>BS_MechanicalDef</li>
+          </allowlist>
           <blacklist>
             <li>Jaw</li>
             <li>Nose</li>
@@ -87,6 +94,8 @@
           </blacklist>
         </geneTagFilters>
         <nullsThoughts>
+          <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>
           <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
           <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
           <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
@@ -103,11 +112,6 @@
         </nullsThoughts>
         
         <apparelRestrictions>
-          <thingDefs>
-            <blacklist>
-              <li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Flophat</li>
-            </blacklist>
-          </thingDefs>
           <apparelLayers>
             <blacklist>
               <li>OnSkin</li>
@@ -119,8 +123,6 @@
             </blacklist>
           </bodyPartGroups>
         </apparelRestrictions>
-        <babyStartAge>20</babyStartAge>
-
         <surgeryRecipes>
           <blacklist>
             <li>InstallNaturalLiver</li>
@@ -141,6 +143,7 @@
             <li>BS_RepairAndroidPartSmall</li>
           </allowlist>
         </surgeryRecipes>
+        <babyStartAge>20</babyStartAge>
 
         <!-- Cosmetic -->
         <disableFacialAnimations>true</disableFacialAnimations>

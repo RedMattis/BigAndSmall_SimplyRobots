@@ -1,5 +1,5 @@
 <Defs>
-  <GeneDef>
+  <GeneDef ParentName="BS_MechanicalTagged">
     <defName>BS_CommandoHead</defName>
     <label>steel enforcer head</label>
     <description>Carriers of this gene have a rugged mechanical-looking head.\n\nPrevents wearing some headgear.\n\nOtherwise visual only.</description>
@@ -7,7 +7,7 @@
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <selectionWeight>0</selectionWeight>
     <biostatMet>1</biostatMet>
-    <skinIsHairColor>true</skinIsHairColor>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
     <statFactors>
       <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
     </statFactors>
@@ -60,21 +60,20 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef>
+  <GeneDef ParentName="BS_MechanicalTagged">
     <defName>BS_CommandoBody</defName>
     <label>steel enforcer body</label>
-    <description>Carriers of this gene have the apperance a mechanical body.</description>
+    <description>Carriers of this gene have the apperance a mechanical body. Only compatible with standard body.</description>
     <iconPath>Pawns/Commando/Naked_Female_south</iconPath>
     <selectionWeight>0</selectionWeight>
     <biostatMet>0</biostatMet>
-    <skinIsHairColor>true</skinIsHairColor>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
     <tattoosVisible>false</tattoosVisible>
     <exclusionTags>
       <li>AG_Bodies</li>
       <li>Bodies</li>
       <li>Body</li>
       <li>BS_Body</li>
-      <li>BodyType</li>
       <li>Fur</li>
     </exclusionTags>
     <bodyType>Standard</bodyType>
@@ -110,14 +109,14 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef>
+  <GeneDef ParentName="BS_MechanicalTagged">
     <defName>BS_CommandoHead_OutfitMatch</defName>
     <label>enforcer head (ac)</label>
     <description>Carriers of this gene have a rugged mechanical-looking head.\n\nPrevents wearing some headgear.\n\nOtherwise visual only.\n\nThis version is colored the same as the apparel or favorite color.</description>
     <iconPath>Icons/BS_CommandoHead</iconPath>
     <selectionWeight>0</selectionWeight>
     <biostatMet>1</biostatMet>
-    <skinIsHairColor>true</skinIsHairColor>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
     <statFactors>
       <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
     </statFactors>
@@ -158,21 +157,20 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef>
+  <GeneDef ParentName="BS_MechanicalTagged">
     <defName>BS_CommandoBody_OutfitMatch</defName>
     <label>enforcer body (ac)</label>
-    <description>Carriers of this gene have the apperance a mechanical body.\n\nThis version is colored the same as the apparel color or favorite color.</description>
+    <description>Carriers of this gene have the apperance a mechanical body.\n\nThis version is colored the same as the apparel color or favorite color. Only compatible with standard body.</description>
     <iconPath>Pawns/Commando/Naked_Female_south</iconPath>
     <selectionWeight>0</selectionWeight>
     <biostatMet>0</biostatMet>
-    <skinIsHairColor>true</skinIsHairColor>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
     <tattoosVisible>false</tattoosVisible>
     <exclusionTags>
       <li>AG_Bodies</li>
       <li>Bodies</li>
       <li>Body</li>
       <li>BS_Body</li>
-      <li>BodyType</li>
       <li>Fur</li>
     </exclusionTags>
     <bodyType>Standard</bodyType>
@@ -196,7 +194,7 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef>
+  <GeneDef ParentName="BS_MechanicalTagged">
     <defName>BS_TVHead</defName>
     <label>ad-bot head</label>
     <description>UwU\n\nPrevents wearing some headgear.\n\nOtherwise visual only.</description>
@@ -204,7 +202,7 @@
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <selectionWeight>0</selectionWeight>
     <biostatMet>1</biostatMet>
-    <skinIsHairColor>true</skinIsHairColor>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
     <statFactors>
       <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
     </statFactors>
@@ -383,21 +381,20 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef>
+  <GeneDef ParentName="BS_MechanicalTagged">
     <defName>BS_SimpleRobotBody</defName>
     <label>wheeled body</label>
     <description>Carriers of this gene are rolling rolling rolling. Visual only.</description>
     <iconPath>Pawns/Simple/Naked_Female_south</iconPath>
     <selectionWeight>0</selectionWeight>
     <biostatMet>0</biostatMet>
-    <skinIsHairColor>true</skinIsHairColor>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
     <tattoosVisible>false</tattoosVisible>
     <exclusionTags>
       <li>AG_Bodies</li>
       <li>Bodies</li>
       <li>Body</li>
       <li>BS_Body</li>
-      <li>BodyType</li>
       <li>Fur</li>
     </exclusionTags>
     <bodyType>Standard</bodyType>

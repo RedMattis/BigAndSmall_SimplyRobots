@@ -10,6 +10,8 @@
       <li>Body_Standard</li>
       <li>Beard_NoBeardOnly</li>
       <li>Hair_BaldOnly</li>
+      <li>BS_CommandoHead</li>
+      <li>BS_CommandoBody</li>
       <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
     </genes>
     <modExtensions>
@@ -31,6 +33,8 @@
       <li>Body_Standard</li>
       <li>Beard_NoBeardOnly</li>
       <li>Hair_BaldOnly</li>
+      <li>BS_CommandoHead</li>
+      <li>BS_CommandoBody</li>
       <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
     </genes>
     <modExtensions>
@@ -52,6 +56,8 @@
       <li>Body_Standard</li>
       <li>Beard_NoBeardOnly</li>
       <li>Hair_BaldOnly</li>
+      <li>BS_TVHead</li>
+      <li>BS_SimpleRobotBody</li>
       <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
     </genes>
     <modExtensions>

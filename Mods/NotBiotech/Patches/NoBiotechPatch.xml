@@ -1,0 +1,9 @@
+<Patch>
+ <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[@Name="BS_CommandoBotThingBase"]/statBases</xpath>
+    <value>
+      <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic> 
+    </value>
+  </Operation>
+  
+</Patch>

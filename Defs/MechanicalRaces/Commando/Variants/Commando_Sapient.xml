@@ -14,6 +14,11 @@
 
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <romanceTags>
+          <Mech>1.0</Mech>
+          <Android>0.65</Android>
+          <Humanlike>0.35</Humanlike>
+        </romanceTags>
         <aptitudes>
           <!-- <Melee>2</Melee> -->
           <!-- <Shooting>2</Shooting> -->

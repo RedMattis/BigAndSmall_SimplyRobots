@@ -43,6 +43,11 @@
     </renderNodeProperties>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <romanceTags>
+          <Synth>1.0</Synth>
+          <Android>0.75</Android>
+          <Humanlike>1.5</Humanlike>
+        </romanceTags>
         <!-- Functional -->
         <aptitudes>
           <!-- <Melee>1</Melee> -->
@@ -54,9 +59,9 @@
           <!-- <Animals>1</Animals> -->
           <!-- <Crafting>2</Crafting> -->
           <!-- <Artistic>2</Artistic> -->
-          <Medicine>4</Medicine>
+          <Medicine>6</Medicine>
           <!-- <Social>1</Social> -->
-          <Intellectual>4</Intellectual>
+          <Intellectual>6</Intellectual>
         </aptitudes>
         <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
         <geneCategoryFilters>

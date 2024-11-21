@@ -25,6 +25,9 @@
           <GlobalLearningFactor>0.4</GlobalLearningFactor>
           <PsychicSensitivity>0</PsychicSensitivity>
         </statFactors>
+        <disabledWorkTags>
+          <li>Intellectual</li>
+        </disabledWorkTags>
       </li>
 		</stages>
     <disablesNeeds>
@@ -35,6 +38,11 @@
       <li>Indoors</li>
       <li>Joy</li>
     </disablesNeeds>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <!-- <romanceTags></romanceTags> --> <!--Already covered by 0% flirt chance.-->
+      </li>
+    </modExtensions>
   </HediffDef>
 
 </Defs>
