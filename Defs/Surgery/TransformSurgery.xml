@@ -147,7 +147,7 @@
     <label>convert to ...tv-like robot?</label>
     <description>Suspiciously simple instructions, but... are you sure about this?</description>
     <jobString>humming Looney Tunes music.</jobString>
-    <uiIconPath>Icons/BS_CommandoHead</uiIconPath>
+    <uiIconPath>Icons/BS_TV_Erratic</uiIconPath>
     <recipeUsers>
       <li>Human</li>
       <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
