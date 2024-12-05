@@ -10,23 +10,23 @@
       <ToxicResistance>1</ToxicResistance>
       <Flammability>0</Flammability>
       <Fertility MayRequire="Ludeon.Rimworld.Biotech"> 0</Fertility>
-      <ComfyTemperatureMin>5</ComfyTemperatureMin>
-      <ComfyTemperatureMax>45</ComfyTemperatureMax>
+      <ComfyTemperatureMin>10</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
       <SM_FlirtChance>0.5</SM_FlirtChance>
       <GlobalLearningFactor>1.2</GlobalLearningFactor>
       <MeatAmount>0</MeatAmount>
       <LeatherAmount>0</LeatherAmount>
       <RoyalFavorValue>3</RoyalFavorValue>
       <MaxNutrition>1.5</MaxNutrition>
-      <CarryingCapacity>100</CarryingCapacity>
-      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">100</VEF_MassCarryCapacity>
+      <CarryingCapacity>80</CarryingCapacity>
+      <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">80</VEF_MassCarryCapacity>
 
       <!-- <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic> -->
-      <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
+      
 
       <ArmorRating_Heat>2.00</ArmorRating_Heat>
       <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.53</ArmorRating_Sharp>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
     </statBases>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <race>
@@ -49,6 +49,8 @@
       <canBecomeShambler>false</canBecomeShambler>
 
       <useMeatFrom IsNull="True"/>
+      <specificMeatDef>Steel</specificMeatDef>
+      <!-- <hasMeat>false</hasMeat> -->
       <leatherDef IsNull="True"/>
       <bloodSmearDef IsNull="True"/>
       <bloodDef>Filth_MachineBits</bloodDef>

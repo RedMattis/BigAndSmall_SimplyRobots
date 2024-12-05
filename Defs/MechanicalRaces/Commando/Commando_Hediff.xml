@@ -16,7 +16,16 @@
       <li>
         <painFactor>0.5</painFactor>
         <totalBleedFactor>0</totalBleedFactor>
+        <statOffsets>
+          <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+          <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+        </statOffsets>
         <statFactors>
+          <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
+          <CarryingCapacity>1.2</CarryingCapacity>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
         </statFactors>
         <damageFactors>
           <Frostbite>0</Frostbite>
