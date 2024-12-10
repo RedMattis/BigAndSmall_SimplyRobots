@@ -1,9 +1,10 @@
 <Patch>
-  <!-- <Operation Class="PatchOperationAdd">
-    <xpath>Defs/XenotypeDef/doubleXenotypeChances</xpath>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="BS_MakeAdBot"]/researchPrerequisite</xpath>
     <value>
-      <BS_SynthSpy>0.005</BS_SynthSpy>
-      <BS_SynthSpyDerp>0.005</BS_SynthSpyDerp>
+      <researchPrerequisite>
+        <li>StandardMechtech</li>
+      </researchPrerequisite>
     </value>
-  </Operation> -->
+  </Operation>
 </Patch>

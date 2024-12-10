@@ -65,5 +65,32 @@
       <li>BS_TVAndroidSapient</li>
     </spawnCategories>
   </BackstoryDef>
+
+
+  <BackstoryDef>
+    <defName>BS_ColonyBuiltBotChild</defName>
+    <title>colony built</title>
+    <titleShort>factory-built</titleShort>
+    <baseDesc>[PAWN_nameDef] was built in in the colony.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains/>
+    <spawnCategories>
+      <li>BS_ColonyBuilt</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>BS_ColonyBuiltBotAdult</defName>
+    <title>colony robot</title>
+    <titleShort>factory-built</titleShort>
+    <baseDesc>[PAWN_nameDef] is a colony robot.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains/>
+    <spawnCategories>
+      <li>BS_ColonyBuilt</li>
+    </spawnCategories>
+  </BackstoryDef>
   
 </Defs>

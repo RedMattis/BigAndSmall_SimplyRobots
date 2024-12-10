@@ -2,6 +2,7 @@
   <PawnKindDef ParentName="GuardBase">
     <defName>BS_TV_Villager</defName>
     <label>crowd-puller</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
     <combatPower>40</combatPower>
     <initialResistanceRange>3~10</initialResistanceRange>
     <weaponTags>
@@ -36,6 +37,7 @@
   <PawnKindDef ParentName="MercenaryGunnerBase" Name="BS_TV_Grunt">
     <defName>BS_TV_Grunt</defName>
     <label>ad-bot</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
     <combatPower>60</combatPower>
     <!-- <apparelColor>0.34,0.30,0.54</apparelColor> -->
     <initialResistanceRange>3~10</initialResistanceRange>
@@ -64,6 +66,7 @@
   <PawnKindDef ParentName="BS_TV_Grunt" Name="BS_TV_Grunt_Sapient">
     <defName>BS_TV_Sapient</defName>
     <label>streamer</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
     <backstoryFiltersOverride Inherit="False">
       <li>
         <categories>
@@ -136,6 +139,7 @@
   <PawnKindDef ParentName="GrenadierBase">
     <defName>BS_TV_Boom</defName>
     <label>sfx bot</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
     <apparelColor>0.8,0.6,0.3</apparelColor>
     <forcedHairColor>0.8,0.6,0.3</forcedHairColor>
     <combatPower>70</combatPower>
@@ -168,6 +172,7 @@
   <PawnKindDef ParentName="MercenaryEliteBase">
     <defName>BS_TV_Elite</defName>
     <label>showrunner</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
     <factionLeader>true</factionLeader>
     <combatPower>100</combatPower>
     <apparelColor>(1.0,1.0,1.0)</apparelColor>
@@ -196,6 +201,7 @@
   <PawnKindDef ParentName="MercenaryGunnerBase" Name="BS_CommandoGrunt">
     <defName>BS_Commando_Grunt</defName>
     <label>RAVEN-A0</label>
+    <nameMaker>BS_NamerRobot</nameMaker>
     <combatPower>130</combatPower>
     <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
     <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
@@ -259,6 +265,7 @@
   <PawnKindDef ParentName="BS_CommandoGrunt">
     <defName>BS_Commando_Grunt_Sapient</defName>
     <label>RAVEN-X</label>
+    <nameMaker>BS_NamerRobot</nameMaker>
     <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
     <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
     <backstoryFiltersOverride>
@@ -277,6 +284,7 @@
   <PawnKindDef ParentName="GrenadierBase">
     <defName>BS_Commando_Boom</defName>
     <label>HELLHOUND</label>
+    <nameMaker>BS_NamerRobot</nameMaker>
     <combatPower>160</combatPower>
     <apparelColor>(1.0, 0.7, 0.3)</apparelColor>
     <forcedHairColor>(1.0, 0.7, 0.3)</forcedHairColor>
@@ -342,6 +350,7 @@
   <PawnKindDef ParentName="BS_CommandoGrunt">
     <defName>BS_Commando_Elite</defName>
     <label>APEX-C</label>
+    <nameMaker>BS_NamerRobot</nameMaker>
     <factionLeader>true</factionLeader>
     <combatPower>200</combatPower>
     <apparelColor>(0.2, 0.2, 0.2)</apparelColor>

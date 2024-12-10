@@ -42,8 +42,8 @@
       <canBecomeShambler>false</canBecomeShambler>
 
       <useMeatFrom IsNull="True"/>
-      <specificMeatDef>Steel</specificMeatDef>
-      <!-- <hasMeat>false</hasMeat> -->
+      <!-- <specificMeatDef>Steel</specificMeatDef> -->
+      <hasMeat>false</hasMeat>
       <leatherDef IsNull="True"/>
       <bloodSmearDef IsNull="True"/>
       <bloodDef>Filth_MachineBits</bloodDef>

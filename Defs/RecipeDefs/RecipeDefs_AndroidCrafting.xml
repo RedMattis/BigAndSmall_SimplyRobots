@@ -1,0 +1,199 @@
+<Defs>
+  <ThingDef ParentName="UnfinishedBase">
+    <defName>BS_UnfinishedAndroid</defName>
+    <label>unfinished android</label>
+    <description>An unfinished android.</description>
+    <thingClass>BigAndSmall.UnfinishedMechanicalRace</thingClass>
+    
+    <!-- <selectable>false</selectable> -->
+    <statBases>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedHealthItem</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(189,169,118)</color>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+  <pawnKindDef ParentName="BS_BlankPawn_NoSkills" Name="BuiltRobot" Abstract="True">
+    <chronologicalAgeRange>0~0</chronologicalAgeRange>
+    <minGenerationAge>20</minGenerationAge>
+    <maxGenerationAge>22</maxGenerationAge>
+
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
+  </pawnKindDef>
+
+  <RecipeDef>
+    <defName>BS_MakePersonaAndroid</defName>
+    <label>make persona android</label>
+    <description>Create an android using a persona core. This is not without its risks...</description>
+    <jobString>Creating Android</jobString>
+    <uiIconPath>Icons/BS_CommandoHead</uiIconPath>
+    <researchPrerequisite>
+      <li>BS_AndroidConversion</li>
+    </researchPrerequisite>
+    <unfinishedThingDef>BS_UnfinishedAndroid</unfinishedThingDef>
+    <effectWorking>ButcherMechanoid</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+    <workAmount>30000</workAmount>
+    <!-- <workAmount>100</workAmount> -->
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>14</Crafting>
+    </skillRequirements>
+    <recipeUsers>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>24</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AIPersonaCore</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+      <li>AIPersonaCore</li>
+      <li>ComponentSpacer</li>
+      <li>ComponentIndustrial</li>
+      <li>Plasteel</li>
+      <li>Hyperweave</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="BigAndSmall.RecipeExtension">
+        <pawnKindDef>BS_CommandoBotPersona_Crafted</pawnKindDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+  <PawnKindDef ParentName="BuiltRobot">
+    <defName>BS_CommandoBotPersona_Crafted</defName>
+    <label>persona mech</label>
+    <race>BS_CommandoBotPersona</race>
+    
+    <backstoryFiltersOverride> <li> <categories> <li>BS_ColonyBuilt</li> </categories> </li> </backstoryFiltersOverride>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_CommandoAndroidPersona MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroidPersona>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+  <!-- TV Robot -->
+  <RecipeDef>
+    <defName>BS_MakeAdBot</defName>
+    <label>make adbot</label>
+    <description>Create basic ad-bot based on old blueprints scattered about.</description>
+    <jobString>Creating adbot</jobString>
+    <uiIconPath>Icons/BS_TV_Erratic</uiIconPath>
+    <researchPrerequisite>
+      <li>Bionics</li>
+    </researchPrerequisite>
+    <unfinishedThingDef>BS_UnfinishedAndroid</unfinishedThingDef>
+    <effectWorking>ButcherMechanoid</effectWorking>
+    <soundWorking>Recipe_ButcherCorpseMechanoid</soundWorking>
+    <workAmount>18000</workAmount>
+    <!-- <workAmount>100</workAmount> -->
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <recipeUsers>
+      <li>TableMachining</li>
+      <li>FabricationBench</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>70</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+      <li>ComponentSpacer</li>
+      <li>ComponentIndustrial</li>
+      <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <modExtensions>
+      <li Class="BigAndSmall.RecipeExtension">
+        <pawnKindDef>BS_TVRobot_Crafted</pawnKindDef>
+      </li>
+    </modExtensions>
+  </RecipeDef>
+
+   <PawnKindDef ParentName="BuiltRobot">
+    <defName>BS_TVRobot_Crafted</defName>
+    <label>TV-headed robot</label>
+    <race>BS_TVAndroid</race>
+    
+    <backstoryFiltersOverride> <li> <categories> <li>BS_ColonyBuilt</li> </categories> </li> </backstoryFiltersOverride>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+
+</Defs>

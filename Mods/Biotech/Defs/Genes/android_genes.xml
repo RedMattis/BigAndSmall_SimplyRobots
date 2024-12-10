@@ -1,5 +1,20 @@
 <Defs>
-  <GeneDef ParentName="BS_MechanicalTagged">
+  <GeneDef ParentName="BS_MechanicalTagged" Abstract="True" Name="RobotHeadWithoutHair">
+    <tattoosVisible>false</tattoosVisible>
+    <beardTagFilter>
+      <whitelist>true</whitelist><tags/>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+    </hairTagFilter>
+    <exclusionTags>
+      <!-- <li>HairStyle</li>
+      <li>BeardStyle</li> -->
+      <li>Jaw</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="RobotHeadWithoutHair">
     <defName>BS_CommandoHead</defName>
     <label>steel enforcer head</label>
     <description>Carriers of this gene have a rugged mechanical-looking head.\n\nPrevents wearing some headgear.\n\nOtherwise visual only.</description>
@@ -11,15 +26,7 @@
     <statFactors>
       <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
     </statFactors>
-    <tattoosVisible>false</tattoosVisible>
-    <beardTagFilter>
-      <whitelist>true</whitelist><tags/>
-    </beardTagFilter>
-    <exclusionTags>
-      <li>HairStyle</li>
-      <li>BeardStyle</li>
-      <li>Jaw</li>
-    </exclusionTags>
+    
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
         <disableFacialAnimations>true</disableFacialAnimations>
@@ -109,7 +116,7 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef ParentName="BS_MechanicalTagged">
+  <GeneDef ParentName="RobotHeadWithoutHair">
     <defName>BS_CommandoHead_OutfitMatch</defName>
     <label>enforcer head (ac)</label>
     <description>Carriers of this gene have a rugged mechanical-looking head.\n\nPrevents wearing some headgear.\n\nOtherwise visual only.\n\nThis version is colored the same as the apparel or favorite color.</description>
@@ -120,15 +127,6 @@
     <statFactors>
       <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
     </statFactors>
-    <tattoosVisible>false</tattoosVisible>
-    <beardTagFilter>
-      <whitelist>true</whitelist><tags/>
-    </beardTagFilter>
-    <exclusionTags>
-      <li>HairStyle</li>
-      <li>BeardStyle</li>
-      <li>Jaw</li>
-    </exclusionTags>
     <modExtensions>
       <li Class="BetterPrerequisites.GeneExtension">
         <disableFacialAnimations>true</disableFacialAnimations>
@@ -194,7 +192,7 @@
     </modExtensions>
   </GeneDef>
 
-  <GeneDef ParentName="BS_MechanicalTagged">
+  <GeneDef ParentName="RobotHeadWithoutHair">
     <defName>BS_TVHead</defName>
     <label>ad-bot head</label>
     <description>UwU\n\nPrevents wearing some headgear.\n\nOtherwise visual only.</description>
@@ -206,15 +204,6 @@
     <statFactors>
       <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
     </statFactors>
-    <tattoosVisible>false</tattoosVisible>
-    <beardTagFilter>
-      <whitelist>true</whitelist><tags/>
-    </beardTagFilter>
-    <exclusionTags>
-      <li>HairStyle</li>
-      <li>BeardStyle</li>
-      <li>Jaw</li>
-    </exclusionTags>
     <renderNodeProperties Inherit="False">
       <!--  -->
       <li Class="BigAndSmall.PawnComplexRenderingProps">
