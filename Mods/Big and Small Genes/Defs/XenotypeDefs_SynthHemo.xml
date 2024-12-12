@@ -3,7 +3,7 @@
     <defName>BS_NanomachineVampire</defName>
     <label>dark cloud</label>
     <description>A mechanical lifeform of unknown origins.</description>
-    <iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
     <combatPowerFactor>1</combatPowerFactor>
     <inheritable>true</inheritable>
     <genes>

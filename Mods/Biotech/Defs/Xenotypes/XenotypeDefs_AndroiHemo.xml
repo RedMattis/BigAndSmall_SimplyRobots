@@ -1,0 +1,48 @@
+<Defs>
+  <XenotypeDef>
+    <defName>BS_Hemohunter</defName>
+    <label>hemohunter</label>
+    <description>A mechanical lifeform of unknown origins.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <combatPowerFactor>1</combatPowerFactor>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Body_Standard</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Hair_BaldOnly</li>
+      <li>Hair_InkBlack</li>
+      <li>Skin_DeepRed</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_SkinBloodRed</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Skin_DarkAsh</li>
+
+      <!-- <li>ArchiteMetabolism</li> -->
+      <li>Deathrest</li>
+      <li>Hemogenic</li>
+      <!-- <li>HemogenDrain</li> -->
+      <li>Bloodfeeder</li>
+      <li>DarkVision</li>
+      <li>Aggression_HyperAggressive</li>
+      <li>UVSensitivity_Mild</li>
+      <li>Ageless</li>
+      
+      <li MayRequire="RedMattis.BigSmall.Core">BS_EltexPsychic</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_NoFood_Hemogenic</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_GreaterHemogenDrain</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Deathlike</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_PsychicWarrior</li>
+      <li MayRequire="RedMattis.BigSmall.Core">VU_Darkness_MoveSpeed_Quick</li>
+
+      <li MayRequire="vanillaracesexpanded.sanguophage">VRE_SanguoFeeder</li>
+      <!-- <li MayRequire="vanillaracesexpanded.sanguophage">VRE_Hemosmosis</li> -->
+    </genes>
+    <modExtensions>
+      <li Class="BetterPrerequisites.XenotypeExtension">
+        <setRace>BS_CommandoBot</setRace>
+        <forceRace>true</forceRace>
+      </li>
+    </modExtensions>
+  </XenotypeDef>
+
+  
+
+</Defs>

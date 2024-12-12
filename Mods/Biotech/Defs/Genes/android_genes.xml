@@ -28,7 +28,7 @@
     </statFactors>
     
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <disableFacialAnimations>true</disableFacialAnimations>
         <headPaths>
           <Female>Pawns/Commando/Female_Average_Normal</Female>
@@ -63,6 +63,9 @@
             </blacklist>
           </bodyPartGroups>
         </apparelRestrictions>
+        <bodyConstantHeadScaleBigOnly>true</bodyConstantHeadScaleBigOnly>
+        <preventHeadScalingFactor>0.3</preventHeadScalingFactor>
+        <facialDisabler />
       </li>
     </modExtensions>
   </GeneDef>
@@ -85,7 +88,7 @@
     </exclusionTags>
     <bodyType>Standard</bodyType>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <bodyPaths>
           <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
           <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
@@ -128,7 +131,7 @@
       <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
     </statFactors>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <disableFacialAnimations>true</disableFacialAnimations>
         <headPaths>
           <Female>Pawns/Commando/Female_Average_Normal</Female>
@@ -173,7 +176,7 @@
     </exclusionTags>
     <bodyType>Standard</bodyType>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <bodyPaths>
           <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
           <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
@@ -388,7 +391,7 @@
     </exclusionTags>
     <bodyType>Standard</bodyType>
     <modExtensions>
-      <li Class="BetterPrerequisites.GeneExtension">
+      <li Class="BigAndSmall.PawnExtension">
         <forceFemaleBody>true</forceFemaleBody>
         <bodyPaths>
           <Body_Female>Pawns/Simple/Naked_Female</Body_Female>
