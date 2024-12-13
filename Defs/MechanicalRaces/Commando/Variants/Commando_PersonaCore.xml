@@ -1,6 +1,7 @@
 <Defs>
   <ThingDef ParentName="BS_CommandoBotThingBase" BS_Alt="ThingDef_AlienRace">
     <defName>BS_CommandoBotPersona</defName>
+    <label>Steel Persona</label>
     <modExtensions>
       <li Class="BigAndSmall.RaceExtension">
         <raceHediff>BS_CommandoBotPersona</raceHediff>
