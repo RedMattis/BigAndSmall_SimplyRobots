@@ -1,7 +1,7 @@
 <Defs>
   <ThingDef ParentName="BS_TVAndroidThingBase" BS_Alt="ThingDef_AlienRace">
     <defName>BS_TVAndroid_Sapient</defName>
-    <label>ad-bot</label>
+    <label>erratic ad-bot</label>
     <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
     <modExtensions>
       <li Class="BigAndSmall.RaceExtension">
