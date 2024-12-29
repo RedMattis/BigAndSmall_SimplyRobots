@@ -87,6 +87,7 @@
             <li>InstallNaturalKidney</li>
             <li>InstallNaturalHeart</li>
             <li>BS_TVConversion</li>
+            <li>BS_SynthConversion</li>
           </blacklist>
           <allowlist>
             <li>BS_RepairRobotBrain</li>

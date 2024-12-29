@@ -96,6 +96,11 @@
 
       <gestationPeriodDays>18</gestationPeriodDays>
       
+      <willNeverEat>
+        <li>GoJuice</li> <li>WakeUp</li> <li>Yayo</li>
+        <li>SmokeleafJoint</li> <li>PsychiteTea</li> <li>Flake</li>
+        <li>Luciferium</li> <li>Penoxycyline</li> <li>Beer</li>
+      </willNeverEat>
 
       <!-- <fleshType>Mechanoid</fleshType> --> <!--Not worth it. Too much hardcoded trouble.-->
       <canBecomeShambler>false</canBecomeShambler>

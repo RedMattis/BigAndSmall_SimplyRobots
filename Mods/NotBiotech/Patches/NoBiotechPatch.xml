@@ -7,7 +7,7 @@
   </Operation>
   
   <Operation Class="PatchOperationAdd">
-    <xpath>Defs/HediffDef[@Name="BS_TVAndroid"]/renderNodeProperties</xpath>
+    <xpath>Defs/HediffDef[@Name="BS_TVAndroidHediffBase"]/renderNodeProperties</xpath>
     <value>
       <!--  -->
       <li Class="BigAndSmall.PawnComplexRenderingProps">

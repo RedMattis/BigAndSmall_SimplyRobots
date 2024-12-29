@@ -121,6 +121,11 @@
         </nullsThoughts>
         
         <apparelRestrictions>
+          <tags>
+            <allowlist>
+              <li>Warcasket</li>
+            </allowlist>
+          </tags>
           <apparelLayers>
             <blacklist>
               <li>OnSkin</li>
