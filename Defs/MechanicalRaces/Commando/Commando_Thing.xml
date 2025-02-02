@@ -1,7 +1,7 @@
 <Defs>
   <ThingDef ParentName="Human" Name="BS_CommandoBotThingBase" Abstract="True">
     <label>Steel Enforcer</label>
-    <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
+    <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human mind. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
     
     <statBases>
       <MarketValue>2500</MarketValue>
