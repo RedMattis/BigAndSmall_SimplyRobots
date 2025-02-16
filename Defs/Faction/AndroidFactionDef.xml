@@ -159,7 +159,7 @@
       <li>
         <kindDef>Trader</kindDef>
         <traders>
-          <BS_TV_Elite>1</BS_TV_Elite>
+          <BS_TV_EliteTrader>1</BS_TV_EliteTrader>
         </traders>
         <carriers>
           <Muffalo>6</Muffalo>

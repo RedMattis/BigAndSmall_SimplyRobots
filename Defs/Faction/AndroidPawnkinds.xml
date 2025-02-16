@@ -169,7 +169,7 @@
     <race>BS_TVAndroid</race>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="MercenaryEliteBase">
+  <PawnKindDef ParentName="MercenaryEliteBase" Name="BS_TV_ElitePawn">
     <defName>BS_TV_Elite</defName>
     <label>showrunner</label>
     <nameMaker>BS_NamerRobot_Service</nameMaker>
@@ -196,6 +196,11 @@
       </xenotypeChances>
     </xenotypeSet>
     <race>BS_TVAndroid_Sapient</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_ElitePawn">
+    <defName>BS_TV_EliteTrader</defName>
+    <trader>true</trader>
   </PawnKindDef>
 
   <PawnKindDef ParentName="MercenaryGunnerBase" Name="BS_CommandoGrunt">
