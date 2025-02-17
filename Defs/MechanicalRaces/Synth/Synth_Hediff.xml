@@ -43,6 +43,7 @@
     </renderNodeProperties>
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <traitIcon>BS_Traits/robot</traitIcon>
         <romanceTags>
           <Synth>1.0</Synth>
           <Android>0.75</Android>

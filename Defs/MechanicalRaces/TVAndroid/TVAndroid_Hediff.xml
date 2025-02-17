@@ -27,6 +27,7 @@
 
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <traitIcon>BS_Traits/robot</traitIcon>
         
         <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
         <nullsThoughts>

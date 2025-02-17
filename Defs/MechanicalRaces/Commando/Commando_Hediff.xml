@@ -60,6 +60,7 @@
 
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <traitIcon>Icons/BS_AndroidFaction_white</traitIcon>
         <pawnDiet>BS_ChemRobotDiet</pawnDiet>
         <traitFilters>
           <blacklist>
