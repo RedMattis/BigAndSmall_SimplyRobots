@@ -15,6 +15,7 @@
     <techHediffsChance>0.06</techHediffsChance>
     <techHediffsMoney>50~600</techHediffsMoney>
     <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -26,6 +27,7 @@
     <disallowedTraits>
       <li>BodyPurist</li>
     </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
@@ -42,6 +44,7 @@
     <!-- <apparelColor>0.34,0.30,0.54</apparelColor> -->
     <initialResistanceRange>3~10</initialResistanceRange>
     <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -55,6 +58,7 @@
     <disallowedTraits>
       <li>BodyPurist</li>
     </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
@@ -145,6 +149,7 @@
     <combatPower>70</combatPower>
     <canBeSapper>true</canBeSapper>
     <isGoodBreacher>true</isGoodBreacher>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
     <weaponTags>
       <li>GrenadeDestructive</li>
     </weaponTags>
@@ -161,6 +166,7 @@
     <disallowedTraits>
       <li>BodyPurist</li>
     </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
@@ -179,6 +185,7 @@
     <forcedHairColor>(1.0,1.0,1.0)</forcedHairColor>
     <initialResistanceRange>3~10</initialResistanceRange>
     <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
     <backstoryFiltersOverride>
       <li>
         <categories>
@@ -190,6 +197,7 @@
     <disallowedTraits>
       <li>BodyPurist</li>
     </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_TVAndroid_Funky MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid_Funky>
@@ -259,6 +267,7 @@
     <disallowedTraits>
       <li>BodyPurist</li>
     </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_CommandoAndroidAutomata MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroidAutomata>
@@ -331,6 +340,7 @@
       <li>GrenadeDestructive</li>
     </weaponTags>
     <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
     <xenotypeSet Inherit="False">
       <xenotypeChances>
         <BS_CommandoAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroid>
@@ -352,7 +362,7 @@
     <race>BS_CommandoBot</race>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="BS_CommandoGrunt">
+  <PawnKindDef ParentName="BS_CommandoGrunt" Name="BS_Commando_Elite">
     <defName>BS_Commando_Elite</defName>
     <label>APEX-C</label>
     <nameMaker>BS_NamerRobot</nameMaker>
@@ -387,4 +397,5 @@
     </backstoryFiltersOverride>
     <race>BS_CommandoBot</race>
   </PawnKindDef>
+
 </Defs>

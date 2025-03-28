@@ -15,7 +15,7 @@
 		</li>
     <li>
         <packageId>RedMattis.BetterPrerequisites</packageId>
-        <displayName>Better Gene Prerequisites</displayName>
+        <displayName>Big and Small - Framework</displayName>
         <steamWorkshopUrl>steam://url/CommunityFilePage/2925432336</steamWorkshopUrl>
 		</li>
 		
@@ -33,6 +33,11 @@
 		<li>nals.facialanimation</li>
 		<li>vanillaexpanded.vtexe.facialanims</li>
 	</loadAfter>
+	<loadBefore>
+		<li>RedMattis.BigSmall</li>
+		<li>RedMattis.LamiasAndOtherSnakes</li>
+		<li>RedMattis.Heaven</li>
+	</loadBefore>
   <incompatibleWith>
 	</incompatibleWith>
 	<description>Robotic colonists designed to be flexible and and have strong compatibility with vanilla and mod content.</description>

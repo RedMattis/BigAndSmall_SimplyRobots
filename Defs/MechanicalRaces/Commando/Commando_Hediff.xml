@@ -83,13 +83,13 @@
             <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
           </blacklist>
         </geneCategoryFilters>
-        <geneFilters>
+        <activeGeneFilters>
           <blacklist>
             <li MayRequire="Ludeon.Rimworld.Biotech">Brow_Heavy</li>
             <li MayRequire="Ludeon.Rimworld.Biotech">FacialRidges</li>
           </blacklist>
-        </geneFilters>
-        <geneTagFilters>
+        </activeGeneFilters>
+        <activeGeneTagFilters>
           <allowlist>
             <li>BS_MechanicalDef</li>
           </allowlist>
@@ -102,7 +102,7 @@
             <li>Fur</li>
             <li>HairStyle</li>
           </blacklist>
-        </geneTagFilters>
+        </activeGeneTagFilters>
         <nullsThoughts>
           <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
           <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>

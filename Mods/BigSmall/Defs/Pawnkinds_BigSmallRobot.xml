@@ -1,0 +1,112 @@
+<Defs>
+  <PawnKindDef ParentName="BS_Commando_Elite" Name="BS_GiantWarRobotBase" Abstract="True">
+    <nameMaker>BS_NamerRobot</nameMaker>
+    <factionLeader>true</factionLeader>
+    <combatPower>350</combatPower>
+    <apparelColor>(0.2, 0.2, 0.2)</apparelColor>
+    <forcedHairColor>(0.15, 0.15, 0.2)</forcedHairColor>
+    <apparelTags Inherit="False"/>
+    <weaponTags Inherit="False"/>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_GiantRobot>999</BS_GiantRobot>
+      </xenotypeChances>
+    </xenotypeSet>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_GiantWarRobotBase" Name="BS_GiantRobotRanged">
+    <defName>BS_GiantRobotRanged</defName>
+    <label>EVA-VF</label>
+    <maxPerGroup>3</maxPerGroup>
+    <weaponTags>
+      <li>RangedHeavyGiant</li>
+    </weaponTags>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">ArmorskinGland</li>
+    </techHediffsRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_GiantRobotRanged">
+    <defName>BS_GiantRobotRanged_One</defName>
+    <label>Valkyrie-1</label>
+    <maxPerGroup>1</maxPerGroup>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">StoneskinGland</li>
+    </techHediffsRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_GiantWarRobotBase" Name="BS_GiantRobotMelee">
+    <defName>BS_GiantRobotMelee</defName>
+    <label>ULTRO-N</label>
+    <maxPerGroup>3</maxPerGroup>
+    <weaponTags>
+      <li>MedievalMeleeGiant</li>
+      <li>UltratechMeleeGiant</li>
+      <li>HerculeanWeapon</li>
+    </weaponTags>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">ArmorskinGland</li>
+    </techHediffsRequired>
+  </PawnKindDef>
+
+    <PawnKindDef ParentName="BS_GiantWarRobotBase">
+    <defName>BS_GiantRobotMelee_One</defName>
+    <label>ULTRO-N</label>
+    <maxPerGroup>1</maxPerGroup>
+    <weaponTags>
+      <li>MedievalMeleeGiant</li>
+      <li>UltratechMeleeGiant</li>
+      <li>HerculeanWeapon</li>
+    </weaponTags>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">ArmorskinGland</li>
+    </techHediffsRequired>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_ElitePawn">
+    <defName>BS_TV_Melee_Mega</defName>
+    <label>cinema</label>
+    <factionLeader>true</factionLeader>
+    <maxPerGroup>1</maxPerGroup>
+    <combatPower>300</combatPower>
+    <apparelColor>(0.3,0.3,0.3)</apparelColor>
+    <forcedHairColor>(0.3,0.3,0.3)</forcedHairColor>
+    <weaponMoney>1500~6000</weaponMoney>
+    <apparelRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">Apparel_ArmorCataphract</li>
+    </apparelRequired>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeGiant</li>
+      <li>UltratechMeleeGiant</li>
+      <li>HerculeanWeapon</li>
+    </weaponTags>
+    <techHediffsRequired>
+      <li MayRequire="Ludeon.Rimworld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.Rimworld.Royalty">ArmorskinGland</li>
+    </techHediffsRequired>
+    <modExtensions>
+			<li Class="BigAndSmall.PawnKindExtension">
+				<appendGenes>
+          <li>ArchiteMetabolism</li>
+          <li>JotunFrame</li>
+          <li>Large</li>
+				</appendGenes>
+			</li>
+		</modExtensions>
+  </PawnKindDef>
+
+</Defs>

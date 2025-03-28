@@ -79,7 +79,7 @@
       <li>
         <!--TV Robots-->
         <kindDef>Combat</kindDef>
-        <commonality>50</commonality>
+        <commonality>20</commonality>
         <options>
           <BS_TV_Villager>10</BS_TV_Villager>
           <BS_TV_Grunt>5</BS_TV_Grunt>
@@ -97,6 +97,27 @@
       </li>
 
       <li>
+        <!--TV Robots-->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <BS_TV_Villager>10</BS_TV_Villager>
+          <BS_TV_Grunt>5</BS_TV_Grunt>
+          <BS_TV_Boom>1</BS_TV_Boom>
+          <BS_TV_Elite>2</BS_TV_Elite>
+          <BS_TV_Sapient_R>0.1</BS_TV_Sapient_R>
+          <BS_TV_Sapient_G>0.1</BS_TV_Sapient_G>
+          <BS_TV_Sapient_B>0.1</BS_TV_Sapient_B>
+          <BS_TV_Sapient_RG>0.1</BS_TV_Sapient_RG>
+          <BS_TV_Sapient_GB>0.1</BS_TV_Sapient_GB>
+          <BS_TV_Sapient_BR>0.1</BS_TV_Sapient_BR>
+          <BS_TV_Sapient_Black>0.1</BS_TV_Sapient_Black>
+          <BS_TV_Sapient_White>0.1</BS_TV_Sapient_White>
+          <BS_TV_Melee_Mega MayRequire="RedMattis.BigSmall.Core">3</BS_TV_Melee_Mega>
+        </options>
+      </li>
+
+      <li>
         <!--Streamer Robots-->
         <kindDef>Combat</kindDef>
         <commonality>30</commonality>
@@ -109,13 +130,14 @@
           <BS_TV_Sapient_BR>0.1</BS_TV_Sapient_BR>
           <BS_TV_Sapient_Black>0.1</BS_TV_Sapient_Black>
           <BS_TV_Sapient_White>0.1</BS_TV_Sapient_White>
+          <BS_TV_Melee_Mega MayRequire="RedMattis.BigSmall.Core">0.1</BS_TV_Melee_Mega>
         </options>
       </li>
       
       <li>
         <!--Commandos Robots-->
         <kindDef>Combat</kindDef>
-        <commonality>50</commonality>
+        <commonality>10</commonality>
         <options>
           <BS_Commando_Grunt>9</BS_Commando_Grunt>
           <BS_Commando_Grunt_Sapient>1</BS_Commando_Grunt_Sapient>
@@ -125,9 +147,22 @@
       </li>
 
       <li>
+        <!--Commandos Robots-->
+        <kindDef>Combat</kindDef>
+        <commonality>10</commonality>
+        <options>
+          <BS_Commando_Grunt>9</BS_Commando_Grunt>
+          <BS_Commando_Grunt_Sapient>1</BS_Commando_Grunt_Sapient>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+          <BS_GiantRobotRanged_One MayRequire="RedMattis.BigSmall.Core">5</BS_GiantRobotRanged_One>
+        </options>
+      </li>
+
+      <li>
         <!--Mixed-->
         <kindDef>Combat</kindDef>
-        <commonality>100</commonality>
+        <commonality>50</commonality>
         <options>
           <BS_TV_Villager>10</BS_TV_Villager>
           <BS_TV_Grunt>20</BS_TV_Grunt>
@@ -142,18 +177,53 @@
       </li>
 
       <li>
+        <!--Mixed-->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <BS_TV_Villager>10</BS_TV_Villager>
+          <BS_TV_Grunt>20</BS_TV_Grunt>
+          <BS_TV_Boom>2</BS_TV_Boom>
+          <BS_TV_Elite>1</BS_TV_Elite>
+          <BS_TV_Melee_Mega MayRequire="RedMattis.BigSmall.Core">5</BS_TV_Melee_Mega>
+
+          <BS_Commando_Grunt>5</BS_Commando_Grunt>
+          <BS_Commando_Grunt_Sapient>0.5</BS_Commando_Grunt_Sapient>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+          <BS_GiantRobotRanged_One MayRequire="RedMattis.BigSmall.Core">5</BS_GiantRobotRanged_One>
+        </options>
+      </li>
+
+      <li>
+        <!--Commandos Robots, possibly with giant robots-->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <BS_Commando_Grunt>9</BS_Commando_Grunt>
+          <BS_Commando_Grunt_Sapient>1</BS_Commando_Grunt_Sapient>
+          <BS_Commando_Boom>1</BS_Commando_Boom>
+          <BS_Commando_Elite>3</BS_Commando_Elite>
+          <BS_GiantRobotRanged MayRequire="RedMattis.BigSmall.Core">3</BS_GiantRobotRanged>
+          <BS_GiantRobotMelee MayRequire="RedMattis.BigSmall.Core">3</BS_GiantRobotMelee>
+        </options>
+      </li>
+
+      <li>
         <kindDef>Peaceful</kindDef>
         <options>
           <BS_TV_Villager>20</BS_TV_Villager>
           <BS_TV_Grunt>10</BS_TV_Grunt>
           <BS_TV_Boom>2</BS_TV_Boom>
           <BS_TV_Elite>1</BS_TV_Elite>
+          <BS_TV_Melee_Mega MayRequire="RedMattis.BigSmall.Core">3</BS_TV_Melee_Mega>
 
           <BS_Commando_Grunt>5</BS_Commando_Grunt>
           <BS_Commando_Grunt_Sapient>0.5</BS_Commando_Grunt_Sapient>
           <BS_Commando_Boom>1</BS_Commando_Boom>
           <BS_Commando_Elite>3</BS_Commando_Elite>
-
+          <BS_GiantRobotRanged_One MayRequire="RedMattis.BigSmall.Core">3</BS_GiantRobotRanged_One>
+          <BS_GiantRobotMelee_One MayRequire="RedMattis.BigSmall.Core">3</BS_GiantRobotMelee_One>
         </options>
       </li>
       <li>
@@ -172,11 +242,13 @@
           <BS_TV_Grunt>20</BS_TV_Grunt>
           <BS_TV_Boom>2</BS_TV_Boom>
           <BS_TV_Elite>1</BS_TV_Elite>
+          <BS_TV_Melee_Mega MayRequire="RedMattis.BigSmall.Core">3</BS_TV_Melee_Mega>
 
           <BS_Commando_Grunt>9</BS_Commando_Grunt>
           <BS_Commando_Grunt_Sapient>1</BS_Commando_Grunt_Sapient>
           <BS_Commando_Boom>1</BS_Commando_Boom>
           <BS_Commando_Elite>3</BS_Commando_Elite>
+          <BS_GiantRobotRanged_One MayRequire="RedMattis.BigSmall.Core">3</BS_GiantRobotRanged_One>
         </guards>
       </li>
       <li>
@@ -192,6 +264,10 @@
           <BS_Commando_Grunt_Sapient>1</BS_Commando_Grunt_Sapient>
           <BS_Commando_Boom>1</BS_Commando_Boom>
           <BS_Commando_Elite>3</BS_Commando_Elite>
+
+          <BS_TV_Melee_Mega MayRequire="RedMattis.BigSmall.Core">9</BS_TV_Melee_Mega>
+          <BS_GiantRobotRanged MayRequire="RedMattis.BigSmall.Core">9</BS_GiantRobotRanged>
+          <BS_GiantRobotMelee MayRequire="RedMattis.BigSmall.Core">9</BS_GiantRobotMelee>
 
         </options>
       </li>
