@@ -2,7 +2,7 @@
   <PawnKindDef ParentName="BS_Commando_Elite" Name="BS_GiantWarRobotBase" Abstract="True">
     <nameMaker>BS_NamerRobot</nameMaker>
     <factionLeader>true</factionLeader>
-    <combatPower>350</combatPower>
+    <combatPower>180</combatPower>
     <apparelColor>(0.2, 0.2, 0.2)</apparelColor>
     <forcedHairColor>(0.15, 0.15, 0.2)</forcedHairColor>
     <apparelTags Inherit="False"/>
@@ -82,7 +82,7 @@
     <label>cinema</label>
     <factionLeader>true</factionLeader>
     <maxPerGroup>1</maxPerGroup>
-    <combatPower>300</combatPower>
+    <combatPower>350</combatPower>
     <apparelColor>(0.3,0.3,0.3)</apparelColor>
     <forcedHairColor>(0.3,0.3,0.3)</forcedHairColor>
     <weaponMoney>1500~6000</weaponMoney>
