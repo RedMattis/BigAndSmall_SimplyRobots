@@ -1,10 +1,16 @@
 <loadFolders>
 	<v1.5>
     <li>/</li>
-		<!-- <li IfModActive="nals.facialanimation">Mods/FacialAnim</li> -->
-		<!-- <li IfModActive="erdelf.HumanoidAlienRaces">Mods/HarHarHar</li> -->
-		<li IfModActive="Ludeon.Rimworld.Biotech">Mods/Biotech</li>
-		<li IfModNotActive="Ludeon.Rimworld.Biotech">Mods/NotBiotech</li>
-		<li IfModActive="RedMattis.BigSmall.Core">Mods/BigSmall</li>
+    <li>1.5</li>
+		<li IfModActive="Ludeon.Rimworld.Biotech">1.5/Mods/Biotech</li>
+		<li IfModNotActive="Ludeon.Rimworld.Biotech">1.5/Mods/NotBiotech</li>
+		<li IfModActive="RedMattis.BigSmall.Core">1.5/Mods/BigSmall</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+    <li>1.6</li>
+		<li IfModActive="Ludeon.Rimworld.Biotech">1.6/Mods/Biotech</li>
+		<li IfModNotActive="Ludeon.Rimworld.Biotech">1.6/Mods/NotBiotech</li>
+		<li IfModActive="RedMattis.BigSmall.Core">1.6/Mods/BigSmall</li>
+	</v1.6>
 </loadFolders>

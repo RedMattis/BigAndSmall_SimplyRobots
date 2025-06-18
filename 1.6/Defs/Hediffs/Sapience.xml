@@ -1,0 +1,44 @@
+<Defs>
+  <HediffDef Name="BS_RobotSapienceBase" Abstract="True">
+  </HediffDef>
+
+  <!-- <HediffDef ParentName="BS_RobotSapienceBase">
+    <defName>BS_RobotSapient</defName>
+    <label>Sapient</label>
+    <description>This robot is sapient</description>
+  </HediffDef> -->
+
+  <HediffDef ParentName="BS_RobotSapienceBase">
+    <defName>BS_RobotNonSapient</defName>
+    <label>Nonsapient</label>
+    <description>This robot appears quite sentient, but not fully sapient.</description>
+    <stages Inherit="False">
+      <li>
+        <statFactors>
+          <SM_FlirtChance>0</SM_FlirtChance>
+          <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+          <GlobalLearningFactor>0.4</GlobalLearningFactor>
+          <PsychicSensitivity>0</PsychicSensitivity>
+        </statFactors>
+        <disabledWorkTags>
+          <li>Intellectual</li>
+        </disabledWorkTags>
+        <disablesNeeds>
+        <li>Mood</li>
+        <li>Rest</li>
+        <li>Beauty</li>
+        <li>Outdoors</li>
+        <li>Indoors</li>
+        <li>Joy</li>
+      </disablesNeeds>
+      </li>
+		</stages>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <!-- <romanceTags></romanceTags> --> <!--Already covered by 0% flirt chance.-->
+      </li>
+    </modExtensions>
+  </HediffDef>
+
+</Defs>

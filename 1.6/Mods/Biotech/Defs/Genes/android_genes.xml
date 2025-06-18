@@ -1,0 +1,426 @@
+<Defs>
+  <GeneDef ParentName="BS_MechanicalTagged" Abstract="True" Name="RobotHeadWithoutHair">
+    <tattoosVisible>false</tattoosVisible>
+    <beardTagFilter>
+      <whitelist>true</whitelist><tags/>
+    </beardTagFilter>
+    <hairTagFilter>
+      <whitelist>true</whitelist>
+    </hairTagFilter>
+    <exclusionTags>
+      <!-- <li>HairStyle</li>
+      <li>BeardStyle</li> -->
+      <li>Jaw</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="RobotHeadWithoutHair">
+    <defName>BS_CommandoHead</defName>
+    <label>steel enforcer head</label>
+    <description>Carriers of this gene have a rugged mechanical-looking head.\n\nPrevents wearing some headgear.\n\nOtherwise visual only.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <selectionWeight>0</selectionWeight>
+    <biostatMet>1</biostatMet>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
+    <statFactors>
+      <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
+    </statFactors>
+    
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <headPaths>
+          <Female>Pawns/Commando/Female_Average_Normal</Female>
+          <Male>Pawns/Commando/Male_Average_Normal</Male>
+        </headPaths>
+        <headMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
+        </headMaterial>
+        <apparelRestrictions>
+          <bodyPartGroups>
+            <blacklist>
+              <li>FullHead</li>
+            </blacklist>
+          </bodyPartGroups>
+        </apparelRestrictions>
+        <bodyConstantHeadScaleBigOnly>true</bodyConstantHeadScaleBigOnly>
+        <preventHeadScalingFactor>0.3</preventHeadScalingFactor>
+        <facialDisabler />
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_MechanicalTagged">
+    <defName>BS_CommandoBody</defName>
+    <label>steel enforcer body</label>
+    <description>Carriers of this gene have the apperance a mechanical body. Only compatible with standard body.</description>
+    <iconPath>Pawns/Commando/Naked_Female_south</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <biostatMet>0</biostatMet>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
+    <tattoosVisible>false</tattoosVisible>
+    <exclusionTags>
+      <li>AG_Bodies</li>
+      <li>Bodies</li>
+      <li>Body</li>
+      <li>BS_Body</li>
+      <li>Fur</li>
+    </exclusionTags>
+    <bodyType>Standard</bodyType>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <bodyPaths>
+          <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
+          <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
+        </bodyPaths>
+        <bodyMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
+        </bodyMaterial>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="RobotHeadWithoutHair">
+    <defName>BS_CommandoHead_OutfitMatch</defName>
+    <label>enforcer head (ac)</label>
+    <description>Carriers of this gene have a rugged mechanical-looking head.\n\nPrevents wearing some headgear.\n\nOtherwise visual only.\n\nThis version is colored the same as the apparel or favorite color.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <biostatMet>1</biostatMet>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
+    <statFactors>
+      <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
+    </statFactors>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <headPaths>
+          <Female>Pawns/Commando/Female_Average_Normal</Female>
+          <Male>Pawns/Commando/Male_Average_Normal</Male>
+        </headPaths>
+        <headMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <apparelColorOrFavorite>true</apparelColorOrFavorite>
+          </colorA>
+          <colorB>
+            <hairColor>true</hairColor>
+          </colorB>
+        </headMaterial>
+        <apparelRestrictions>
+          <bodyPartGroups>
+            <blacklist>
+              <li>FullHead</li>
+            </blacklist>
+          </bodyPartGroups>
+        </apparelRestrictions>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_MechanicalTagged">
+    <defName>BS_CommandoBody_OutfitMatch</defName>
+    <label>enforcer body (ac)</label>
+    <description>Carriers of this gene have the apperance a mechanical body.\n\nThis version is colored the same as the apparel color or favorite color. Only compatible with standard body.</description>
+    <iconPath>Pawns/Commando/Naked_Female_south</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <biostatMet>0</biostatMet>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
+    <tattoosVisible>false</tattoosVisible>
+    <exclusionTags>
+      <li>AG_Bodies</li>
+      <li>Bodies</li>
+      <li>Body</li>
+      <li>BS_Body</li>
+      <li>Fur</li>
+    </exclusionTags>
+    <bodyType>Standard</bodyType>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <bodyPaths>
+          <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
+          <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
+        </bodyPaths>
+        <bodyMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <apparelColorOrFavorite>true</apparelColorOrFavorite>
+          </colorA>
+          <colorB>
+            <hairColor>true</hairColor>
+          </colorB>
+        </bodyMaterial>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="RobotHeadWithoutHair">
+    <defName>BS_TVHead</defName>
+    <label>ad-bot head</label>
+    <description>UwU\n\nPrevents wearing some headgear.\n\nOtherwise visual only.</description>
+    <iconPath>Icons/BS_TV_Erratic</iconPath>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <selectionWeight>0</selectionWeight>
+    <biostatMet>1</biostatMet>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
+    <statFactors>
+      <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
+    </statFactors>
+    <renderNodeProperties Inherit="False">
+      <!--  -->
+      <li Class="BigAndSmall.PawnComplexRenderingProps">
+        <nodeClass>BigAndSmall.PawnRenderNode_Complex</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <drawSize>0.26</drawSize>
+        <shader>TransparentPostLight</shader>
+        <rotDrawMode>Fresh</rotDrawMode>
+        <colorA>
+          <hostilityStatus>true</hostilityStatus>
+          <invisibleIfUnconcious>true</invisibleIfUnconcious>
+          <color>(300, 300, 300, 220)</color>
+          <alts>
+            <li>
+              <triggers><li>Colonist</li></triggers>
+              <favoriteColor>true</favoriteColor>
+              <minBrightness>1</minBrightness>
+              <invisibleIfUnconcious>true</invisibleIfUnconcious>
+              <color>(300, 300, 300, 220)</color>
+            </li>
+          </alts>
+        </colorA>
+        <colorType>Custom</colorType>
+        <useSkinShader>false</useSkinShader>
+        <visibleFacing>
+          <li>South</li>
+        </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>54</layer>
+            <offset>(0, 0, -0.11)</offset>
+          </defaultData>
+        </drawData>
+        <parentTagDef>Head</parentTagDef>
+        <texPaths>
+          <li>Pawns/Simple/Face/BS_TV_Head_1_south</li> 
+          <li>Pawns/Simple/Face/BS_TV_Head_2_south</li> 
+          <li>Pawns/Simple/Face/BS_TV_Head_3_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_4_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_5_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_6_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_7_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_8_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_9_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_10_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_11_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_12_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_13_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_14_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_15_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_16_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_17_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_18_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_19_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_20_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_21_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_22_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_23_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_24_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_25_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_26_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_27_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_28_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_29_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_30_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_31_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_32_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_33_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_34_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_35_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_36_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_37_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_38_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_39_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_40_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_41_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_42_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_43_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_44_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_45_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_46_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_47_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_48_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_49_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_50_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_51_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_52_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_53_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_54_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_55_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_56_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_57_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_58_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_59_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_60_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_61_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_62_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_63_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_64_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_65_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_66_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_67_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_67_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_68_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_69_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_70_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_71_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_72_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_73_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_74_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_75_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_76_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_77_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_78_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_79_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_80_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_81_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_82_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_83_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_84_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_85_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_86_south</li>
+          <li>Pawns/Simple/Face/BS_TV_Head_87_south</li>
+        </texPaths>
+      </li>
+    </renderNodeProperties>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <headPaths>
+          <Female>Pawns/Simple/Female_Average_Simple</Female>
+          <Male>Pawns/Simple/Female_Average_Simple</Male>
+        </headPaths>
+        <headMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
+        </headMaterial>
+        <apparelRestrictions>
+          <bodyPartGroups>
+            <blacklist>
+              <li>FullHead</li>
+            </blacklist>
+          </bodyPartGroups>
+        </apparelRestrictions>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+  <GeneDef ParentName="BS_MechanicalTagged">
+    <defName>BS_SimpleRobotBody</defName>
+    <label>wheeled body</label>
+    <description>Carriers of this gene are rolling rolling rolling. Visual only.</description>
+    <iconPath>Pawns/Simple/Naked_Female_south</iconPath>
+    <selectionWeight>0</selectionWeight>
+    <biostatMet>0</biostatMet>
+    <!-- <skinIsHairColor>true</skinIsHairColor> -->
+    <tattoosVisible>false</tattoosVisible>
+    <exclusionTags>
+      <li>AG_Bodies</li>
+      <li>Bodies</li>
+      <li>Body</li>
+      <li>BS_Body</li>
+      <li>Fur</li>
+    </exclusionTags>
+    <bodyType>Standard</bodyType>
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <forceFemaleBody>true</forceFemaleBody>
+        <bodyPaths>
+          <Body_Female>Pawns/Simple/Naked_Female</Body_Female>
+          <Body_Male>Pawns/Simple/Naked_Female</Body_Male>
+        </bodyPaths>
+        <bodyMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
+        </bodyMaterial>
+      </li>
+    </modExtensions>
+  </GeneDef>
+
+</Defs>

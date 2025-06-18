@@ -1,0 +1,7 @@
+<Patch>
+  <Operation Class="PatchOperationAttributeSet">
+    <xpath>Defs/ThingDef[defName="BS_TVAndroid" or defName="BS_TVAndroid_Sapient" or defName="BS_CommandoBot_NonSapient" or defName="BS_CommandoBot" or defName="BS_SynthRace"]</xpath>
+    <attribute>Class</attribute>
+    <value>AlienRace.ThingDef_AlienRace</value>
+  </Operation>
+</Patch>

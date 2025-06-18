@@ -1,0 +1,35 @@
+<Defs>
+  <FacialAnimation.HeadTypeDef>
+    <defName>BS_CommandoHeads</defName>
+    <texPath>Pawns/Commando/Normal</texPath>
+    <altMaskPath>Pawns/Commando/Normal</altMaskPath>
+    <raceName>BS_CommandoBot</raceName>
+    <shader>CutoutComplex</shader>
+    <shaderColorOverride>CutoutComplex</shaderColorOverride>
+    <minColor>RGB(0.25, 0.25, 0.25)</minColor>
+    <maxColor>RGB(1, 1, 1)</maxColor>
+    <colorMode>randomColor</colorMode>
+    <!-- <colorMode>hairColor</colorMode> -->
+  </FacialAnimation.HeadTypeDef>
+
+  <FacialAnimation.HeadTypeDef>
+    <defName>BS_CommandoBot_NonSapient</defName>
+    <texPath>Pawns/Commando/Normal</texPath>
+    <altMaskPath>Pawns/Commando/Normal</altMaskPath>
+    <raceName>BS_CommandoBot_NonSapient</raceName>
+    <shader>CutoutComplex</shader>
+    <shaderColorOverride>CutoutComplex</shaderColorOverride>
+    <colorMode>randomColor</colorMode>
+    <minColor>RGB(0.25, 0.25, 0.25)</minColor>
+    <maxColor>RGB(1, 1, 1)</maxColor>
+    <!-- <colorMode>hairColor</colorMode> -->
+  </FacialAnimation.HeadTypeDef>
+
+  <!-- <FacialAnimation.HeadTypeDef>
+    <defName>Tier4HeadNormal</defName>
+    <texPath>Things/Pawn/Tier4/Heads_Blank/Normal</texPath>
+    <raceName>ATR_Tier4Android</raceName>
+    <shader>Cutout</shader>
+  </FacialAnimation.HeadTypeDef> -->
+
+</Defs>

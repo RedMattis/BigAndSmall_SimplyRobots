@@ -1,0 +1,24 @@
+<Patch>
+
+  <!-- <BigAndSmall.FoodCategory>
+    <defName>BS_Fuel</defName>
+    <foodDefs/>
+    <acceptableFoodFor>
+      <denyByDefault>true</denyByDefault>
+      <fleshTypes>
+        <li>Mechanoid</li>
+      </fleshTypes>
+      <raceDefs/>
+      <geneDefs/>
+    </acceptableFoodFor>
+  </BigAndSmall.FoodCategory> -->
+
+  <Operation Class="PatchOperationAdd">
+    <success>Always</success>
+    <xpath>Defs/BigAndSmall.FoodCategory[defName=""]/acceptableFoodFor/raceDefs</xpath>
+    <value>
+      <li>BS_CommandoBot</li>
+    </value>
+  </Operation>
+
+</Patch>

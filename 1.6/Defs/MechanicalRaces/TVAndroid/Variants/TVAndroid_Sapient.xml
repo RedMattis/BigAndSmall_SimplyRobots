@@ -1,0 +1,81 @@
+<Defs>
+  <ThingDef ParentName="BS_TVAndroidThingBase" BS_Alt="ThingDef_AlienRace">
+    <defName>BS_TVAndroid_Sapient</defName>
+    <label>erratic ad-bot</label>
+    <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension">
+        <raceHediff>BS_TVAndroid_Sapient</raceHediff>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef ParentName="BS_TVAndroidHediffBase">
+    <defName>BS_TVAndroid_Sapient</defName>
+    <label>erratic ad-bot</label>
+    <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled easily when injured.</description>
+
+    <stages Inherit="False">
+      <li>
+        <totalBleedFactor>0</totalBleedFactor>
+        <damageFactors>
+          <Frostbite>0</Frostbite>
+        </damageFactors>
+        <socialFightChanceFactor>0.5</socialFightChanceFactor>
+        <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>WoundInfection</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>OrganDecay</li>
+          <li>LungRot</li>
+          <li>FoodPoisoning</li>
+        </makeImmuneTo>
+        <disablesNeeds>
+          <li>Comfort</li>
+          <!-- <li>Indoors</li> -->
+          <li>Outdoors</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+        </disablesNeeds>
+      </li>
+		</stages>
+
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <romanceTags>
+          <Android>0.5</Android>
+          <Robot>0.5</Robot>
+          <Humanlike>0.5</Humanlike>
+        </romanceTags>
+        <!-- Functional -->
+        <aptitudes>
+          <!-- <Melee>0</Melee> -->
+          <!-- <Shooting>2</Shooting> -->
+          <!-- <Construction>0</Construction> -->
+          <!-- <Mining>0</Mining> -->
+          <!-- <Cooking>2</Cooking> -->
+          <!-- <Plants>0</Plants> -->
+          <!-- <Animals>0</Animals> -->
+          <!-- <Crafting>1</Crafting> -->
+          <Artistic>2</Artistic>
+          <!-- <Medicine>2</Medicine> -->
+          <!-- <Social>0</Social> -->
+          <Intellectual>4</Intellectual>
+        </aptitudes>
+
+        
+        <!-- <randomSkinGenes>
+          <li>BS_Skin_AndroidWhite</li>
+          <li>BS_Skin_AndroidGrey</li>
+        </randomSkinGenes> -->
+
+      </li>
+    </modExtensions>
+  </HediffDef>
+</Defs>

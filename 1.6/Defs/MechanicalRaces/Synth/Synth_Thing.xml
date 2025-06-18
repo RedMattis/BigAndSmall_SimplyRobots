@@ -1,0 +1,114 @@
+<Defs>
+  <ThingDef ParentName="Human" BS_Alt="ThingDef_AlienRace">
+    <defName>BS_SynthRace</defName>
+    <label>synth</label>
+    <description>Synthetic humans of unclear origins</description>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+      <MoveSpeed>4.2</MoveSpeed>
+      <PsychicSensitivity>0.8</PsychicSensitivity>
+      <ToxicResistance>1</ToxicResistance>
+      <Flammability>0.7</Flammability>
+      <Fertility MayRequire="Ludeon.Rimworld.Biotech">0</Fertility>
+      <GlobalLearningFactor>1.5</GlobalLearningFactor>
+      <MeatAmount>0</MeatAmount>
+      <LeatherAmount>0</LeatherAmount>
+      <RoyalFavorValue>3</RoyalFavorValue>
+      <MaxNutrition>1.35</MaxNutrition>
+      <CarryingCapacity>65</CarryingCapacity>
+      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
+      <ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.18</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+    </statBases>
+    <race>
+      <!-- <thinkTreeMain>Mechanoid</thinkTreeMain>-->
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>8000</lifeExpectancy>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>BS_StandardAndroid</body>
+      <!-- <body>PENDING_PENDING_PENDING</body> -->
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1.2</baseHealthScale>
+      <!-- <baseHungerRate>2</baseHungerRate> -->
+
+      <gestationPeriodDays>18</gestationPeriodDays>
+
+      <!-- <fleshType>Mechanoid</fleshType> --> <!--Not worth it. Too much hardcoded trouble.-->
+      <canBecomeShambler>false</canBecomeShambler>
+
+      <useMeatFrom IsNull="True"/>
+      <!-- <specificMeatDef>Steel</specificMeatDef> -->
+      <hasMeat>false</hasMeat>
+      <leatherDef IsNull="True"/>
+      <bloodSmearDef IsNull="True"/>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      
+      <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+      <!-- <soundCallIntervalRange>1000~2000</soundCallIntervalRange> -->
+
+      <lifeStageWorkSettings Inherit="False"/>
+      <hediffGiverSets Inherit="False"/>
+      
+      <lifeStageAges Inherit="False">
+        <!-- We're not using custom defs because some Rimworld stuff is hardcoded to look for certain defs.
+         Better from a compatibility standpoint to simply make the stages exist but not be active. -->
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>3</minAge>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>HumanlikePreTeenager</def>
+          <minAge>9</minAge>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+        </li>
+      </lifeStageAges>
+      <ageGenerationCurve>
+        <points>
+          <li>(20,0)</li>
+          <li>(21,100)</li>
+          <li>(90,100)</li>
+          <li>(200,0)</li>
+        </points>
+      </ageGenerationCurve>
+    </race>
+    <butcherProducts Inherit="False">
+      <Hyperweave>35</Hyperweave>
+    </butcherProducts>
+    <ingredient Inherit="False"/>
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension">
+        <raceHediff>BS_SynthHediff</raceHediff>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  
+
+  
+</Defs>

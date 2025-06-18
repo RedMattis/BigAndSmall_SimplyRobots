@@ -1,0 +1,273 @@
+<Defs>
+
+
+  <RecipeDef ParentName="BS_TransformSurgery">
+    <defName>BS_AndroidConversion</defName>
+    <label>convert to steel enforcer</label>
+    <description>Build an steel enforcer body and convert the brain into a superior synthetic form.\n\nNote that if combined with other race-changes the character will be transformed into a more generic version.</description>
+    <uiIconPath>Icons/BS_CommandoHead</uiIconPath>
+    <jobString>Go go gadget dental floss!</jobString>
+    <skillRequirements>
+      <Medicine>10</Medicine>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <recipeUsers Inherit="False">
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <researchPrerequisite>
+      <li>BS_AndroidConversion</li>
+    </researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>14</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+        <li>ComponentIndustrial</li>
+        <li>Hyperweave</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BS_CommandoBot_Morph</addsHediff>
+  </RecipeDef>
+  <HediffDef>
+    <defName>BS_CommandoBot_Morph</defName>
+    <label>BS_CommandoBot_Morph</label><description>blank</description>
+    <hediffClass>BigAndSmall.InstantEffect</hediffClass>
+    <comps>
+      <li Class="BigAndSmall.SwapRaceHediffCompProperties">
+        <swapTarget>BS_CommandoBot</swapTarget>
+        <xenotype MayRequire="Ludeon.RimWorld.Biotech">BS_CommandoAndroid</xenotype>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <RecipeDef ParentName="BS_TransformSurgery">
+    <defName>BS_SynthConversion</defName>
+    <label>convert to synth</label>
+    <description>Convert the subject from an inferior organic body to that of a suprerior synthetic.</description>
+    <uiIconPath>UI/Icons/Xenotypes/Baseliner</uiIconPath>
+    <jobString>Synthesising synthetic</jobString>
+    <skillRequirements>
+      <Medicine>14</Medicine>
+      <Crafting>10</Crafting>
+    </skillRequirements>
+    <recipeUsers Inherit="False">
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <researchPrerequisite>
+      <li>BS_AndroidConversion</li>
+    </researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Hyperweave</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>160</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+        <li>ComponentIndustrial</li>
+        <li>Hyperweave</li>
+        <li>Plasteel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BS_Synth_Morph</addsHediff>
+  </RecipeDef>
+  <HediffDef>
+    <defName>BS_Synth_Morph</defName>
+    <label>BS_Synth_Morph</label><description>blank</description>
+    <hediffClass>BigAndSmall.InstantEffect</hediffClass>
+    <comps><li Class="BigAndSmall.SwapRaceHediffCompProperties"><swapTarget>BS_SynthRace</swapTarget></li></comps>
+  </HediffDef>
+
+  <RecipeDef ParentName="BS_TransformSurgery">
+    <defName>BS_TVConversion</defName>
+    <label>convert to ...tv-like robot?</label>
+    <description>Suspiciously simple instructions, but... are you sure about this?</description>
+    <jobString>humming Looney Tunes music.</jobString>
+    <uiIconPath>Icons/BS_TV_Erratic</uiIconPath>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <researchPrerequisite>
+      <li>MultiAnalyzer</li>
+    </researchPrerequisite>
+    <skillRequirements>
+      <Medicine>12</Medicine>
+      <Crafting>12</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BS_TVAndroid_Sapient_Morph</addsHediff>
+  </RecipeDef>
+  <HediffDef>
+    <defName>BS_TVAndroid_Sapient_Morph</defName>
+    <label>BS_TVAndroid_Sapient_Morph</label><description>blank</description>
+    <hediffClass>BigAndSmall.InstantEffect</hediffClass>
+    <comps>
+      <li Class="BigAndSmall.SwapRaceHediffCompProperties">
+        <swapTarget>BS_TVAndroid_Sapient</swapTarget>
+        <xenotype MayRequire="Ludeon.RimWorld.Biotech">BS_TVAndroid</xenotype>
+      </li>
+    </comps>
+  </HediffDef>
+
+  <!-- Sapience Upgrades -->
+
+  <RecipeDef ParentName="BS_TransformSurgery">
+    <defName>BS_CommandoSapience</defName>
+    <label>unleach full potential</label>
+    <description>Most of the synthetic brain is not being properly utilized due to artificial limiters. Let's remove them.</description>
+    <jobString>humming mission impossible theme.</jobString>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <uiIconPath>Icons/BS_CommandoHead</uiIconPath>
+    <workAmount>1000</workAmount>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <recipeUsers Inherit="False">
+      <li>BS_CommandoBot_NonSapient</li>
+    </recipeUsers>
+    <researchPrerequisite>
+      <li>MultiAnalyzer</li>
+    </researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BS_CommandoBot_Morph</addsHediff>
+  </RecipeDef>
+
+
+  <RecipeDef ParentName="BS_TransformSurgery">
+    <defName>BS_TVSapience</defName>
+    <label>tune in to strange decrypted broadcast</label>
+    <description>It's seems intended for HIR robots, and it is decrypted so that probably means it isn't a trap. Right?</description>
+    <jobString>humming Looney Tunes music.</jobString>
+    <workAmount>3000</workAmount>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>0</Medicine>
+      <Intellectual>16</Intellectual>
+    </skillRequirements>
+    <recipeUsers Inherit="False">
+      <li>BS_TVAndroid</li>
+    </recipeUsers>
+    <researchPrerequisite>
+      <li>Electricity</li>
+    </researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <addsHediff>BS_TVAndroid_Sapient_Morph</addsHediff>
+  </RecipeDef>
+</Defs>

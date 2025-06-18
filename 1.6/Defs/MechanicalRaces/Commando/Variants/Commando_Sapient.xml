@@ -1,0 +1,40 @@
+<Defs>
+  <ThingDef ParentName="BS_CommandoBotThingBase" BS_Alt="ThingDef_AlienRace">
+    <defName>BS_CommandoBot</defName>
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension">
+        <raceHediff>BS_CommandoBot</raceHediff>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef ParentName="BS_CommandoBotHediffBase">
+    <defName>BS_CommandoBot</defName>
+    <label>Steel Enforcer</label>
+
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <romanceTags>
+          <Mech>1.0</Mech>
+          <Android>0.65</Android>
+          <Humanlike>0.35</Humanlike>
+        </romanceTags>
+        <aptitudes>
+          <!-- <Melee>2</Melee> -->
+          <!-- <Shooting>2</Shooting> -->
+          <Construction>4</Construction>
+          <!-- <Mining>2</Mining> -->
+          <!-- <Cooking>-4</Cooking> -->
+          <!-- <Plants>-2</Plants> -->
+          <Animals>-4</Animals>
+          <!-- <Crafting>2</Crafting> -->
+          <!-- <Artistic>-2</Artistic> -->
+          <!-- <Medicine>0</Medicine> -->
+          <!-- <Social>-2</Social> -->
+          <!-- <Intellectual>0</Intellectual> -->
+        </aptitudes>
+        
+      </li>
+    </modExtensions>
+  </HediffDef>
+</Defs>

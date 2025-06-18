@@ -1,0 +1,10 @@
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/RecipeDef[defName="BS_MakeAdBot"]/researchPrerequisite</xpath>
+    <value>
+      <researchPrerequisite>
+        <li>StandardMechtech</li>
+      </researchPrerequisite>
+    </value>
+  </Operation>
+</Patch>

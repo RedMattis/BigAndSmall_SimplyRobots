@@ -1,0 +1,96 @@
+<Defs>
+
+  <PawnKindDef ParentName="GuardBase">
+    <defName>BS_TVAndroid</defName>
+    <label>ad-bot</label>
+    <race>BS_TVAndroid</race>
+    <combatPower>40</combatPower>
+    <xenotypeSet Inherit="False">
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <BackstoryDef>
+    <defName>BS_SimpleAndroidChild</defName>
+    <title>factory-built</title>
+    <titleShort>factory-built</titleShort>
+    <baseDesc>[PAWN_nameDef] was built in a factory. They did not have a childhood.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_SimpleAndroidChild</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+
+  <BackstoryDef>
+    <defName>BS_TVAndroid</defName>
+    <title>support</title>
+    <titleShort>ad-bot</titleShort>
+    <baseDesc>[PAWN_nameDef] was mostly used for rudimentory low-skill jobs.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Female</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Construction>1</Construction>
+      <Animals>1</Animals>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_SimpleAndroidAdult</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>BS_TVAndroidAnnouncer</defName>
+    <title>announcer</title>
+    <titleShort>announcer</titleShort>
+    <baseDesc>At some point [PAWN_nameDef]'s processing patterns became erratic for an unknown reason.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Female</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains>
+      <Social>8</Social>
+      <Intellectual>6</Intellectual>
+      <Medicine>6</Medicine>
+    </skillGains>
+    <spawnCategories>
+      <li>BS_TVAndroidSapient</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+
+  <BackstoryDef>
+    <defName>BS_ColonyBuiltBotChild</defName>
+    <title>colony built</title>
+    <titleShort>factory-built</titleShort>
+    <baseDesc>[PAWN_nameDef] was built in in the colony.</baseDesc>
+    <slot>Childhood</slot>
+    <skillGains/>
+    <spawnCategories>
+      <li>BS_ColonyBuilt</li>
+    </spawnCategories>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>BS_ColonyBuiltBotAdult</defName>
+    <title>colony robot</title>
+    <titleShort>factory-built</titleShort>
+    <baseDesc>[PAWN_nameDef] is a colony robot.</baseDesc>
+    <slot>Adulthood</slot>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <skillGains/>
+    <spawnCategories>
+      <li>BS_ColonyBuilt</li>
+    </spawnCategories>
+  </BackstoryDef>
+  
+</Defs>

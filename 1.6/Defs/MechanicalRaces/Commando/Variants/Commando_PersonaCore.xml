@@ -1,0 +1,119 @@
+<Defs>
+  <ThingDef ParentName="BS_CommandoBotThingBase" BS_Alt="ThingDef_AlienRace">
+    <defName>BS_CommandoBotPersona</defName>
+    <label>Steel Persona</label>
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension">
+        <raceHediff>BS_CommandoBotPersona</raceHediff>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef ParentName="BS_CommandoBotHediffBase">
+    <defName>BS_CommandoBotPersona</defName>
+    <label>Steel Persona</label>
+    <description>A mechanical lifeform made using ancient patterns. This one houses an AI Persona. This is probably a disaster waiting to happen.</description>
+    <stages Inherit="False">
+      <li>
+        <painFactor>0.5</painFactor>
+        <totalBleedFactor>0</totalBleedFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.10</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <GlobalLearningFactor>3.25</GlobalLearningFactor>
+          <MentalBreakThreshold>0.13</MentalBreakThreshold>
+          <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+          <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+        </statOffsets>
+        <statFactors>
+          <WorkSpeedGlobal>2</WorkSpeedGlobal>
+          <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
+          <CarryingCapacity>1.2</CarryingCapacity>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
+        </statFactors>
+        <damageFactors>
+          <Frostbite>0</Frostbite>
+        </damageFactors>
+        <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>WoundInfection</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>OrganDecay</li>
+          <li>LungRot</li>
+          <li>FoodPoisoning</li>
+        </makeImmuneTo>
+        <disablesNeeds Inherit="False">
+          <li>Comfort</li>
+          <li>Outdoors</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+          <li>Indoors</li>
+          <li>Rest</li>
+          <li>Joy</li>
+        </disablesNeeds>
+        <!-- <mentalStateGivers>
+          <li>
+            <mentalState>Wander_Psychotic</mentalState>
+            <mtbDays>20</mtbDays>
+          </li>
+          <li>
+            <mentalState>WanderConfused</mentalState>
+            <mtbDays>20</mtbDays>
+          </li>
+        </mentalStateGivers> -->
+        <!-- <blocksSleeping>true</blocksSleeping> -->
+      </li>
+		</stages>
+
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <romanceTags>
+          <Mech>1.0</Mech>
+          <Android>0.65</Android>
+          <Humanlike>0.35</Humanlike>
+        </romanceTags>
+        <aptitudes>
+          <Melee>4</Melee>
+          <Shooting>4</Shooting>
+          <Construction>4</Construction>
+          <!-- <Mining>2</Mining> -->
+          <Cooking>8</Cooking>
+          <Plants>4</Plants>
+          <Animals>4</Animals>
+          <Crafting>12</Crafting>
+          <Artistic>4</Artistic>
+          <Medicine>8</Medicine>
+          <Social>-4</Social>
+          <Intellectual>16</Intellectual>
+        </aptitudes>
+        <forcedTraits>
+          <li>TooSmart</li>
+        </forcedTraits>
+        <surgeryRecipes>
+          <blacklist>
+            <li>BS_SynthConversion</li>
+            <li>BS_TVConversion</li>
+          </blacklist>
+        </surgeryRecipes>
+
+        
+      </li>
+    </modExtensions>
+  </HediffDef>
+</Defs>

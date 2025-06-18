@@ -1,0 +1,401 @@
+<Defs>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>BS_TV_Villager</defName>
+    <label>crowd-puller</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
+    <combatPower>40</combatPower>
+    <initialResistanceRange>3~10</initialResistanceRange>
+    <weaponTags>
+      <li>Gun</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <weaponMoney>136~250</weaponMoney>
+    <apparelMoney>200~400</apparelMoney>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsChance>0.06</techHediffsChance>
+    <techHediffsMoney>50~600</techHediffsMoney>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
+      </xenotypeChances>
+    </xenotypeSet>
+    <race>BS_TVAndroid</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryGunnerBase" Name="BS_TV_Grunt">
+    <defName>BS_TV_Grunt</defName>
+    <label>ad-bot</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
+    <combatPower>60</combatPower>
+    <!-- <apparelColor>0.34,0.30,0.54</apparelColor> -->
+    <initialResistanceRange>3~10</initialResistanceRange>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+          <li>Offworld</li>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
+      </xenotypeChances>
+    </xenotypeSet>
+    <race>BS_TVAndroid</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt" Name="BS_TV_Grunt_Sapient">
+    <defName>BS_TV_Sapient</defName>
+    <label>streamer</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
+    <backstoryFiltersOverride Inherit="False">
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>Offworld</li>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <race>BS_TVAndroid_Sapient</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+    <defName>BS_TV_Sapient_R</defName>
+    <apparelColor>(1.0, 0.25, 0.25)</apparelColor>
+    <forcedHairColor>(1.0, 0.25, 0.25)</forcedHairColor>
+    <forcedTraits><Tough/></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_G</defName>
+      <apparelColor>(0.5, 1.0, 0.4)</apparelColor> 
+      <forcedHairColor>(0.25, 1.0, 0.25)</forcedHairColor>
+      <forcedTraits><Greedy/><Industriousness>2</Industriousness></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_B</defName>
+      <apparelColor>(0.25, 0.25, 1.0)</apparelColor>
+      <forcedHairColor>(0.25, 0.25, 1.0)</forcedHairColor>
+      <forcedTraits><Nerves>2</Nerves></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_RG</defName>
+      <apparelColor>(1.0, 1.0, 0.25)</apparelColor>
+      <forcedHairColor>(1.0, 1.0, 0.25)</forcedHairColor>
+      <forcedTraits><SpeedOffset>2</SpeedOffset></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_GB</defName>
+      <apparelColor>(0.5, 1.0, 1.0)</apparelColor>
+      <forcedHairColor>(0.5, 1.0, 1.0)</forcedHairColor>
+      <forcedTraits><PsychicSensitivity>2</PsychicSensitivity><Neurotic>2</Neurotic></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+      <defName>BS_TV_Sapient_BR</defName>
+      <apparelColor>(1.0, 0.5, 0.75)</apparelColor>
+      <forcedHairColor>(1.0, 0.5, 0.75)</forcedHairColor>
+      <forcedTraits><NaturalMood>2</NaturalMood></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+    <defName>BS_TV_Sapient_Black</defName>
+    <apparelColor>(0.12, 0.12, 0.12)</apparelColor>
+    <forcedHairColor>(0.12, 0.12, 0.12)</forcedHairColor>
+    <forcedTraits><QuickSleeper/></forcedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_Grunt_Sapient">
+    <defName>BS_TV_Sapient_White</defName>
+    <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
+    <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
+    <forcedTraits><Nimble/></forcedTraits>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="GrenadierBase">
+    <defName>BS_TV_Boom</defName>
+    <label>sfx bot</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
+    <apparelColor>0.8,0.6,0.3</apparelColor>
+    <forcedHairColor>0.8,0.6,0.3</forcedHairColor>
+    <combatPower>70</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <initialResistanceRange>3~10</initialResistanceRange>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_TVAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid>
+      </xenotypeChances>
+    </xenotypeSet>
+    <race>BS_TVAndroid</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteBase" Name="BS_TV_ElitePawn">
+    <defName>BS_TV_Elite</defName>
+    <label>showrunner</label>
+    <nameMaker>BS_NamerRobot_Service</nameMaker>
+    <factionLeader>true</factionLeader>
+    <combatPower>100</combatPower>
+    <apparelColor>(1.0,1.0,1.0)</apparelColor>
+    <forcedHairColor>(1.0,1.0,1.0)</forcedHairColor>
+    <initialResistanceRange>3~10</initialResistanceRange>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_TVAndroidSapient</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_TVAndroid_Funky MayRequire="Ludeon.Rimworld.Biotech">999</BS_TVAndroid_Funky>
+      </xenotypeChances>
+    </xenotypeSet>
+    <race>BS_TVAndroid_Sapient</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_TV_ElitePawn">
+    <defName>BS_TV_EliteTrader</defName>
+    <trader>true</trader>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryGunnerBase" Name="BS_CommandoGrunt">
+    <defName>BS_Commando_Grunt</defName>
+    <label>RAVEN-A0</label>
+    <nameMaker>BS_NamerRobot</nameMaker>
+    <combatPower>130</combatPower>
+    <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
+    <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
+    <initialResistanceRange>3~15</initialResistanceRange> 
+    <apparelTags Inherit="False">
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_AdvancedHelmet</li>
+    </apparelRequired>
+    <itemQuality>Normal</itemQuality>
+    <gearHealthRange>0.3~1.1</gearHealthRange>
+    <apparelMoney>500~2000</apparelMoney>
+    <weaponMoney>306~600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsMoney>500~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    
+    <styleItemTags Inherit="False">
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~12</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>0~12</range>
+      </li>
+    </skills>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_AutomatedSoldierAdult</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_CommandoAndroidAutomata MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroidAutomata>
+      </xenotypeChances>
+    </xenotypeSet>
+    <race>BS_CommandoBot</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_CommandoGrunt">
+    <defName>BS_Commando_Grunt_Sapient</defName>
+    <label>RAVEN-X</label>
+    <nameMaker>BS_NamerRobot</nameMaker>
+    <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
+    <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+          <li>Offworld</li>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <race>BS_CommandoBot_NonSapient</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GrenadierBase">
+    <defName>BS_Commando_Boom</defName>
+    <label>HELLHOUND</label>
+    <nameMaker>BS_NamerRobot</nameMaker>
+    <combatPower>160</combatPower>
+    <apparelColor>(1.0, 0.7, 0.3)</apparelColor>
+    <forcedHairColor>(1.0, 0.7, 0.3)</forcedHairColor>
+    <initialResistanceRange>3~20</initialResistanceRange>
+    <apparelTags Inherit="False">
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_AdvancedHelmet</li>
+    </apparelRequired>
+    <itemQuality>Normal</itemQuality>
+    <gearHealthRange>0.3~1.1</gearHealthRange>
+    <apparelMoney>500~2000</apparelMoney>
+    <techHediffsMoney>500~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <styleItemTags Inherit="False">
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~12</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>0~12</range>
+      </li>
+    </skills>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <weaponTags Inherit="False">
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invFoodDef>BS_AndroidFuel</invFoodDef>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_CommandoAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroid>
+      </xenotypeChances>
+    </xenotypeSet>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+          <li>Offworld</li>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <race>BS_CommandoBot</race>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="BS_CommandoGrunt" Name="BS_Commando_Elite">
+    <defName>BS_Commando_Elite</defName>
+    <label>APEX-C</label>
+    <nameMaker>BS_NamerRobot</nameMaker>
+    <factionLeader>true</factionLeader>
+    <combatPower>200</combatPower>
+    <apparelColor>(0.2, 0.2, 0.2)</apparelColor>
+    <forcedHairColor>(0.15, 0.15, 0.2)</forcedHairColor>
+    <apparelMoney>500~8000</apparelMoney>
+    <weaponMoney>1000~2500</weaponMoney>
+    <apparelTags Inherit="False">
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <BS_CommandoAndroid MayRequire="Ludeon.Rimworld.Biotech">999</BS_CommandoAndroid>
+      </xenotypeChances>
+    </xenotypeSet>
+    <disallowedTraits>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>BS_SimpleAndroidChild</li>
+          <li>BS_SimpleAndroidAdult</li>
+          <li>Offworld</li>
+          <li>Outlander</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <race>BS_CommandoBot</race>
+  </PawnKindDef>
+
+</Defs>

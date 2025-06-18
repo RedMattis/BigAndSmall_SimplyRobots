@@ -1,0 +1,67 @@
+<Defs>
+  <ThingDef ParentName="BS_CommandoBotThingBase" BS_Alt="ThingDef_AlienRace">
+    <defName>BS_CommandoBot_NonSapient</defName>
+    <label>Automated Enforcer</label>
+    <description>A mechanical lifeform with a design were born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.\n\nThis one appears to be no more sophisticated than an advanced mechanoid however.</description>
+
+    <modExtensions>
+      <li Class="BigAndSmall.RaceExtension">
+        <raceHediff>BS_CommandoBot_NonSapient</raceHediff>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
+  <HediffDef ParentName="BS_CommandoBotHediffBase">
+    <defName>BS_CommandoBot_NonSapient</defName>
+    <label>Automated Enforcer</label>
+    <description>A mechanical lifeform with a design were born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.\n\nThis one appears to be no more sophisticated than an advanced mechanoid however.</description>
+
+    <stages Inherit="False">
+      <li>
+        <painFactor>0</painFactor>
+        <totalBleedFactor>0</totalBleedFactor>
+        <damageFactors>
+          <Frostbite>0</Frostbite>
+        </damageFactors>
+        <socialFightChanceFactor>0.5</socialFightChanceFactor>
+        <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>WoundInfection</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>OrganDecay</li>
+          <li>LungRot</li>
+          <li>FoodPoisoning</li>
+        </makeImmuneTo>
+        <disabledWorkTags>
+          <li>Intellectual</li>
+        </disabledWorkTags>
+      </li>
+		</stages>
+
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <aptitudes>
+          <Melee>6</Melee>
+          <Shooting>6</Shooting>
+          <Construction>6</Construction>
+          <Mining>6</Mining>
+          <!-- <Cooking>1</Cooking> -->
+          <!-- <Plants>1</Plants> -->
+          <Animals>-10</Animals>
+          <Crafting>6</Crafting>
+          <Artistic>-4</Artistic>
+          <!-- <Medicine>0</Medicine> -->
+          <!-- <Social>2</Social> -->
+          <Intellectual>-20</Intellectual>
+        </aptitudes>
+        <forcedHediffs><li>BS_RobotNonSapient</li></forcedHediffs>
+      </li>
+    </modExtensions>
+  </HediffDef>
+  
+</Defs>

@@ -1,0 +1,258 @@
+<Defs>
+  <HediffDef ParentName="BS_BaseRobotHumanoid" Name="BS_CommandoBotHediffBase" Abstract="True">
+    <label>Steel Enforcer</label>
+    <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
+
+    <stages Inherit="False">
+      <li>
+        <painFactor>0.5</painFactor>
+        <totalBleedFactor>0</totalBleedFactor>
+        <statOffsets>
+          <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+          <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
+        </statOffsets>
+        <statFactors>
+          <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
+          <CarryingCapacity>1.2</CarryingCapacity>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
+        </statFactors>
+        <damageFactors>
+          <Frostbite>0</Frostbite>
+        </damageFactors>
+        <makeImmuneTo>
+          <li>Flu</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>Plague</li>
+          <li>WoundInfection</li>
+          <li>LungRot</li>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>OrganDecay</li>
+          <li>LungRot</li>
+          <li>FoodPoisoning</li>
+        </makeImmuneTo>
+        <disablesNeeds>
+          <li>Comfort</li>
+          <li>Outdoors</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+          <!-- <li>FoodVariety</li> -->
+          <!-- <li>Indoors</li> -->
+        </disablesNeeds>
+        <!-- <blocksSleeping>true</blocksSleeping> -->
+      </li>
+		</stages>
+    <comps>
+      <li Class="BigAndSmall.CompProperties_Race">
+        <!-- Cosmetic -->
+        <bodyDefOverride>Male</bodyDefOverride>
+        <bodyDefOverride_Female>Female</bodyDefOverride_Female>
+        <disableHair>true</disableHair>
+        <disableBeards>true</disableBeards>
+        <canSwapAwayFrom>false</canSwapAwayFrom>
+      </li>
+		</comps>
+    <renderNodeProperties Inherit="False"/>
+
+    <modExtensions>
+      <li Class="BigAndSmall.PawnExtension">
+        <traitIcon>Icons/BS_AndroidFaction_white</traitIcon>
+        <pawnDiet>BS_ChemRobotDiet</pawnDiet>
+        <traitFilters>
+          <blacklist>
+            <li>Wimp</li>
+            <!-- <li>BodyPurist</li> -->
+          </blacklist>
+        </traitFilters>
+        <immutableEndogenes>
+          <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
+          
+          <!-- Mostly serves to get rid of other body genes. -->
+        </immutableEndogenes>
+        <forcedEndogenes>
+          <li MayRequire="Ludeon.Rimworld.Biotech">BS_CommandoBody</li>
+          <li MayRequire="Ludeon.Rimworld.Biotech">BS_CommandoHead</li>
+        </forcedEndogenes>
+        <geneCategoryFilters>
+          <blacklist>
+            <!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->
+            <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
+          </blacklist>
+        </geneCategoryFilters>
+        <activeGeneFilters>
+          <blacklist>
+            <li MayRequire="Ludeon.Rimworld.Biotech">Brow_Heavy</li>
+            <li MayRequire="Ludeon.Rimworld.Biotech">FacialRidges</li>
+          </blacklist>
+        </activeGeneFilters>
+        <activeGeneTagFilters>
+          <allowlist>
+            <li>BS_MechanicalDef</li>
+          </allowlist>
+          <blacklist>
+            <li>Jaw</li>
+            <li>Nose</li>
+            <!-- <li>Ears</li> -->
+            <li>EyeColor</li>
+            <li>BeardStyle</li>
+            <li>Fur</li>
+            <li>HairStyle</li>
+          </blacklist>
+        </activeGeneTagFilters>
+        <nullsThoughts>
+          <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+          <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+          <li>Naked</li>
+        </nullsThoughts>
+        
+        <apparelRestrictions>
+          <tags>
+            <allowlist>
+              <li>Warcasket</li>
+            </allowlist>
+          </tags>
+          <apparelLayers>
+            <blacklist>
+              <li>OnSkin</li>
+            </blacklist>
+          </apparelLayers>
+          <bodyPartGroups>
+            <blacklist>
+              <li>FullHead</li>
+            </blacklist>
+          </bodyPartGroups>
+        </apparelRestrictions>
+        <surgeryRecipes>
+          <blacklist>
+            <li>InstallNaturalLiver</li>
+            <li>InstallNaturalLung</li>
+            <li>InstallNaturalKidney</li>
+            <li>InstallNaturalHeart</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallStoneskinGland</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallArmorskinGland</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">InstallToughskinGland</li>
+            <li>BS_AndroidConversion</li>
+          </blacklist>
+          <allowlist>
+            <li>BS_RepairAndroidBrain</li>
+            <li>BS_RepairAndroidReactor</li>
+            <li>BS_RepairAndroidOrgan</li>
+            <li>BS_RepairAndroidMinorOrganPart</li>
+            <li>BS_RepairAndroidPart</li>
+            <li>BS_RepairAndroidPartSmall</li>
+          </allowlist>
+        </surgeryRecipes>
+        <babyStartAge>20</babyStartAge>
+
+        <!-- Cosmetic -->
+        <disableFacialAnimations>true</disableFacialAnimations>
+        <bodyPaths>
+          <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
+          <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
+        </bodyPaths>
+        <headPaths>
+          <Female>Pawns/Commando/Female_Average_Normal</Female>
+          <Male>Pawns/Commando/Male_Average_Normal</Male>
+        </headPaths>
+
+        <bodyMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
+        </bodyMaterial>
+        <headMaterial>
+          <shader>CutoutComplex</shader>
+          <overrideDesiccated>true</overrideDesiccated>
+          <colorA>
+            <hairColor>true</hairColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </alts>
+          </colorA>
+          <colorB>
+            <ideologyColor>true</ideologyColor>
+            <alts>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </alts>
+          </colorB>
+        </headMaterial>
+        <randomHairGenes>
+          <li>Hair_Gray</li>
+          <li>Hair_SnowWhite</li>
+          <li>Hair_LightBlue</li>
+          <li>Hair_DarkBlack</li>
+          <li>Hair_DarkReddish</li>
+          <li>Hair_DarkSaturatedReddish</li>
+          <li>Hair_DarkBrown</li>
+          <li>Hair_ReddishBrown</li>
+          <li>Hair_SandyBlonde</li>
+          <li>Hair_Blonde</li>
+          <li>Hair_Pink</li>
+          <li>Hair_LightPurple</li>
+          <li>Hair_LightBlue</li>
+          <li>Hair_LightTeal</li>
+          <li>Hair_LightGreen</li>
+          <li>Hair_LightOrange</li>
+          <li>Hair_BrightRed</li>
+        </randomHairGenes>
+      </li>
+      
+    </modExtensions>
+  </HediffDef>
+
+  <GeneDef ParentName="GeneSkinColorMelanin">
+    <defName>BS_Skin_AndroidWhite</defName>
+    <skinColorBase>(255, 255, 255)</skinColorBase>
+    <minMelanin>0</minMelanin>
+    <selectionWeight>0</selectionWeight>
+    <randomBrightnessFactor>0.1</randomBrightnessFactor>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorMelanin">
+    <defName>BS_Skin_AndroidGrey</defName>
+    <skinColorBase>(200, 200, 200)</skinColorBase>
+    <minMelanin>0</minMelanin>
+    <selectionWeight>0</selectionWeight>
+    <randomBrightnessFactor>0.4</randomBrightnessFactor>
+  </GeneDef>
+</Defs>

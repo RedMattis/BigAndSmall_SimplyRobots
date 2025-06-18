@@ -1,0 +1,181 @@
+<Defs>
+  <ThingDef ParentName="Human" Name="BS_TVAndroidThingBase" Abstract="True">
+    <label>ad-bot</label>
+    <description>A new take on early attempts at mechanical lifeforms. These androids have a fair number of built-in programs for basic survival situations, but have very limited ability to improve beyond that point.\n\nThey are fairly sturdy for a rolling television, but tend to be disabled  easily when injured.</description>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <PsychicSensitivity>2</PsychicSensitivity> <!--If they actually get a sapient one...-->
+      <ToxicResistance>1</ToxicResistance>
+      <Flammability>0.5</Flammability>
+      <Fertility MayRequire="Ludeon.Rimworld.Biotech"> 0</Fertility>
+      <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
+      <SM_BodySizeMultiplier>0.85</SM_BodySizeMultiplier>
+      <ComfyTemperatureMin>12</ComfyTemperatureMin>
+      <ComfyTemperatureMax>40</ComfyTemperatureMax>
+      <MeatAmount>0</MeatAmount>
+      <LeatherAmount>0</LeatherAmount>
+      <RoyalFavorValue>1</RoyalFavorValue>
+      <IncomingDamageFactor>0.75</IncomingDamageFactor>
+      
+      <SM_FlirtChance>0.5</SM_FlirtChance>
+      <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">0</SlaveSuppressionFallRate>
+      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
+      <MaxNutrition>1</MaxNutrition>
+      <CarryingCapacity>50</CarryingCapacity>
+      <WorkSpeedGlobal>0.9</WorkSpeedGlobal>
+      <GlobalLearningFactor>1</GlobalLearningFactor>
+
+      <ArmorRating_Heat>0.5</ArmorRating_Heat>
+      <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+    </statBases>
+    <tools Inherit="False">
+      <li>
+        <label>left fist</label>
+        <labelNoLocation>fist</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>right fist</label>
+        <labelNoLocation>fist</labelNoLocation>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9.2</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <!-- <thinkTreeMain>Mechanoid</thinkTreeMain>-->
+      <thinkTreeMain>Humanlike</thinkTreeMain>
+      <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+      <intelligence>Humanlike</intelligence>
+      <makesFootprints>true</makesFootprints>
+      <lifeExpectancy>200</lifeExpectancy>
+      <nameCategory>HumanStandard</nameCategory>
+      <body>BS_TVAndroid</body>
+      <!-- <body>PENDING_PENDING_PENDING</body> -->
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <!-- <baseHungerRate>2</baseHungerRate> -->
+
+      <gestationPeriodDays>18</gestationPeriodDays>
+      
+      <willNeverEat>
+        <li>GoJuice</li> <li>WakeUp</li> <li>Yayo</li>
+        <li>SmokeleafJoint</li> <li>PsychiteTea</li> <li>Flake</li>
+        <li>Luciferium</li> <li>Penoxycyline</li> <li>Beer</li>
+      </willNeverEat>
+
+      <!-- <fleshType>Mechanoid</fleshType> --> <!--Not worth it. Too much hardcoded trouble.-->
+      <canBecomeShambler>false</canBecomeShambler>
+
+      <useMeatFrom IsNull="True"/>
+      <hasMeat>false</hasMeat>
+      <!-- <hasMeat>false</hasMeat> -->
+      <leatherDef IsNull="True"/>
+      <bloodSmearDef IsNull="True"/>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      
+      <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+      <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+
+      <lifeStageWorkSettings Inherit="False"/>
+      <hediffGiverSets Inherit="False"/>
+      
+      <lifeStageAges Inherit="False">
+        <!-- We're not using custom defs because some Rimworld stuff is hardcoded to look for certain defs.
+         Better from a compatibility standpoint to simply make the stages exist but not be active. -->
+        <li>
+          <def>HumanlikeBaby</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+        <li>
+          <def>HumanlikeChild</def>
+          <minAge>3</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>HumanlikePreTeenager</def>
+          <minAge>9</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+        <li>
+          <def>HumanlikeTeenager</def>
+          <minAge>13</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+        <li>
+          <def>HumanlikeAdult</def>
+          <minAge>18</minAge>
+          <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+          <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+          <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+        </li>
+      </lifeStageAges>
+      <ageGenerationCurve>
+        <points>
+          <li>(20,0)</li>
+          <li>(21,100)</li>
+          <li>(30,100)</li>
+          <li>(40,0)</li>
+        </points>
+      </ageGenerationCurve>
+    </race>
+    <butcherProducts Inherit="False">
+      <Plasteel>50</Plasteel>
+    </butcherProducts>
+    <ingredient Inherit="False"/>
+  </ThingDef>
+
+  
+</Defs>

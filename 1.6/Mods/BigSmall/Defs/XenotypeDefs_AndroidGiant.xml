@@ -1,0 +1,119 @@
+<Defs>
+  <XenotypeDef>
+    <defName>BS_ActualGiantFreakinRobot</defName>
+    <label>literal giant robot</label>
+    <description>A steel enforcer design recklessly upscaled far beyond intentions of the intended design. It is outputting almost unmanagable amounts of heat, and event at a glance there are numerous design flaws that should have rendered the lumbering design entierly non-functional</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <combatPowerFactor>8</combatPowerFactor>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <!-- Stabndard robot stuff -->
+      <li>Body_Standard</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Hair_BaldOnly</li>
+      <li>BS_CommandoHead</li>
+      <li>BS_CommandoBody</li>
+      <li>BS_AcidResistanceMid</li>
+
+      <!-- Core Features -->
+      <li>TitanFrame</li>
+      <li>ArchiteMetabolism</li>
+      <li>Robust</li>
+      <li>BS_HeatGenerator</li>
+      <li>MinTemp_HugeDecrease</li>
+      <li>BS_CannotWearClothingOrArmor</li>
+      <li>BS_NaturalArmor_Great</li>
+
+      <li>BS_EVA_Gene</li>
+      <li>Unstoppable</li>
+      <li>Neversleep</li>
+			<li>Pain_Reduced</li>
+			<li>VU_Libido_None</li>
+      <li>WoundHealing_VerySlow</li>
+      <li>BS_Very_Slow</li>
+
+      <li>AptitudePoor_Cooking</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudeTerrible_Animals</li>
+			<li>AptitudeTerrible_Crafting</li>
+			<li>AptitudePoor_Artistic</li>
+			<li>AptitudeTerrible_Medicine</li>
+			<li>AptitudePoor_Social</li>
+
+      <!-- Colors -->
+      <!-- <li>BS_HairFrostWhite</li> -->
+      <li>Hair_Gray</li>
+      <li>BS_CreamHair</li>
+      <li>BS_MatteGreenHair</li>
+      <li>Hair_Blonde</li>
+
+      <li>BS_Skin_DarkAsh</li>
+      <li>BS_SkinPermafrost</li>
+      <li>Skin_Blue</li>
+      <li>BS_SkinBloodRed</li>
+    </genes>
+    <modExtensions>
+      <li Class="BigAndSmall.XenotypeExtension">
+        <setRace>BS_CommandoBot_NonSapient</setRace>
+        <forceRace>true</forceRace>
+      </li>
+    </modExtensions>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>BS_GiantRobot</defName>
+    <label>combat mech</label>
+    <description>What appears to be a steel enforcer design successfully upscaled for heavy combat or support roles. Unlike bio-engineered lumbering giants they are terrifyingly fast.</description>
+    <iconPath>Icons/BS_CommandoHead</iconPath>
+    <combatPowerFactor>4</combatPowerFactor>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0.5</factionlessGenerationWeight>
+    <genes>
+      <!-- Stabndard robot stuff -->
+      <li>Body_Standard</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Hair_BaldOnly</li>
+      <li>BS_CommandoHead</li>
+      <li>BS_CommandoBody</li>
+      <li>BS_AcidResistanceMid</li>
+
+      <!-- Core Features -->
+      <li>JotunFrame</li>
+      <li>BS_CannotWearClothingOrArmor</li>
+      <li>BS_NaturalArmor_Great</li>
+      <li>VeryNakedSpeed</li>
+
+      <li>BS_EVA_Gene</li>
+      <li>Unstoppable</li>
+			<li>VU_Libido_None</li>
+      <li>WoundHealing_Slow</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_LargeIncrease</li>
+
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudePoor_Animals</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudePoor_Medicine</li>
+			<li>AptitudePoor_Social</li>
+
+      <!-- Colors -->
+      <li>BS_HairFrostWhite</li>
+      <li>BS_CreamHair</li>
+      <li>BS_MatteGreenHair</li>
+      <li>BS_Hair_TrueWhite</li>
+      <li>Hair_Pink</li>
+
+      <li>BS_Skin_DarkAsh</li>
+      <li>BS_SkinPermafrost</li>
+      <li>Skin_Blue</li>
+      <li>BS_SkinBloodRed</li>
+    </genes>
+    <modExtensions>
+      <li Class="BigAndSmall.XenotypeExtension">
+        <setRace>BS_CommandoBot</setRace>
+        <forceRace>true</forceRace>
+      </li>
+    </modExtensions>
+  </XenotypeDef>
+</Defs>
