@@ -52,6 +52,7 @@
           <Android>0.5</Android>
           <Robot>0.5</Robot>
           <Humanlike>0.5</Humanlike>
+          <Mechanoid>0.5</Mechanoid>
         </romanceTags>
         <!-- Functional -->
         <aptitudes>

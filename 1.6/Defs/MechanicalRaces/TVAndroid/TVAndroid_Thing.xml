@@ -20,7 +20,7 @@
       <IncomingDamageFactor>0.75</IncomingDamageFactor>
       
       <SM_FlirtChance>0.5</SM_FlirtChance>
-      <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">0</SlaveSuppressionFallRate>
+      <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">-1.00</SlaveSuppressionFallRate>
       <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
       <MaxNutrition>1</MaxNutrition>
       <CarryingCapacity>50</CarryingCapacity>
