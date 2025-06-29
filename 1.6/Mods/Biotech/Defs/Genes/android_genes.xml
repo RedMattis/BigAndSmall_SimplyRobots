@@ -57,6 +57,11 @@
           </colorB>
         </headMaterial>
         <apparelRestrictions>
+          <tags>
+            <allowlist>
+              <li>Warcasket</li>
+            </allowlist>
+          </tags>
           <bodyPartGroups>
             <blacklist>
               <li>FullHead</li>
@@ -148,6 +153,11 @@
           </colorB>
         </headMaterial>
         <apparelRestrictions>
+          <tags>
+            <allowlist>
+              <li>Warcasket</li>
+            </allowlist>
+          </tags>
           <bodyPartGroups>
             <blacklist>
               <li>FullHead</li>
