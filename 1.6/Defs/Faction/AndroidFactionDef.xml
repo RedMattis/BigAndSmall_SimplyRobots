@@ -45,6 +45,10 @@
     </fixedLeaderKinds> -->
     <xenotypeSet Inherit="False">
       <xenotypeChances>
+        <BS_TVAndroid_Funky MayRequire="Ludeon.Rimworld.Biotech">0.5</BS_TVAndroid_Funky>
+        <BS_CommandoAndroid MayRequire="Ludeon.Rimworld.Biotech">0.5</BS_CommandoAndroid>
+        <BS_Hemohunter MayRequire="RedMattis.BigSmall.Core">0.02</BS_Hemohunter>
+        <BS_GiantRobot MayRequire="RedMattis.BigSmall.Core">0.01</BS_GiantRobot>
       </xenotypeChances>
     </xenotypeSet>
     <raidCommonalityFromPointsCurve>
