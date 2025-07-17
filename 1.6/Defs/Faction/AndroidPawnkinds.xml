@@ -3,7 +3,7 @@
     <defName>BS_TV_Villager</defName>
     <label>crowd-puller</label>
     <nameMaker>BS_NamerRobot_Service</nameMaker>
-    <combatPower>40</combatPower>
+    <combatPower>50</combatPower>
     <initialResistanceRange>3~10</initialResistanceRange>
     <weaponTags>
       <li>Gun</li>
@@ -40,7 +40,7 @@
     <defName>BS_TV_Grunt</defName>
     <label>ad-bot</label>
     <nameMaker>BS_NamerRobot_Service</nameMaker>
-    <combatPower>60</combatPower>
+    <combatPower>70</combatPower>
     <!-- <apparelColor>0.34,0.30,0.54</apparelColor> -->
     <initialResistanceRange>3~10</initialResistanceRange>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -146,7 +146,7 @@
     <nameMaker>BS_NamerRobot_Service</nameMaker>
     <apparelColor>0.8,0.6,0.3</apparelColor>
     <forcedHairColor>0.8,0.6,0.3</forcedHairColor>
-    <combatPower>70</combatPower>
+    <combatPower>80</combatPower>
     <canBeSapper>true</canBeSapper>
     <isGoodBreacher>true</isGoodBreacher>
     <invFoodDef>BS_AndroidFuel</invFoodDef>
@@ -215,7 +215,7 @@
     <defName>BS_Commando_Grunt</defName>
     <label>RAVEN-A0</label>
     <nameMaker>BS_NamerRobot</nameMaker>
-    <combatPower>130</combatPower>
+    <combatPower>150</combatPower>
     <apparelColor>(1.0, 1.0, 1.0)</apparelColor>
     <forcedHairColor>(1.0, 1.0, 1.0)</forcedHairColor>
     <initialResistanceRange>3~15</initialResistanceRange> 
@@ -299,7 +299,7 @@
     <defName>BS_Commando_Boom</defName>
     <label>HELLHOUND</label>
     <nameMaker>BS_NamerRobot</nameMaker>
-    <combatPower>160</combatPower>
+    <combatPower>180</combatPower>
     <apparelColor>(1.0, 0.7, 0.3)</apparelColor>
     <forcedHairColor>(1.0, 0.7, 0.3)</forcedHairColor>
     <initialResistanceRange>3~20</initialResistanceRange>
@@ -367,7 +367,7 @@
     <label>APEX-C</label>
     <nameMaker>BS_NamerRobot</nameMaker>
     <factionLeader>true</factionLeader>
-    <combatPower>200</combatPower>
+    <combatPower>220</combatPower>
     <apparelColor>(0.2, 0.2, 0.2)</apparelColor>
     <forcedHairColor>(0.15, 0.15, 0.2)</forcedHairColor>
     <apparelMoney>500~8000</apparelMoney>
