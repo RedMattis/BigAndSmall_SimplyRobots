@@ -2,7 +2,7 @@
   <XenotypeDef>
     <defName>BS_ActualGiantFreakinRobot</defName>
     <label>literal giant robot</label>
-    <description>A steel enforcer design recklessly upscaled far beyond intentions of the intended design. It is outputting almost unmanagable amounts of heat, and event at a glance there are numerous design flaws that should have rendered the lumbering design entierly non-functional</description>
+    <description>A steel enforcer design recklessly upscaled far beyond intentions of the intended design. It is outputting almost unmanageable amounts of heat, and event at a glance there are numerous design flaws that should have rendered the lumbering design entirely non-functional</description>
     <iconPath>Icons/BS_CommandoHead</iconPath>
     <combatPowerFactor>8</combatPowerFactor>
     <inheritable>true</inheritable>

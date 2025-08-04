@@ -10,7 +10,7 @@
 
   <HediffDef ParentName="BS_RobotSapienceBase">
     <defName>BS_RobotNonSapient</defName>
-    <label>Nonsapient</label>
+    <label>Non-sapient</label>
     <description>This robot appears quite sentient, but not fully sapient.</description>
     <stages Inherit="False">
       <li>
@@ -24,13 +24,13 @@
           <li>Intellectual</li>
         </disabledWorkTags>
         <disablesNeeds>
-        <li>Mood</li>
-        <li>Rest</li>
-        <li>Beauty</li>
-        <li>Outdoors</li>
-        <li>Indoors</li>
-        <li>Joy</li>
-      </disablesNeeds>
+          <li>Mood</li>
+          <li>Rest</li>
+          <li>Beauty</li>
+          <li>Outdoors</li>
+          <li>Indoors</li>
+          <li>Joy</li>
+        </disablesNeeds>
       </li>
 		</stages>
     
