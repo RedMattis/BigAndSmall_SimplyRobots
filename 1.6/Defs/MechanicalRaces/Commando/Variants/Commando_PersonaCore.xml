@@ -31,7 +31,7 @@
           <GlobalLearningFactor>3.25</GlobalLearningFactor>
           <MentalBreakThreshold>0.13</MentalBreakThreshold>
           <ComfyTemperatureMin>-5</ComfyTemperatureMin>
-          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+          <ComfyTemperatureMax>-10</ComfyTemperatureMax>
           <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
           <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
         </statOffsets>
