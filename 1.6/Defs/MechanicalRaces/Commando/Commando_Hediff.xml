@@ -173,7 +173,7 @@
         </headPaths>
 
         <bodyMaterial>
-          <shader>CutoutComplex</shader>
+          <shader>BS_CutoutThreeColor</shader>
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
@@ -193,9 +193,25 @@
               </li>
             </alts>
           </colorB>
+          <!-- <colorC>
+            <favoriteColor>true</favoriteColor>
+          </colorC> -->
+          <colorC>
+            <!-- <color>1.0, 0.95, 0.95</color> -->
+            <colourRange>
+              <li>220, 255, 255</li>
+              <li>190, 190, 190</li>
+              <li>255, 255, 255</li>
+              <li>255, 255, 255</li>
+              <li>245, 255, 255</li>
+              <li>255, 230, 220</li>
+              <li>242, 237, 224</li>
+              <li>255, 239, 213</li>
+            </colourRange>
+          </colorC>
         </bodyMaterial>
         <headMaterial>
-          <shader>CutoutComplex</shader>
+          <shader>BS_CutoutThreeColor</shader>
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
@@ -215,6 +231,19 @@
               </li>
             </alts>
           </colorB>
+          <colorC>
+            <colourRange>
+              <li>200, 255, 255</li>
+              <li>180, 180, 180</li>
+              <li>255, 255, 255</li>
+              <li>255, 255, 255</li>
+              <li>245, 255, 255</li>
+              <li>255, 230, 220</li>
+              <li>242, 237, 224</li>
+              <li>255, 239, 213</li>
+              <li>255, 200, 190</li>
+            </colourRange>
+          </colorC>
         </headMaterial>
         <randomHairGenes>
           <li>Hair_Gray</li>
@@ -238,6 +267,44 @@
       </li>
       
     </modExtensions>
+    <renderNodeProperties>
+      <li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+        <nodeClass>BigAndSmall.PawnRenderNode_Ultimate</nodeClass>
+        <workerClass>BigAndSmall.UltimateRenderNodeWorker</workerClass>
+        <parentTagDef>Body</parentTagDef>
+        <shader>Cutout</shader>
+        <conditionalGraphics>
+          <texturePaths><default>BS_Blank</default></texturePaths>
+          <alts>
+            <li>
+              <triggers><li>IdeologyDLC</li></triggers>
+              <pathGetter><source>IdeologyIcon</source></pathGetter>
+              <colorA>
+                <ideologyColor>true</ideologyColor>
+                <color>(1.0, 1.0, 1.0, 0.8)</color>
+                <averageColors>false</averageColors>
+                <alts>
+                  <li>
+                    <triggers><li>HasForcedSkinColorGene</li></triggers>
+                    <hairColor>true</hairColor>
+                    <color>(1.0, 1.0, 1.0, 0.8)</color>
+                    <averageColors>false</averageColors>
+                  </li>
+                </alts>
+              </colorA>
+            </li>
+          </alts>
+        </conditionalGraphics>
+        <drawSize>(0.15, 0.15)</drawSize>
+        <visibleFacing> <li>South</li> </visibleFacing>
+        <drawData>
+          <defaultData>
+            <layer>5</layer>
+            <offset>(0.00, 0, -0.02)</offset>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
   </HediffDef>
 
   <GeneDef ParentName="GeneSkinColorMelanin">
