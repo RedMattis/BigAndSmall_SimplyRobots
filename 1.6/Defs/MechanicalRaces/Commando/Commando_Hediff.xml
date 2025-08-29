@@ -177,27 +177,30 @@
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalA</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <skinColor>true</skinColor>
               </li>
-            </alts>
+            </altsLate>
           </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalB</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <hairColor>true</hairColor>
               </li>
-            </alts>
+            </altsLate>
           </colorB>
           <!-- <colorC>
             <favoriteColor>true</favoriteColor>
           </colorC> -->
           <colorC>
             <!-- <color>1.0, 0.95, 0.95</color> -->
+            <altDefs><li>BS_CustomGlobalC</li></altDefs>
             <colourRange>
               <li>220, 255, 255</li>
               <li>190, 190, 190</li>
@@ -215,23 +218,26 @@
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalA</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <skinColor>true</skinColor>
               </li>
-            </alts>
+            </altsLate>
           </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalB</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <hairColor>true</hairColor>
               </li>
-            </alts>
+            </altsLate>
           </colorB>
           <colorC>
+            <altDefs><li>BS_CustomGlobalC</li></altDefs>
             <colourRange>
               <li>200, 255, 255</li>
               <li>180, 180, 180</li>
@@ -279,23 +285,27 @@
             <li>
               <triggers><li>IdeologyDLC</li></triggers>
               <pathGetter><source>IdeologyIcon</source></pathGetter>
+              <props>
+                <shader>BS_FlatTransparentOverlay</shader>
+              </props>
               <colorA>
                 <ideologyColor>true</ideologyColor>
-                <color>(1.0, 1.0, 1.0, 0.8)</color>
+                <color>(1.0, 1.0, 1.0, 0.85)</color>
                 <averageColors>false</averageColors>
-                <alts>
+                <altDefs><li>BS_CustomGlobalB</li></altDefs>
+                <altsLate>
                   <li>
                     <triggers><li>HasForcedSkinColorGene</li></triggers>
                     <hairColor>true</hairColor>
-                    <color>(1.0, 1.0, 1.0, 0.8)</color>
+                    <color>(1.0, 1.0, 1.0, 0.85)</color>
                     <averageColors>false</averageColors>
                   </li>
-                </alts>
+                </altsLate>
               </colorA>
             </li>
           </alts>
         </conditionalGraphics>
-        <drawSize>(0.15, 0.15)</drawSize>
+        <drawSize>(0.16, 0.16)</drawSize>
         <visibleFacing> <li>South</li> </visibleFacing>
         <drawData>
           <defaultData>
