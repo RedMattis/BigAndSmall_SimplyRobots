@@ -199,8 +199,10 @@
             <favoriteColor>true</favoriteColor>
           </colorC> -->
           <colorC>
-            <!-- <color>1.0, 0.95, 0.95</color> -->
-            <altDefs><li>BS_CustomGlobalC</li></altDefs>
+            <altDefs>
+              <li>BS_CustomGlobalC</li>
+              <li>BS_CommandoRandomSkin</li>
+            </altDefs>
             <colourRange>
               <li>220, 255, 255</li>
               <li>190, 190, 190</li>
@@ -237,7 +239,10 @@
             </altsLate>
           </colorB>
           <colorC>
-            <altDefs><li>BS_CustomGlobalC</li></altDefs>
+            <altDefs>
+              <li>BS_CustomGlobalC</li>
+              <li>BS_CommandoRandomSkin</li>
+            </altDefs>
             <colourRange>
               <li>200, 255, 255</li>
               <li>180, 180, 180</li>
@@ -290,14 +295,18 @@
               </props>
               <colorA>
                 <ideologyColor>true</ideologyColor>
-                <color>(1.0, 1.0, 1.0, 0.85)</color>
+                <color>(1.0, 1.0, 1.0, 0.75)</color>
+                <brightness>1.1</brightness>
+                <saturation>1.15</saturation>
                 <averageColors>false</averageColors>
                 <altDefs><li>BS_CustomGlobalB</li></altDefs>
                 <altsLate>
                   <li>
                     <triggers><li>HasForcedSkinColorGene</li></triggers>
                     <hairColor>true</hairColor>
-                    <color>(1.0, 1.0, 1.0, 0.85)</color>
+                    <color>(1.0, 1.0, 1.0, 0.75)</color>
+                    <brightness>1.1</brightness>
+                    <saturation>1.15</saturation>
                     <averageColors>false</averageColors>
                   </li>
                 </altsLate>
@@ -305,7 +314,7 @@
             </li>
           </alts>
         </conditionalGraphics>
-        <drawSize>(0.16, 0.16)</drawSize>
+        <drawSize>(0.155, 0.155)</drawSize>
         <visibleFacing> <li>South</li> </visibleFacing>
         <drawData>
           <defaultData>
@@ -332,4 +341,43 @@
     <selectionWeight>0</selectionWeight>
     <randomBrightnessFactor>0.4</randomBrightnessFactor>
   </GeneDef>
+
+  <BigAndSmall.ColorSettingDef>
+    <defName>BS_CommandoRandomSkin</defName>
+    <color>
+      <chanceTrigger>0.75</chanceTrigger>
+      <randSeed>11</randSeed>
+      <alts>
+        <li>
+          <randSeed>22</randSeed>
+          <chanceTrigger>0.25</chanceTrigger>
+          <hairColor>true</hairColor>
+          <temperatureAnalogous>0.8</temperatureAnalogous>
+          <minBrightness>0.5</minBrightness>
+          <brightnessFlat>0.1</brightnessFlat>
+          <saturation>0.4</saturation>
+        </li>
+        <li>
+          <randSeed>33</randSeed>
+          <chanceTrigger>0.35</chanceTrigger>
+          <hairColor>true</hairColor>
+          <temperatureComplementary>0.8</temperatureComplementary>
+          <minBrightness>0.45</minBrightness>
+          <saturation>0.5</saturation>
+        </li>
+        <li>
+          <randSeed>44</randSeed>
+          <chanceTrigger>0.35</chanceTrigger>
+          <skinColor>true</skinColor>
+          <minBrightness>0.2</minBrightness>
+          <brightnessFlat>0.1</brightnessFlat>
+        </li>
+      </alts>
+
+      <skinColor>true</skinColor>
+      <temperatureAnalogous>0.35</temperatureAnalogous>
+      <minBrightness>0.2</minBrightness>
+      <brightnessFlat>0.05</brightnessFlat>
+    </color>
+  </BigAndSmall.ColorSettingDef>
 </Defs>

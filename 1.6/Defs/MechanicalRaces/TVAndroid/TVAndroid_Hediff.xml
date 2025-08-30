@@ -121,22 +121,24 @@
           <shader>CutoutComplex</shader>
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
+            <altDefs><li>BS_CustomGlobalA</li></altDefs>
             <hairColor>true</hairColor>
-            <alts>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <skinColor>true</skinColor>
               </li>
-            </alts>
+            </altsLate>
           </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalB</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <hairColor>true</hairColor>
               </li>
-            </alts>
+            </altsLate>
           </colorB>
         </bodyMaterial>
         <headPaths>
@@ -148,21 +150,23 @@
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalA</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <skinColor>true</skinColor>
               </li>
-            </alts>
+            </altsLate>
           </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalB</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <hairColor>true</hairColor>
               </li>
-            </alts>
+            </altsLate>
           </colorB>
         </headMaterial>
         <randomHairGenes>

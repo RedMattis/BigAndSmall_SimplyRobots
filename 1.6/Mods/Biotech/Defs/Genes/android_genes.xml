@@ -35,26 +35,45 @@
           <Male>Pawns/Commando/Male_Average_Normal</Male>
         </headPaths>
         <headMaterial>
-          <shader>CutoutComplex</shader>
+          <shader>BS_CutoutThreeColor</shader>
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalA</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <skinColor>true</skinColor>
               </li>
-            </alts>
+            </altsLate>
           </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalB</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <hairColor>true</hairColor>
               </li>
-            </alts>
+            </altsLate>
           </colorB>
+          <colorC>
+            <altDefs>
+              <li>BS_CustomGlobalC</li>
+              <li>BS_CommandoRandomSkin</li>
+            </altDefs>
+            <colourRange>
+              <li>200, 255, 255</li>
+              <li>180, 180, 180</li>
+              <li>255, 255, 255</li>
+              <li>255, 255, 255</li>
+              <li>245, 255, 255</li>
+              <li>255, 230, 220</li>
+              <li>242, 237, 224</li>
+              <li>255, 239, 213</li>
+              <li>255, 200, 190</li>
+            </colourRange>
+          </colorC>
         </headMaterial>
         <apparelRestrictions>
           <tags>
@@ -98,108 +117,53 @@
           <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
           <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
         </bodyPaths>
-        <bodyMaterial>
-          <shader>CutoutComplex</shader>
-          <overrideDesiccated>true</overrideDesiccated>
-          <colorA>
-            <hairColor>true</hairColor>
-            <alts>
-              <li>
-                <triggers><li>HasForcedSkinColorGene</li></triggers>
-                <skinColor>true</skinColor>
-              </li>
-            </alts>
-          </colorA>
-          <colorB>
-            <ideologyColor>true</ideologyColor>
-            <alts>
-              <li>
-                <triggers><li>HasForcedSkinColorGene</li></triggers>
-                <hairColor>true</hairColor>
-              </li>
-            </alts>
-          </colorB>
-        </bodyMaterial>
-      </li>
-    </modExtensions>
-  </GeneDef>
-
-  <GeneDef ParentName="RobotHeadWithoutHair">
-    <defName>BS_CommandoHead_OutfitMatch</defName>
-    <label>enforcer head (ac)</label>
-    <description>Carriers of this gene have a rugged mechanical-looking head.\n\nPrevents wearing some headgear.\n\nOtherwise visual only.\n\nThis version is colored the same as the apparel or favorite color.</description>
-    <iconPath>Icons/BS_CommandoHead</iconPath>
-    <selectionWeight>0</selectionWeight>
-    <biostatMet>1</biostatMet>
-    <!-- <skinIsHairColor>true</skinIsHairColor> -->
-    <statFactors>
-      <SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
-    </statFactors>
-    <modExtensions>
-      <li Class="BigAndSmall.PawnExtension">
-        <disableFacialAnimations>true</disableFacialAnimations>
         <headPaths>
           <Female>Pawns/Commando/Female_Average_Normal</Female>
           <Male>Pawns/Commando/Male_Average_Normal</Male>
         </headPaths>
-        <headMaterial>
-          <shader>CutoutComplex</shader>
-          <overrideDesiccated>true</overrideDesiccated>
-          <colorA>
-            <apparelColorOrFavorite>true</apparelColorOrFavorite>
-          </colorA>
-          <colorB>
-            <hairColor>true</hairColor>
-          </colorB>
-        </headMaterial>
-        <apparelRestrictions>
-          <tags>
-            <allowlist>
-              <li>Warcasket</li>
-            </allowlist>
-          </tags>
-          <bodyPartGroups>
-            <blacklist>
-              <li>FullHead</li>
-            </blacklist>
-          </bodyPartGroups>
-        </apparelRestrictions>
-      </li>
-    </modExtensions>
-  </GeneDef>
 
-  <GeneDef ParentName="BS_MechanicalTagged">
-    <defName>BS_CommandoBody_OutfitMatch</defName>
-    <label>enforcer body (ac)</label>
-    <description>Carriers of this gene have the apperance a mechanical body.\n\nThis version is colored the same as the apparel color or favorite color. Only compatible with standard body.</description>
-    <iconPath>Pawns/Commando/Naked_Female_south</iconPath>
-    <selectionWeight>0</selectionWeight>
-    <biostatMet>0</biostatMet>
-    <!-- <skinIsHairColor>true</skinIsHairColor> -->
-    <tattoosVisible>false</tattoosVisible>
-    <exclusionTags>
-      <li>AG_Bodies</li>
-      <li>Bodies</li>
-      <li>Body</li>
-      <li>BS_Body</li>
-      <li>Fur</li>
-    </exclusionTags>
-    <bodyType>Standard</bodyType>
-    <modExtensions>
-      <li Class="BigAndSmall.PawnExtension">
-        <bodyPaths>
-          <Body_Female>Pawns/Commando/Naked_Female</Body_Female>
-          <Body_Male>Pawns/Commando/Naked_Male</Body_Male>
-        </bodyPaths>
         <bodyMaterial>
-          <shader>CutoutComplex</shader>
+          <shader>BS_CutoutThreeColor</shader>
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
-            <apparelColorOrFavorite>true</apparelColorOrFavorite>
+            <hairColor>true</hairColor>
+            <altDefs><li>BS_CustomGlobalA</li></altDefs>
+            <altsLate>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <skinColor>true</skinColor>
+              </li>
+            </altsLate>
           </colorA>
           <colorB>
-            <hairColor>true</hairColor>
+            <ideologyColor>true</ideologyColor>
+            <altDefs><li>BS_CustomGlobalB</li></altDefs>
+            <altsLate>
+              <li>
+                <triggers><li>HasForcedSkinColorGene</li></triggers>
+                <hairColor>true</hairColor>
+              </li>
+            </altsLate>
           </colorB>
+          <!-- <colorC>
+            <favoriteColor>true</favoriteColor>
+          </colorC> -->
+          <colorC>
+            <altDefs>
+              <li>BS_CustomGlobalC</li>
+              <li>BS_CommandoRandomSkin</li>
+            </altDefs>
+            <colourRange>
+              <li>220, 255, 255</li>
+              <li>190, 190, 190</li>
+              <li>255, 255, 255</li>
+              <li>255, 255, 255</li>
+              <li>245, 255, 255</li>
+              <li>255, 230, 220</li>
+              <li>242, 237, 224</li>
+              <li>255, 239, 213</li>
+            </colourRange>
+          </colorC>
         </bodyMaterial>
       </li>
     </modExtensions>
@@ -229,7 +193,8 @@
           <hostilityStatus>true</hostilityStatus>
           <invisibleIfUnconcious>true</invisibleIfUnconcious>
           <color>(300, 300, 300, 220)</color>
-          <alts>
+          <altDefs><li>BS_CustomGlobalC</li></altDefs>
+          <altsLate>
             <li>
               <triggers><li>Colonist</li></triggers>
               <favoriteColor>true</favoriteColor>
@@ -237,7 +202,7 @@
               <invisibleIfUnconcious>true</invisibleIfUnconcious>
               <color>(300, 300, 300, 220)</color>
             </li>
-          </alts>
+          </altsLate>
         </colorA>
         <colorType>Custom</colorType>
         <useSkinShader>false</useSkinShader>
@@ -355,21 +320,23 @@
           <overrideDesiccated>true</overrideDesiccated>
           <colorA>
             <hairColor>true</hairColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalA</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <skinColor>true</skinColor>
               </li>
-            </alts>
+            </altsLate>
           </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalB</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <hairColor>true</hairColor>
               </li>
-            </alts>
+            </altsLate>
           </colorB>
         </headMaterial>
         <apparelRestrictions>
@@ -410,23 +377,26 @@
         <bodyMaterial>
           <shader>CutoutComplex</shader>
           <overrideDesiccated>true</overrideDesiccated>
+          
           <colorA>
             <hairColor>true</hairColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalA</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <skinColor>true</skinColor>
               </li>
-            </alts>
+            </altsLate>
           </colorA>
           <colorB>
             <ideologyColor>true</ideologyColor>
-            <alts>
+            <altDefs><li>BS_CustomGlobalB</li></altDefs>
+            <altsLate>
               <li>
                 <triggers><li>HasForcedSkinColorGene</li></triggers>
                 <hairColor>true</hairColor>
               </li>
-            </alts>
+            </altsLate>
           </colorB>
         </bodyMaterial>
       </li>
