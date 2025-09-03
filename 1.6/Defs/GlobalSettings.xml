@@ -1,0 +1,9 @@
+<Defs>
+  <BigAndSmall.GlobalSettings>
+    <defName>BS_SimplyRobots</defName>
+    <enabledFeatures>
+       <li>RecolorButton</li>
+       <li>RaceButton</li>
+    </enabledFeatures>
+  </BigAndSmall.GlobalSettings>
+</Defs>
