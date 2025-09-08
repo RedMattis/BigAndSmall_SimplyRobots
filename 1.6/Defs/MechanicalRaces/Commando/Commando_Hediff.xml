@@ -61,7 +61,7 @@
 
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
-        <traitIcon>Icons/BS_AndroidFaction_white</traitIcon>
+        <traitIcon>BS_Traits/robot</traitIcon>
         <pawnDiet>BS_ChemRobotDiet</pawnDiet>
         <traitFilters>
           <blacklist>
@@ -195,9 +195,6 @@
               </li>
             </altsLate>
           </colorB>
-          <!-- <colorC>
-            <favoriteColor>true</favoriteColor>
-          </colorC> -->
           <colorC>
             <altDefs>
               <li>BS_CustomGlobalC</li>
