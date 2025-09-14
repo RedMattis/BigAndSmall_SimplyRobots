@@ -36,9 +36,6 @@
           <li>LungRot</li>
           <li>FoodPoisoning</li>
         </makeImmuneTo>
-        <disabledWorkTags>
-          <li>Intellectual</li>
-        </disabledWorkTags>
         <disablesNeeds>
           <li>Comfort</li>
           <!-- <li>Indoors</li> -->
@@ -64,7 +61,6 @@
           <Artistic>-8</Artistic>
           <Medicine>4</Medicine>
           <Social>4</Social>
-          <Intellectual>-20</Intellectual>
         </aptitudes>
         <forcedHediffs><li>BS_RobotNonSapient</li></forcedHediffs>
       </li>

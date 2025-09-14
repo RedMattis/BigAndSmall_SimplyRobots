@@ -37,9 +37,6 @@
           <li>LungRot</li>
           <li>FoodPoisoning</li>
         </makeImmuneTo>
-        <disabledWorkTags>
-          <li>Intellectual</li>
-        </disabledWorkTags>
       </li>
 		</stages>
 
@@ -57,7 +54,6 @@
           <Artistic>-4</Artistic>
           <!-- <Medicine>0</Medicine> -->
           <!-- <Social>2</Social> -->
-          <Intellectual>-20</Intellectual>
         </aptitudes>
         <forcedHediffs><li>BS_RobotNonSapient</li></forcedHediffs>
       </li>

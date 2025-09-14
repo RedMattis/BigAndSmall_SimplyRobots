@@ -20,9 +20,9 @@
           <GlobalLearningFactor>0.4</GlobalLearningFactor>
           <PsychicSensitivity>0</PsychicSensitivity>
         </statFactors>
-        <disabledWorkTags>
+        <!-- <disabledWorkTags>
           <li>Intellectual</li>
-        </disabledWorkTags>
+        </disabledWorkTags> -->
         <disablesNeeds>
           <li>Mood</li>
           <li>Rest</li>
@@ -37,6 +37,12 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <!-- <romanceTags></romanceTags> --> <!--Already covered by 0% flirt chance.-->
+         <aptitudes>
+          <Intellectual>-4</Intellectual>
+        </aptitudes>
+        <disableSkillBelowAptitude>
+          <Intellectual>-3</Intellectual>
+        </disableSkillBelowAptitude>
       </li>
     </modExtensions>
   </HediffDef>
