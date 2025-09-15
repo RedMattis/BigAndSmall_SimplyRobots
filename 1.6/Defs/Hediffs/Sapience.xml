@@ -43,6 +43,8 @@
         <disableSkillBelowAptitude>
           <Intellectual>-3</Intellectual>
         </disableSkillBelowAptitude>
+        <canHavePassions>false</canHavePassions>
+        <disabledWorkTypes><li>Warden</li></disabledWorkTypes>
       </li>
     </modExtensions>
   </HediffDef>
