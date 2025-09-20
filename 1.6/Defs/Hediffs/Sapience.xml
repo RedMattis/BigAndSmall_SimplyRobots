@@ -11,7 +11,7 @@
   <HediffDef ParentName="BS_RobotSapienceBase">
     <defName>BS_RobotNonSapient</defName>
     <label>Non-sapient</label>
-    <description>This robot appears quite sentient, but not fully sapient.</description>
+    <description>This robot appears sentient, but not fully sapient.</description>
     <stages Inherit="False">
       <li>
         <statFactors>
@@ -36,6 +36,7 @@
     
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
+        <traitIcon>Icons/BS_RobotNonSapient</traitIcon>
         <!-- <romanceTags></romanceTags> --> <!--Already covered by 0% flirt chance.-->
          <aptitudes>
           <Intellectual>-4</Intellectual>
@@ -43,8 +44,21 @@
         <disableSkillBelowAptitude>
           <Intellectual>-3</Intellectual>
         </disableSkillBelowAptitude>
+        <clampedSkills>
+          <li>
+            <skill>Artistic</skill>
+            <range>0~8</range>
+          </li>
+          <li>
+            <skill>Animals</skill>
+            <range>0~12</range>
+          </li>
+          <li>
+            <skill>Social</skill>
+            <range>0~12</range>
+          </li>
+        </clampedSkills>
         <canHavePassions>false</canHavePassions>
-        <disabledWorkTypes><li>Warden</li></disabledWorkTypes>
       </li>
     </modExtensions>
   </HediffDef>
