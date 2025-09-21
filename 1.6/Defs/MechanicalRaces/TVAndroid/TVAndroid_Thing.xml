@@ -26,6 +26,7 @@
       <CarryingCapacity>50</CarryingCapacity>
       <WorkSpeedGlobal>0.9</WorkSpeedGlobal>
       <GlobalLearningFactor>1</GlobalLearningFactor>
+      <BS_BatteryCharging>1.0</BS_BatteryCharging>
 
       <ArmorRating_Heat>0.5</ArmorRating_Heat>
       <ArmorRating_Blunt>0.05</ArmorRating_Blunt>

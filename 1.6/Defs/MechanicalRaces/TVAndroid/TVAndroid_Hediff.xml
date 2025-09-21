@@ -21,6 +21,8 @@
     <modExtensions>
       <li Class="BigAndSmall.PawnExtension">
         <traitIcon>BS_Traits/robot</traitIcon>
+
+        <canUseChargers>true</canUseChargers>
         
         <!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
         <nullsThoughts>
