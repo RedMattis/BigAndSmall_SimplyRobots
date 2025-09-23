@@ -18,12 +18,26 @@
 
     <stages Inherit="False">
       <li>
-        <painFactor>0</painFactor>
+        <socialFightChanceFactor>0.5</socialFightChanceFactor>
+
+        <painFactor>0.5</painFactor>
         <totalBleedFactor>0</totalBleedFactor>
+        <statOffsets>
+          <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+          <ComfyTemperatureMax>5</ComfyTemperatureMax>
+          <ArmorRating_Heat>2.00</ArmorRating_Heat>
+          <ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
+        </statOffsets>
+        <statFactors>
+          <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
+          <CarryingCapacity>1.2</CarryingCapacity>
+          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
+        </statFactors>
         <damageFactors>
           <Frostbite>0</Frostbite>
         </damageFactors>
-        <socialFightChanceFactor>0.5</socialFightChanceFactor>
         <makeImmuneTo>
           <li>Flu</li>
           <li>Malaria</li>
@@ -37,6 +51,15 @@
           <li>LungRot</li>
           <li>FoodPoisoning</li>
         </makeImmuneTo>
+        <disablesNeeds>
+          <li>Comfort</li>
+          <li>Outdoors</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+          <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+          <!-- <li>FoodVariety</li> -->
+          <!-- <li>Indoors</li> -->
+        </disablesNeeds>
       </li>
 		</stages>
 

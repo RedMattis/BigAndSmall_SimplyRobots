@@ -15,7 +15,7 @@
     <description>A mechanical lifeform made using ancient patterns. This one houses an AI Persona. This is probably a disaster waiting to happen.</description>
     <stages Inherit="False">
       <li>
-        <painFactor>0.5</painFactor>
+        <painFactor>0.65</painFactor>
         <totalBleedFactor>0</totalBleedFactor>
         <capMods>
           <li>
@@ -30,10 +30,11 @@
         <statOffsets>
           <GlobalLearningFactor>3.25</GlobalLearningFactor>
           <MentalBreakThreshold>0.13</MentalBreakThreshold>
-          <ComfyTemperatureMin>-5</ComfyTemperatureMin>
+          <ComfyTemperatureMin>-10</ComfyTemperatureMin>
           <ComfyTemperatureMax>-10</ComfyTemperatureMax>
-          <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-          <ArmorRating_Sharp>0.15</ArmorRating_Sharp>
+          <ArmorRating_Heat>2.00</ArmorRating_Heat>
+          <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+          <ArmorRating_Sharp>0.6</ArmorRating_Sharp>
         </statOffsets>
         <statFactors>
           <WorkSpeedGlobal>2</WorkSpeedGlobal>
@@ -77,7 +78,6 @@
             <mtbDays>20</mtbDays>
           </li>
         </mentalStateGivers> -->
-        <!-- <blocksSleeping>true</blocksSleeping> -->
       </li>
 		</stages>
 

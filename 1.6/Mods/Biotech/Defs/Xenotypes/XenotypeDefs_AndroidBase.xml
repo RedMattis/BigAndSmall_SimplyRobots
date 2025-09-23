@@ -84,6 +84,7 @@
       <li>BS_TVHead</li>
       <li>BS_SimpleRobotBody</li>
       <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_BatteryChargeable</li>
     </genes>
     <modExtensions>
       <li Class="BigAndSmall.XenotypeExtension">
@@ -103,7 +104,10 @@
     <factionlessGenerationWeight>2</factionlessGenerationWeight>
     <genes>
       <li>Body_Standard</li>
+      <li>BS_TVHead</li>
+      <li>BS_SimpleRobotBody</li>
       <li MayRequire="RedMattis.BigSmall.Core">BS_AcidResistanceMid</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_BatteryChargeable</li>
       <!-- <li>Hair_Pink</li>
       <li>Hair_LightPurple</li>
       <li>Hair_LightBlue</li>

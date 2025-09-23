@@ -3,50 +3,6 @@
     <label>Steel Enforcer</label>
     <description>A mechanical lifeform with a design born from early attempts at developing AI Persona by emulating a human using engineering. It is made mostly out of metals and synthetical components.\n\nThis design is especially rugged, but the design of its body prevents it from wearing non-loose clothing and armor.</description>
 
-    <stages Inherit="False">
-      <li>
-        <painFactor>0.5</painFactor>
-        <totalBleedFactor>0</totalBleedFactor>
-        <statOffsets>
-          <ComfyTemperatureMin>-5</ComfyTemperatureMin>
-          <ComfyTemperatureMax>5</ComfyTemperatureMax>
-          <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-          <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-          <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
-        </statOffsets>
-        <statFactors>
-          <SM_BodySizeMultiplier>1.15</SM_BodySizeMultiplier>
-          <CarryingCapacity>1.2</CarryingCapacity>
-          <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">1.2</VEF_MassCarryCapacity>
-        </statFactors>
-        <damageFactors>
-          <Frostbite>0</Frostbite>
-        </damageFactors>
-        <makeImmuneTo>
-          <li>Flu</li>
-          <li>Malaria</li>
-          <li>SleepingSickness</li>
-          <li>Plague</li>
-          <li>WoundInfection</li>
-          <li>LungRot</li>
-          <li>GutWorms</li>
-          <li>MuscleParasites</li>
-          <li>OrganDecay</li>
-          <li>LungRot</li>
-          <li>FoodPoisoning</li>
-        </makeImmuneTo>
-        <disablesNeeds>
-          <li>Comfort</li>
-          <li>Outdoors</li>
-          <li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
-          <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
-          <li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
-          <!-- <li>FoodVariety</li> -->
-          <!-- <li>Indoors</li> -->
-        </disablesNeeds>
-        <!-- <blocksSleeping>true</blocksSleeping> -->
-      </li>
-		</stages>
     <comps>
       <li Class="BigAndSmall.CompProperties_Race">
         <!-- Cosmetic -->
@@ -70,9 +26,8 @@
           </blacklist>
         </traitFilters>
         <immutableEndogenes>
-          <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
-          
           <!-- Mostly serves to get rid of other body genes. -->
+          <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
         </immutableEndogenes>
         <forcedEndogenes>
           <li MayRequire="Ludeon.Rimworld.Biotech">BS_CommandoBody</li>
@@ -80,7 +35,6 @@
         </forcedEndogenes>
         <geneCategoryFilters>
           <blacklist>
-            <!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->
             <li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
           </blacklist>
         </geneCategoryFilters>
