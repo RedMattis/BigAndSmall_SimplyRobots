@@ -175,7 +175,7 @@
       </ageGenerationCurve>
     </race>
     <butcherProducts Inherit="False">
-      <Plasteel>50</Plasteel>
+      <Plasteel>35</Plasteel>
     </butcherProducts>
     <ingredient Inherit="False"/>
   </ThingDef>

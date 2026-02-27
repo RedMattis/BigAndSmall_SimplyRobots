@@ -59,10 +59,10 @@
      </points>
     </raidCommonalityFromPointsCurve>
     <visitorTraderKinds>
-      <li>Visitor_Outlander_Standard</li>
+      <li>BS_AdbotTrader</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-      <li>Base_Outlander_Standard</li>
+      <li>Adbot_Base_Standard</li>
     </baseTraderKinds>
     <raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
     <maxPawnCostPerTotalPointsCurve>

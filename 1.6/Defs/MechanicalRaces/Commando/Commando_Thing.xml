@@ -7,7 +7,7 @@
       <hasUnnaturalCorpse>true</hasUnnaturalCorpse>
     </race>
     <butcherProducts Inherit="False">
-      <Plasteel>50</Plasteel>
+      <Plasteel>35</Plasteel>
     </butcherProducts>
   </ThingDef>
   
